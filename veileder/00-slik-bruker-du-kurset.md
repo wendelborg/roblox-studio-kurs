@@ -4,7 +4,7 @@
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/#start](https://wendelborg.github.io/roblox-studio-kurs/#start)
 
-Åtte oppdrag på 45–60 minutter tar barnet fra å endre en kloss til å bygge en egen obby med poeng, feller og mål. Hvert oppdrag gir noe som virker i spillet med en gang, men målet er å skjønne *hvorfor* det virker.
+Ti oppdrag på 45–60 minutter tar barnet fra å endre en kloss til å bygge en egen obby med poeng, feller og mål. Hvert oppdrag gir noe som virker i spillet med en gang, men målet er å skjønne *hvorfor* det virker.
 
 **Slik kjøres en økt (for deg som voksen):**
 

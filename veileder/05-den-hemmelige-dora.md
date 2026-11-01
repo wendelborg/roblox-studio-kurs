@@ -1,8 +1,8 @@
-# Oppdrag 4: Den hemmelige døra
+# Oppdrag 5: Den hemmelige døra
 
-[← Oppdrag 3: Gulvet er lava](03-gulvet-er-lava.md) · [Innhold](../README.md) · [Oppdrag 5: Disko og forsvinnende trapp →](05-disko-og-forsvinnende-trapp.md)
+[← Oppdrag 4: Gulvet er lava](04-gulvet-er-lava.md) · [Innhold](../README.md) · [Oppdrag 6: Disko og forsvinnende trapp →](06-disko-og-forsvinnende-trapp.md)
 
-> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/4/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/4/)
+> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/5/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/5/)
 
 **Barnet lærer:** `if`, `elseif` og `else` – å la koden ta valg.
 
@@ -55,4 +55,4 @@ dor.Touched:Connect(naarNoeRorer)
 
 ---
 
-[← Oppdrag 3: Gulvet er lava](03-gulvet-er-lava.md) · [Innhold](../README.md) · [Oppdrag 5: Disko og forsvinnende trapp →](05-disko-og-forsvinnende-trapp.md)
+[← Oppdrag 4: Gulvet er lava](04-gulvet-er-lava.md) · [Innhold](../README.md) · [Oppdrag 6: Disko og forsvinnende trapp →](06-disko-og-forsvinnende-trapp.md)

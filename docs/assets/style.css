@@ -302,3 +302,4 @@ div.highlighter-rouge, div.highlight, pre { max-width: 100%; overflow-x: auto; }
 .ordliste li.sjekk:has(input:checked) { opacity: 1; border-color: #10b981; }
 .ordliste li.sjekk:has(input:checked) > .sjekk-tekst { text-decoration: none; }
 .ordliste li.sjekk:has(input:checked) .ord { color: #10b981; }
+.kart .bonuskort a { border-style: dashed; border-top-style: solid; }

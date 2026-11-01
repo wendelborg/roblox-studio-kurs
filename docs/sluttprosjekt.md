@@ -3,7 +3,7 @@ title: "Sluttprosjekt: Min egen obby"
 permalink: /sluttprosjekt/
 ---
 
-Nå er det **du** som er sjefen! Du skal lage din egen hinderløype, og der skal du bruke alt du har lært i oppdrag 1–8. Den voksne er kunden som tester spillet ditt.
+Nå er det **du** som er sjefen! Du skal lage din egen hinderløype, og der skal du bruke alt du har lært i oppdrag 1–10. Den voksne er kunden som tester spillet ditt.
 
 Sett av 3–4 økter. Det trenger ikke bli ferdig på én dag.
 
@@ -31,17 +31,18 @@ Ta fram et ark og tegn løypa fra start til mål. Gi hver hindring et navn, og s
 
 ## Dette skal være med i løypa
 
-- [ ] Minst 3 lavaklosser (oppdrag 3)
-- [ ] Én hemmelig dør eller snarvei (oppdrag 4)
-- [ ] Én forsvinnende trapp eller blinkende plattform (oppdrag 5)
-- [ ] Noe som er bygget med en egen funksjon (oppdrag 6)
-- [ ] Mynter og poengtavle (oppdrag 7)
-- [ ] En låst dør og en gjemt nøkkel (oppdrag 8)
+- [ ] En plattform som faller ned, eller noe som velter (oppdrag 3)
+- [ ] Minst 3 lavaklosser (oppdrag 4)
+- [ ] Én hemmelig dør eller snarvei (oppdrag 5)
+- [ ] Én forsvinnende trapp eller blinkende plattform (oppdrag 6)
+- [ ] Noe som er bygget med en egen funksjon (oppdrag 7)
+- [ ] Mynter og poengtavle (oppdrag 8)
+- [ ] En låst dør og en gjemt nøkkel (oppdrag 9)
 - [ ] Et sjekkpunkt: sett inn en **SpawnLocation** midt i løypa
 - [ ] En målkloss som skriver «Du vant!» og gir 50 mynter
 
 <details markdown="1"><summary>Hint: målklossen</summary>
-Målklossen ligner mye på mynten fra oppdrag 7. Bruk `Touched`, finn spilleren, legg til 50 i stedet for 1, og skriv «Du vant!» med `print`. Husk debounce, ellers får du mange hundre mynter!
+Målklossen ligner mye på mynten fra oppdrag 8. Bruk `Touched`, finn spilleren, legg til 50 i stedet for 1, og skriv «Du vant!» med `print`. Husk debounce, ellers får du mange hundre mynter!
 </details>
 
 ## Vil du ha mer?
@@ -64,4 +65,12 @@ Så får du fikse én ting. Det er sånn alle gode spill blir laget: man tester,
 
 ## Publisering
 
-Med **File → Publish to Roblox** lagres spillet ditt i skyen. Du kan holde det privat, eller dele det med venner. Snakk med en voksen om hvem som skal få spille det før du gjør det offentlig.
+Vil du at venner skal spille obbyen din på sine egne maskiner? Da må spillet publiseres. **Gjør det sammen med en voksen.** Den voksne har en egen forklaring på hvordan dere gjør det trygt.
+
+## Bonusoppdrag
+
+Når obbyen er ferdig, kan du prøve disse:
+
+- [Lag din egen verden med terreng]({{ '/bonus-terreng/' | relative_url }})
+- [En robot som spiller Har den!]({{ '/bonus-npc/' | relative_url }})
+- [Lag din egen 3D-modell]({{ '/bonus-3d/' | relative_url }})

@@ -1,6 +1,6 @@
 # Verktøykasse
 
-[← Sluttprosjekt: Min egen obby](09-sluttprosjekt.md) · [Innhold](../README.md) · [Om nettsiden →](11-om-nettsiden.md)
+[← Dele spillet med andre](15-dele-spillet.md) · [Innhold](../README.md) · [Om nettsiden →](17-om-nettsiden.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/hjelp/](https://wendelborg.github.io/roblox-studio-kurs/hjelp/)
 
@@ -30,17 +30,19 @@
 | String | Tekst i anførselstegn |
 | Variabel | En boks med navnelapp |
 | Boolean | Ja eller nei (`true` / `false`) |
+| Anchored | Festet med en usynlig spiker, faller ikke |
 | Hendelse (event) | En dørklokke koden venter på |
 | Betingelse | Et ja/nei-spørsmål med `if` |
 | Løkke | Et refreng som gjentas |
 | Funksjon | En oppskrift med navn |
 | Parameter | Ingrediensen du sender inn i oppskriften |
+| Attributt | En lapp med navn som alle skript kan lese |
 | Debounce | En vakt som hindrer at ting skjer for mange ganger |
 
-**Gjør det til et spill:** Skriv ut ordlista og la barnet krysse av hvert ord det kan forklare. Ti kryss betyr diplom og en belønning dere har avtalt på forhånd.
+**Gjør det til et spill:** Skriv ut ordlista og la barnet krysse av hvert ord det kan forklare. Når alle ordene er krysset av, blir det diplom og en belønning dere har avtalt på forhånd.
 
 **Når kurset er ferdig:** Roblox sin egen dokumentasjon på create.roblox.com/docs har gode, gratis gjennomganger. Neste naturlige steg er LocalScripts og knapper på skjermen (GUI), og ModuleScripts for å dele kode mellom skript.
 
 ---
 
-[← Sluttprosjekt: Min egen obby](09-sluttprosjekt.md) · [Innhold](../README.md) · [Om nettsiden →](11-om-nettsiden.md)
+[← Dele spillet med andre](15-dele-spillet.md) · [Innhold](../README.md) · [Om nettsiden →](17-om-nettsiden.md)

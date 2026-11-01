@@ -1,8 +1,8 @@
-# Oppdrag 7: Myntjakt med poengtavle
+# Oppdrag 8: Myntjakt med poengtavle
 
-[← Oppdrag 6: Lag dine egne trylleord](06-lag-dine-egne-trylleord.md) · [Innhold](../README.md) · [Oppdrag 8: Den gylne nøkkelen →](08-den-gylne-nokkelen.md)
+[← Oppdrag 7: Lag dine egne trylleord](07-lag-dine-egne-trylleord.md) · [Innhold](../README.md) · [Oppdrag 9: Den gylne nøkkelen →](09-den-gylne-nokkelen.md)
 
-> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/7/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/7/)
+> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/8/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/8/)
 
 **Barnet lærer:** å lagre poeng per spiller, og «debounce» – å hindre at noe skjer for mange ganger.
 
@@ -54,7 +54,7 @@ end
 mynt.Touched:Connect(naarNoeRorer)
 ```
 
-**Detektivoppgave:** Kjør først mynt-skriptet *uten* `opptatt`-linjene. Hvor mange poeng gir én mynt? (Mange, fordi flere kroppsdeler treffer – akkurat som i oppdrag 3.) Så legges `opptatt` inn og ser forskjellen. Det er **debounce**.
+**Detektivoppgave:** Kjør først mynt-skriptet *uten* `opptatt`-linjene. Hvor mange poeng gir én mynt? (Mange, fordi flere kroppsdeler treffer – akkurat som i oppdrag 4.) Så legges `opptatt` inn og ser forskjellen. Det er **debounce**.
 
 **Forklar sammen:**
 
@@ -71,4 +71,4 @@ mynt.Touched:Connect(naarNoeRorer)
 
 ---
 
-[← Oppdrag 6: Lag dine egne trylleord](06-lag-dine-egne-trylleord.md) · [Innhold](../README.md) · [Oppdrag 8: Den gylne nøkkelen →](08-den-gylne-nokkelen.md)
+[← Oppdrag 7: Lag dine egne trylleord](07-lag-dine-egne-trylleord.md) · [Innhold](../README.md) · [Oppdrag 9: Den gylne nøkkelen →](09-den-gylne-nokkelen.md)

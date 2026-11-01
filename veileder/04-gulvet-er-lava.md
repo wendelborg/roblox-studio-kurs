@@ -1,8 +1,8 @@
-# Oppdrag 3: Gulvet er lava
+# Oppdrag 4: Gulvet er lava
 
-[← Oppdrag 2: Trylleformler](02-trylleformler.md) · [Innhold](../README.md) · [Oppdrag 4: Den hemmelige døra →](04-den-hemmelige-dora.md)
+[← Oppdrag 3: Fysikk-laben](03-fysikk-laben.md) · [Innhold](../README.md) · [Oppdrag 5: Den hemmelige døra →](05-den-hemmelige-dora.md)
 
-> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/3/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/3/)
+> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/4/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/4/)
 
 **Barnet lærer:** hendelser (events) – kode som venter på at noe skal skje.
 
@@ -46,4 +46,4 @@ lava.Touched:Connect(naarNoeRorer)
 
 ---
 
-[← Oppdrag 2: Trylleformler](02-trylleformler.md) · [Innhold](../README.md) · [Oppdrag 4: Den hemmelige døra →](04-den-hemmelige-dora.md)
+[← Oppdrag 3: Fysikk-laben](03-fysikk-laben.md) · [Innhold](../README.md) · [Oppdrag 5: Den hemmelige døra →](05-den-hemmelige-dora.md)

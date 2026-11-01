@@ -1,8 +1,8 @@
-# Oppdrag 5: Disko og forsvinnende trapp
+# Oppdrag 6: Disko og forsvinnende trapp
 
-[← Oppdrag 4: Den hemmelige døra](04-den-hemmelige-dora.md) · [Innhold](../README.md) · [Oppdrag 6: Lag dine egne trylleord →](06-lag-dine-egne-trylleord.md)
+[← Oppdrag 5: Den hemmelige døra](05-den-hemmelige-dora.md) · [Innhold](../README.md) · [Oppdrag 7: Lag dine egne trylleord →](07-lag-dine-egne-trylleord.md)
 
-> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/5/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/5/)
+> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/6/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/6/)
 
 **Barnet lærer:** løkker – å gjenta noe uten å skrive det mange ganger.
 
@@ -40,7 +40,7 @@ kloss.CanCollide = false
 - `i` er en teller som blir 1, så 2, så 3 … helt til 10.
 - `i / 10` blir 0.1, 0.2 … 1.0. Derfor blekner klossen litt hver runde.
 
-**Byggeoppgave – trappa som forsvinner:** Kombiner oppdrag 3 og 5. Lag en trinnkloss som begynner å blekne når noen tråkker på den, forsvinner, og kommer tilbake etter 3 sekunder. Kopier den til en hel trapp.
+**Byggeoppgave – trappa som forsvinner:** Kombiner oppdrag 4 og 6. Lag en trinnkloss som begynner å blekne når noen tråkker på den, forsvinner, og kommer tilbake etter 3 sekunder. Kopier den til en hel trapp.
 
 **Utfordringer:**
 
@@ -52,4 +52,4 @@ kloss.CanCollide = false
 
 ---
 
-[← Oppdrag 4: Den hemmelige døra](04-den-hemmelige-dora.md) · [Innhold](../README.md) · [Oppdrag 6: Lag dine egne trylleord →](06-lag-dine-egne-trylleord.md)
+[← Oppdrag 5: Den hemmelige døra](05-den-hemmelige-dora.md) · [Innhold](../README.md) · [Oppdrag 7: Lag dine egne trylleord →](07-lag-dine-egne-trylleord.md)

@@ -1,8 +1,8 @@
-# Oppdrag 6: Lag dine egne trylleord
+# Oppdrag 7: Lag dine egne trylleord
 
-[← Oppdrag 5: Disko og forsvinnende trapp](05-disko-og-forsvinnende-trapp.md) · [Innhold](../README.md) · [Oppdrag 7: Myntjakt med poengtavle →](07-myntjakt-med-poengtavle.md)
+[← Oppdrag 6: Disko og forsvinnende trapp](06-disko-og-forsvinnende-trapp.md) · [Innhold](../README.md) · [Oppdrag 8: Myntjakt med poengtavle →](08-myntjakt-med-poengtavle.md)
 
-> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/6/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/6/)
+> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/7/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/7/)
 
 **Barnet lærer:** funksjoner med parametere – å finne opp egne kommandoer.
 
@@ -41,10 +41,10 @@ kjempe.Material = Enum.Material.Neon
 
 - [ ] Legg til en parameter for posisjon, så klossene ikke havner oppå hverandre.
 - [ ] Lag funksjonen `lagTrapp(antall)` som bruker en løkke og `lagKloss` til å bygge en trapp.
-- [ ] Lag `lagLava(x, z)` som lager en lavakloss med Touched-koden fra oppdrag 3 innebygd.
+- [ ] Lag `lagLava(x, z)` som lager en lavakloss med Touched-koden fra oppdrag 4 innebygd.
 
 **Hemmelig ord å forklare tilbake:** funksjon
 
 ---
 
-[← Oppdrag 5: Disko og forsvinnende trapp](05-disko-og-forsvinnende-trapp.md) · [Innhold](../README.md) · [Oppdrag 7: Myntjakt med poengtavle →](07-myntjakt-med-poengtavle.md)
+[← Oppdrag 6: Disko og forsvinnende trapp](06-disko-og-forsvinnende-trapp.md) · [Innhold](../README.md) · [Oppdrag 8: Myntjakt med poengtavle →](08-myntjakt-med-poengtavle.md)

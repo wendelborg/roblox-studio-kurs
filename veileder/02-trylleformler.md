@@ -1,6 +1,6 @@
 # Oppdrag 2: Trylleformler
 
-[← Oppdrag 1: Hei, verden!](01-hei-verden.md) · [Innhold](../README.md) · [Oppdrag 3: Gulvet er lava →](03-gulvet-er-lava.md)
+[← Oppdrag 1: Hei, verden!](01-hei-verden.md) · [Innhold](../README.md) · [Oppdrag 3: Fysikk-laben →](03-fysikk-laben.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/2/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/2/)
 
@@ -44,4 +44,4 @@ print("Pang! Klossen byttet farge.")
 
 ---
 
-[← Oppdrag 1: Hei, verden!](01-hei-verden.md) · [Innhold](../README.md) · [Oppdrag 3: Gulvet er lava →](03-gulvet-er-lava.md)
+[← Oppdrag 1: Hei, verden!](01-hei-verden.md) · [Innhold](../README.md) · [Oppdrag 3: Fysikk-laben →](03-fysikk-laben.md)

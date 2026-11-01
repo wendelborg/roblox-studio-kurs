@@ -1,8 +1,8 @@
-# Oppdrag 8: Den gylne nøkkelen
+# Oppdrag 9: Den gylne nøkkelen
 
-[← Oppdrag 7: Myntjakt med poengtavle](07-myntjakt-med-poengtavle.md) · [Innhold](../README.md) · [Sluttprosjekt: Min egen obby →](09-sluttprosjekt.md)
+[← Oppdrag 8: Myntjakt med poengtavle](08-myntjakt-med-poengtavle.md) · [Innhold](../README.md) · [Oppdrag 10: Har den! →](10-har-den.md)
 
-> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/8/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/8/)
+> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/9/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/9/)
 
 **Barnet lærer:** verktøy (Tool), forskjellen på å *ha* noe og å *holde* noe, og å sjekke hva en spiller bærer på.
 
@@ -63,7 +63,7 @@ dor.Touched:Connect(naarNoeRorer)
 - `figur:FindFirstChild("Nokkel")` leter etter et barn med det navnet. Finnes det ikke, får vi `nil`.
 - Nøkkelen i ryggsekken teller ikke, fordi den ikke er barn av figuren. Spilleren må *holde* den.
 - `IsA("Tool")` spør «er du et verktøy?». Hvis det var nøkkelen som traff døra, er forelderen nøkkelen og ikke figuren, så vi går ett hakk opp i slektstreet.
-- `aapen` er den samme vakten (debounce) som i oppdrag 7.
+- `aapen` er den samme vakten (debounce) som i oppdrag 8.
 
 **Tippeoppgave:** «Hva skjer hvis du går inn i døra med nøkkelen i ryggsekken, men ikke i hånden?» La barnet gjette, så teste.
 
@@ -71,11 +71,11 @@ dor.Touched:Connect(naarNoeRorer)
 
 - [ ] Gjør nøkkelen engangs: legg til `nokkel:Destroy()` når døra åpnes. Nå må spilleren finne en ny nøkkel neste gang.
 - [ ] Lag to nøkler, `RodNokkel` og `BlaaNokkel`, og to dører som hver bare åpner for sin farge.
-- [ ] Lag en butikk som selger nøkkelen for 10 mynter (kombinerer med oppdrag 7). Tips: `nokkel:Clone()` og legg kopien i `spiller.Backpack`.
+- [ ] Lag en butikk som selger nøkkelen for 10 mynter (kombinerer med oppdrag 8). Tips: `nokkel:Clone()` og legg kopien i `spiller.Backpack`.
 - [ ] Bonus – et verktøy som gjør noe når du klikker: legg et Script i verktøyet med `script.Parent.Activated:Connect(...)` og la det for eksempel gi superhopp.
 
 **Hemmelig ord å forklare tilbake:** Backpack
 
 ---
 
-[← Oppdrag 7: Myntjakt med poengtavle](07-myntjakt-med-poengtavle.md) · [Innhold](../README.md) · [Sluttprosjekt: Min egen obby →](09-sluttprosjekt.md)
+[← Oppdrag 8: Myntjakt med poengtavle](08-myntjakt-med-poengtavle.md) · [Innhold](../README.md) · [Oppdrag 10: Har den! →](10-har-den.md)

@@ -1,0 +1,242 @@
+---
+title: "Bonus: En robot som spiller Har den!"
+permalink: /bonus-npc/
+---
+
+I oppdrag 10 trengte du minst to spillere for å spille Har den. Nå skal du lage en **robot** som spiller med deg! En datastyrt figur i et spill heter en **NPC**. Dette er en bonus. Du gjør den bare hvis du har lyst!
+
+Du må ha gjort [oppdrag 10]({{ '/oppdrag/10/' | relative_url }}) først.
+
+## Den store ideen
+
+Roboten er en figur med en **Humanoid**, akkurat som deg. Forskjellen er at det er et skript som bestemmer hvor den går, ikke et tastatur.
+
+Robotens hjerne har bare to regler:
+
+- **Har roboten den?** Da jager den spilleren som er nærmest.
+- **Har du den?** Da løper roboten vekk fra deg.
+
+<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div class="enkel-tekst" markdown="1">
+Tenk på en hund som leker sisten.
+
+- Når hunden har den, løper den etter deg.
+- Når du har den, løper hunden sin vei.
+
+Roboten gjør det samme. Den ser seg rundt mange ganger i sekundet og bestemmer: «Skal jeg løpe mot eller bort?»
+</div>
+</details>
+
+## Del A: Lag roboten
+
+1. Gå til fanen **Avatar** og velg **Rig Builder**.
+2. Velg en figur, for eksempel **Block Rig**. Nå står det en grå figur i verdenen din.
+3. Gi den navnet `Robot` i Explorer. Den skal ligge rett i **Workspace**.
+4. Sjekk at ingen av delene i roboten er **Anchored**. Ellers står den fast.
+5. Gi roboten farger, så den ser ut som en robot!
+
+## Del B: Robotens hjerne
+
+Legg et Script inni **Robot**.
+
+<div class="skriv-selv" markdown="1">
+```lua
+local Players = game:GetService("Players")
+local robot = script.Parent
+local humanoid = robot:WaitForChild("Humanoid")
+local rot = robot:WaitForChild("HumanoidRootPart")
+
+rot:SetNetworkOwner(nil)   -- serveren styrer roboten
+humanoid.WalkSpeed = 14     -- litt tregere enn deg
+
+local function naermesteSpiller()
+	local naermest = nil
+	local kortest = math.huge
+
+	for _, spiller in Players:GetPlayers() do
+		local figur = spiller.Character
+		if figur and figur:FindFirstChild("HumanoidRootPart") then
+			local avstand = (figur.HumanoidRootPart.Position - rot.Position).Magnitude
+			if avstand < kortest then
+				kortest = avstand
+				naermest = figur
+			end
+		end
+	end
+
+	return naermest
+end
+
+while true do
+	local spiller = naermesteSpiller()
+
+	if spiller then
+		local der = spiller.HumanoidRootPart.Position
+
+		if robot:GetAttribute("HarDen") then
+			humanoid:MoveTo(der)   -- jag!
+		else
+			local vekk = rot.Position + (rot.Position - der).Unit * 20
+			humanoid:MoveTo(vekk)  -- flykt!
+		end
+	end
+
+	task.wait(0.3)
+end
+```
+</div>
+
+<div class="hva-skjer" markdown="1">
+### Hva skjer når du trykker Play?
+
+1. Skriptet finner robotens Humanoid og **HumanoidRootPart**. Det er den usynlige midten av figuren.
+2. Løkka starter og går for alltid, med en liten pause hver gang.
+3. Hver runde ser roboten på alle spillerne og regner ut hvem som er **nærmest**.
+4. Har roboten den (attributten `HarDen` fra oppdrag 10), går den rett mot deg med `MoveTo`.
+5. Har den *ikke* den, regner den ut et punkt 20 skritt i motsatt retning av deg, og går dit.
+6. 0,3 sekunder senere tenker den på nytt. Derfor følger den etter deg når du løper.
+</div>
+
+<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div class="enkel-tekst" markdown="1">
+Roboten gjør dette om og om igjen, tre ganger i sekundet:
+
+1. «Hvem er nærmest meg?»
+2. «Har jeg den?»
+3. Ja: «Løp mot den spilleren!» Nei: «Løp bort fra den spilleren!»
+
+`MoveTo` betyr «gå dit». Roboten går av seg selv, akkurat som deg når du trykker på tastene.
+</div>
+</details>
+
+## Del C: La dommeren se roboten
+
+Dommerskriptet fra oppdrag 10 kjenner bare til spillere. Nå må det også kjenne roboten. Bytt ut alt i `HarDen`-skriptet i ServerScriptService med denne nye versjonen. Den ligner veldig, men nå gir den den videre til **figurer**, ikke bare spillere.
+
+<div class="skriv-selv" markdown="1">
+```lua
+local Players = game:GetService("Players")
+
+local den = nil       -- figuren som har den, spiller eller robot
+local kanTas = true
+
+local function settLapp(figur, verdi)
+	figur:SetAttribute("HarDen", verdi)
+	local spiller = Players:GetPlayerFromCharacter(figur)
+	if spiller then
+		spiller:SetAttribute("HarDen", verdi)
+	end
+end
+
+local function merk(figur)
+	if figur:FindFirstChild("DenLys") == nil then
+		local lys = Instance.new("Highlight")
+		lys.Name = "DenLys"
+		lys.FillColor = Color3.new(1, 0, 0)
+		lys.Parent = figur
+	end
+end
+
+local function fjernMerke(figur)
+	local lys = figur:FindFirstChild("DenLys")
+	if lys then
+		lys:Destroy()
+	end
+end
+
+local function giDen(figur)
+	if den then
+		settLapp(den, false)
+		fjernMerke(den)
+	end
+
+	den = figur
+	settLapp(den, true)
+	merk(den)
+	print(den.Name .. " har den!")
+end
+
+local function naarFigurRorer(figur, treff)
+	if figur ~= den or kanTas == false then
+		return
+	end
+
+	local annen = treff.Parent
+	if annen ~= figur and annen:FindFirstChild("Humanoid") then
+		kanTas = false
+		giDen(annen)
+		task.wait(2)
+		kanTas = true
+	end
+end
+
+local function lyttPaa(figur)
+	for _, del in figur:GetChildren() do
+		if del:IsA("BasePart") then
+			del.Touched:Connect(function(treff)
+				naarFigurRorer(figur, treff)
+			end)
+		end
+	end
+end
+
+local function nySpiller(spiller)
+	spiller.CharacterAdded:Connect(function(figur)
+		lyttPaa(figur)
+		if spiller:GetAttribute("HarDen") then
+			den = figur
+			settLapp(figur, true)
+			merk(figur)
+		end
+	end)
+end
+
+Players.PlayerAdded:Connect(nySpiller)
+
+-- roboten er med fra start, og den har den først!
+local robot = workspace:WaitForChild("Robot")
+lyttPaa(robot)
+giDen(robot)
+```
+</div>
+
+<div class="hva-skjer" markdown="1">
+### Hva er nytt i dommeren?
+
+1. `den` er nå en **figur**, ikke en spiller. Både spillere og roboten har figurer, så dommeren kan behandle dem likt.
+2. `settLapp` klistrer lappen `HarDen` både på figuren og på spilleren. Da virker sakte-feltet fra oppdrag 10 fortsatt.
+3. `naarFigurRorer` sjekker bare om den som ble rørt har en Humanoid. Det har både spillere og roboten.
+4. Helt nederst henter dommeren roboten, følger med på den og gir den den først. Løp!
+</div>
+
+<div class="boks gjett" markdown="1">
+### Gjett først!
+
+Hva skjer hvis du setter `humanoid.WalkSpeed` i robothjernen til 30?
+
+<details markdown="1"><summary>Se svaret</summary>
+Roboten blir raskere enn deg (du løper i 16), og du kommer aldri unna! Et godt spill er verken for lett eller for vanskelig. Prøv deg fram til du finner en fart som er spennende.
+</details>
+</div>
+
+## Hva betyr ordene?
+
+- **NPC** betyr «non-player character»: en figur som styres av datamaskinen.
+- `MoveTo` får en Humanoid til å gå til et punkt.
+- **HumanoidRootPart** er den usynlige midten av en figur.
+- `.Magnitude` er avstanden, hvor langt det er mellom to punkter.
+- `math.huge` er et uendelig stort tall. Alle avstander er kortere enn det.
+- `SetNetworkOwner(nil)` betyr at serveren alltid styrer roboten, så den ikke hakker.
+
+## Utfordringer
+
+- [ ] Finn den beste farten for roboten, slik at det er spennende, men mulig å slippe unna.
+- [ ] La roboten hoppe innimellom: `humanoid.Jump = true`. Kanskje bare hvis den står fast?
+- [ ] Lag to roboter. Tips: Legg dem i en mappe som heter `Roboter`, og bruk en løkke i dommeren for å følge med på alle.
+- [ ] Gi roboten en powerup: når den tar en fart-boks, går den fortere i 5 sekunder.
+- [ ] For de modige: Bruk **PathfindingService**, så roboten finner veien rundt vegger i stedet for å gå rett på dem.
+
+<nav class="bla">
+  <a href="{{ '/bonus-terreng/' | relative_url }}">← Bonus: Terreng</a>
+  <a class="neste" href="{{ '/bonus-3d/' | relative_url }}">Bonus: Egen 3D-modell →</a>
+</nav>

@@ -4,7 +4,7 @@ vis_tittel: false
 ---
 <section class="helt">
   <h1>Fra «hæ?» til eget spill</h1>
-  <p>Åtte oppdrag i Roblox Studio. Etter hvert oppdrag skjer det noe nytt i spillet ditt. Til slutt bygger du din egen obby med lava, hemmelige dører, mynter og en gjemt nøkkel.</p>
+  <p>Ti oppdrag i Roblox Studio. Etter hvert oppdrag skjer det noe nytt i spillet ditt. Til slutt bygger du din egen obby med lava, hemmelige dører, mynter og en gjemt nøkkel.</p>
   <div class="fremgang">
     <div class="fremgang-bane"><div id="fremgang-stolpe"></div></div>
     <p id="fremgang-tekst">0 av 8 oppdrag fullført</p>
@@ -32,6 +32,16 @@ vis_tittel: false
       <p>Bygg din egen hinderløype med alt du har lært</p>
     </a>
   </li>
+  {% assign bonuser = "bonus-terreng|Terreng|Fjell, huler, hav og øyer;bonus-npc|Robot som spiller Har den!|Lag en datastyrt motspiller;bonus-3d|Egen 3D-modell|Form din egen pokal eller figur" | split: ";" %}
+  {% for b in bonuser %}{% assign d = b | split: "|" %}
+  <li class="bonuskort" style="--farge: #7c3aed">
+    <a href="{{ '/' | append: d[0] | append: '/' | relative_url }}">
+      <span class="nr">Bonus</span>
+      <h3>{{ d[1] }}</h3>
+      <p>{{ d[2] }}</p>
+    </a>
+  </li>
+  {% endfor %}
 </ul>
 
 <h2 id="start">Start her: Gjør klar Roblox Studio</h2>

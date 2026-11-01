@@ -6,6 +6,8 @@
   forklaring: En boks med navnelapp. Du legger noe oppi og bruker navnet etterpå.
 - ord: Boolean
   forklaring: "Ja eller nei: true eller false."
+- ord: Anchored
+  forklaring: Festet med en usynlig spiker. En kloss som er Anchored, faller ikke ned.
 - ord: Hendelse (event)
   forklaring: En dørklokke som koden venter på, for eksempel Touched.
 - ord: Betingelse
@@ -16,5 +18,7 @@
   forklaring: En oppskrift med navn som du kan bruke mange ganger.
 - ord: Parameter
   forklaring: Ingrediensen du sender inn i oppskriften.
+- ord: Attributt
+  forklaring: En lapp med navn og verdi som du klistrer på en spiller eller en ting, for eksempel HarDen = true.
 - ord: Debounce
   forklaring: En vakt som hindrer at ting skjer for mange ganger.

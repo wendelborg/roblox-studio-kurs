@@ -3,7 +3,7 @@ title: Ordbok
 permalink: /ordbok/
 ---
 <p>Her er alle de hemmelige ordene. Prøv å forklare hvert ord til en voksen med dine egne ord. Klarer du det, krysser du av. Kikk på forklaringen bare hvis du står helt fast!</p>
-<p>Du kan: <span id="ord-teller">0 av {{ site.data.ordbok.size }} ord</span>. Ti kryss gir deg et diplom.</p>
+<p>Du kan: <span id="ord-teller">0 av {{ site.data.ordbok.size }} ord</span>. Når alle har kryss, får du et diplom.</p>
 
 <ul class="ordliste">
   {% for o in site.data.ordbok %}
@@ -19,6 +19,6 @@ permalink: /ordbok/
   <h2>Diplom</h2>
   <p>Dette bekrefter at</p>
   <p class="navn" id="diplom-navn-ut">…</p>
-  <p>kan forklare alle de ti ordene i Roblox-koding<br>og er en ekte <strong>Luau-programmerer</strong>!</p>
+  <p>kan forklare alle de {{ site.data.ordbok.size }} ordene i Roblox-koding<br>og er en ekte <strong>Luau-programmerer</strong>!</p>
   <button id="skriv-ut" type="button">Skriv ut diplomet</button>
 </section>
