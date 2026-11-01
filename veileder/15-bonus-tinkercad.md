@@ -29,6 +29,8 @@ Dette er den enkleste av de to 3D-bonusene. Blender-bonusen er for den som vil v
 pokal.CFrame = pokal.CFrame * CFrame.Angles(0, math.rad(10), 0)
 ```
 
+**Eksempelmodell:** Barnets side har en ferdig pokal (`docs/assets/modeller/pokal.obj`) som kan importeres hvis Tinkercad-delen blir for mye, eller for å se hvordan resultatet blir.
+
 **Forklar sammen:**
 
 - `CFrame` er både hvor noe er og hvilken vei det peker.

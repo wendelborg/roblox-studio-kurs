@@ -62,8 +62,19 @@ Du trenger en konto i Tinkercad. For barn må en voksen hjelpe til med å lage d
 
 ## Del C: Hent modellen inn i Roblox
 
+<div class="boks ide" markdown="1">
+### Bruk eksempelmodellen
+
+Har du ikke laget en modell ennå, eller vil du se hvordan det blir? Last ned eksempelpokalen og bruk den i stedet for din egen. Du kan også åpne den i Tinkercad med **Import** for å se hvordan den er bygget.
+
+<div class="bildegalleri">
+  <a href="{{ '/assets/modeller/pokal.obj' | relative_url }}" download><img src="{{ '/assets/modeller/pokal.png' | relative_url }}" alt="Pokal"><span>Last ned pokal.obj</span></a>
+</div>
+</div>
+
+
 1. I Roblox Studio velger du **File → Import 3D**.
-2. Finn OBJ-filen du lagret, og trykk **Import**.
+2. Finn OBJ-filen du lagret (eller eksempelpokalen), og trykk **Import**.
 3. Modellen dukker opp i verdenen din og i Explorer. Den er en **MeshPart**.
 4. Er den altfor stor eller altfor liten? Bruk **Scale**-verktøyet i fanen Home.
 5. Husk å sette **Anchored** på, ellers faller den ned!

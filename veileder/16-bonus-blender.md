@@ -20,6 +20,8 @@
 
 **Del C – sprettsoppen:** Et skript inni soppen klemmer den sammen i 0,2 sekunder (`Size * Vector3.new(1, 0.7, 1)`) og gir spilleren `JumpHeight = 30` i 5 sekunder. Det er nesten samme kode som hopp-powerupen i oppdrag 11, med debounce fra oppdrag 8. Barnet kjenner altså igjen det meste.
 
+**Eksempelmodell:** Barnets side har en ferdig sopp (`docs/assets/modeller/sopp.obj`). Den kan importeres i Roblox hvis Blender-delen strander, så barnet likevel kan lage sprettsoppen. Den kan også åpnes i Blender for å se hvordan den er bygget.
+
 **Forklar sammen:**
 
 - `Vector3.new(1, 0.7, 1)` betyr «like bred, 70 % så høy, like dyp». Å gange en størrelse med det gjør modellen lavere.
