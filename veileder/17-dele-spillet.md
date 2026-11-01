@@ -1,6 +1,6 @@
 # Dele spillet med andre
 
-[← Bonus: 3D-modell i Blender](16-bonus-blender.md) · [Innhold](../README.md) · [Verktøykasse →](18-verktoykasse.md)
+[← Bonus: 3D-modell i Blender](16-bonus-blender.md) · [Innhold](../README.md) · [Slik fungerer serveren →](18-serveren.md)
 
 Før eller siden vil barnet vise fram spillet sitt. Dette kapitlet forklarer de vanligste måtene å dele på, fra den enkleste og mest private til den mest offentlige.
 
@@ -48,6 +48,10 @@ For at hvem som helst på Roblox skal kunne finne og spille spillet, krever Robl
 
 For et barns første spill er dette sjelden verdt det. Hvis dere likevel vil, bør en voksen gå gjennom kravene sammen med barnet. Les også hva spillet faktisk inneholder før dere svarer på spørreskjemaet.
 
+## Bygge sammen
+
+Vil barnet bygge spillet sammen med en venn, fra hver sin maskin, finnes **Collaborate** (Team Create) i Studio. Det forklares i [Slik fungerer serveren](18-serveren.md), sammen med hva som deles mellom spillere på en server, og hva som forsvinner når serveren stenges.
+
 ## Ting å snakke om sammen
 
 - **Hvem skal spille?** Det er lurt å starte med folk dere kjenner.
@@ -63,4 +67,4 @@ For et barns første spill er dette sjelden verdt det. Hvis dere likevel vil, b�
 
 ---
 
-[← Bonus: 3D-modell i Blender](16-bonus-blender.md) · [Innhold](../README.md) · [Verktøykasse →](18-verktoykasse.md)
+[← Bonus: 3D-modell i Blender](16-bonus-blender.md) · [Innhold](../README.md) · [Slik fungerer serveren →](18-serveren.md)

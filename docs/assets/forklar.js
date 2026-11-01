@@ -24,7 +24,8 @@
     Material: { navn: "materiale" },
     CFrame: { navn: "plass og retning" },
     FillColor: { navn: "fyllfarge" },
-    Gravity: { navn: "tyngdekraft" }
+    Gravity: { navn: "tyngdekraft" },
+    Text: { navn: "tekst" }
   };
 
   // Hvordan vi sier «X sin Y» på en naturlig måte.
@@ -34,11 +35,12 @@
     if (prop === "Terrain" && x === "workspace") return "terrenget i verden";
     if (prop === "HumanoidRootPart") return "midten av " + x;
     var e = EGENSKAP[prop];
+    if (!e && /^[a-z]/.test(prop)) return "«" + prop + "» fra " + x;
     var n = e ? e.navn : prop;
     var bestemt = { "gjennomsiktighet": "gjennomsiktigheten", "farge": "fargen", "størrelse": "størrelsen",
       "navn": "navnet", "verdi": "verdien", "gåfart": "gåfarten", "hopphøyde": "hopphøyden", "liv": "livet",
       "materiale": "materialet", "fyllfarge": "fyllfargen", "tyngdekraft": "tyngdekraften",
-      "plass i verden": "plassen i verden", "plass og retning": "plassen og retningen" };
+      "plass i verden": "plassen i verden", "plass og retning": "plassen og retningen", "tekst": "teksten" };
     return (bestemt[n] || n) + " til " + x;
   }
 
@@ -51,6 +53,10 @@
   };
 
   var SPESIELLE = {
+    "local tid = os.clock() - startTid[spiller]":
+      "Regn ut tida: klokka nå minus klokka da spilleren startet. Legg svaret i boksen tid.",
+    "tid = math.floor(tid * 100) / 100":
+      "Rund av tida til to desimaler. 12.3456 blir for eksempel til 12.34.",
     "local avstand = (figur.HumanoidRootPart.Position - rot.Position).Magnitude":
       "Regn ut hvor langt det er fra roboten til denne spilleren, og legg svaret i boksen avstand.",
     "local vekk = rot.Position + (rot.Position - der).Unit * 20":
@@ -78,6 +84,21 @@
   };
 
   // ---------- Hjelpere ----------
+
+  // Deler et uttrykk på en operator som ikke står inni tekst eller parenteser.
+  function splitTopp(s, op) {
+    var ut = [], dybde = 0, start = 0, iTekst = false;
+    for (var i = 0; i < s.length; i++) {
+      var c = s[i];
+      if (c === '"') iTekst = !iTekst;
+      if (iTekst) continue;
+      if (c === "(" || c === "{" || c === "[") dybde++;
+      else if (c === ")" || c === "}" || c === "]") dybde--;
+      else if (dybde === 0 && s.substr(i, op.length) === op) { ut.push(s.slice(start, i).trim()); start = i + op.length; i += op.length - 1; }
+    }
+    ut.push(s.slice(start).trim());
+    return ut;
+  }
 
   function delArgs(s) {
     var ut = [], dybde = 0, start = 0, iTekst = false;
@@ -107,6 +128,15 @@
     if (e === "script.Parent") return "tingen skriptet ligger inni";
     if (e === "script.Parent.Name") return "navnet til tingen skriptet ligger inni";
     if (e === "i") return "tallet i";
+    if (e === "{}") return "en tom huskeliste (en tabell)";
+    if (e === "os.clock()") return "klokka akkurat nå, i sekunder";
+    if (splitTopp(e, "..").length > 1) return splitTopp(e, "..").map(function (b) {
+      var t = b.match(/^"(.*)"$/); return t ? "«" + t[1] + "»" : hva(b); }).join(" + ");
+    if ((m = e.match(/^(\w+)\[(\w+)\]$/))) return "det som står ved " + m[2] + " i huskelista " + m[1];
+    if ((m = e.match(/^(\w+):GetDataStore\("(\w+)"\)$/))) return "lageret som heter «" + m[2] + "»";
+    if ((m = e.match(/^(\w+):GetAsync\("(\w+)"\)$/))) return "det som er lagret under «" + m[2] + "» i " + m[1];
+    if ((m = e.match(/^\{(.*)\}$/))) return "en liten huskeliste med " + liste(delArgs(m[1]).map(function (d) { return d.split("=")[0].trim(); }));
+    if ((m = e.match(/^(\w+)\.(\w+)\.(\w+)$/))) return m[3] + " inni " + m[2] + " inni " + m[1];
     if (e === "nil") return "ingenting (nil)";
     if (e === "true") return "true (ja)";
     if (e === "false") return "false (nei)";
@@ -152,9 +182,17 @@
   }
 
   // Oversetter en betingelse (det mellom if og then) til et spørsmål.
+  function ledd(x) {
+    var m;
+    x = x.trim();
+    if ((m = x.match(/^(\w+)\.(\w+)$/)) && !/^(nil|true|false)$/.test(x)) return sin(m[1], m[2]);
+    return x;
+  }
+
   function sporsmal(b) {
     var m;
     b = b.trim();
+    if ((m = b.match(/^(\w+)\[(\w+)\]\s*==\s*nil$/))) return m[2] + " ikke står i huskelista " + m[1];
     var deler = b.split(/\s+or\s+/);
     if (deler.length > 1) return deler.map(sporsmal).join(", eller ");
     deler = b.split(/\s+and\s+/);
@@ -166,9 +204,9 @@
     if ((m = b.match(/^(.+?)\s*==\s*nil$/))) return m[1] + " er ingenting (nil)";
     if ((m = b.match(/^(.+?)\s*==\s*false$/))) return m[1] + " er false";
     if ((m = b.match(/^(\w+)\.Name\s*==\s*(.+)$/))) return "navnet til " + m[1] + " er " + m[2];
-    if ((m = b.match(/^(.+?)\s*==\s*(.+)$/))) return m[1] + " er lik " + m[2];
+    if ((m = b.match(/^(.+?)\s*==\s*(.+)$/))) return ledd(m[1]) + " er lik " + ledd(m[2]);
     if ((m = b.match(/^(.+?)\s*~=\s*(.+)$/))) return m[1] + " ikke er lik " + m[2];
-    if ((m = b.match(/^(.+?)\s*<\s*(.+)$/))) return m[1] + " er mindre enn " + m[2];
+    if ((m = b.match(/^(.+?)\s*<\s*(.+)$/))) return ledd(m[1]) + " er mindre enn " + ledd(m[2]);
     if ((m = b.match(/^(.+?)\s*>\s*(.+)$/))) return m[1] + " er større enn " + m[2];
     if (/^[\w.]+$/.test(b)) return b + " er true (eller finnes)";
     return "`" + b + "`";
@@ -225,10 +263,26 @@
       var hendelse = m[2] === "Touched" ? "noe rører " + m[1] : (HENDELSE[m[2]] || m[2] + " skjer");
       return "Koble dørklokka: Hver gang " + hendelse + ", skal funksjonen " + m[3] + " kjøre.";
     }
+    if ((m = l.match(/^local (\w+), (\w+) = pcall\(function\(\)$/))) {
+      stabel.push({ type: "anonym" });
+      return "Prøv å kjøre funksjonen som starter her, uten at spillet krasjer hvis noe går galt. " + m[1] +
+        " blir true hvis det gikk bra, og " + m[2] + " blir det funksjonen gir tilbake.";
+    }
+    if (l === "pcall(function()") {
+      stabel.push({ type: "anonym" });
+      return "Prøv å kjøre funksjonen som starter her, uten at spillet krasjer hvis noe går galt.";
+    }
+    if ((m = l.match(/^(\w+):UpdateAsync\("(\w+)", function\((\w+)\)$/))) {
+      stabel.push({ type: "anonym" });
+      return "Be " + m[1] + " om å oppdatere «" + m[2] + "». Funksjonen som starter her, får det som er lagret fra før (" + m[3] + "), og bestemmer hva som skal lagres i stedet.";
+    }
     if (l === "end)") {
       stabel.pop();
-      return "Her slutter funksjonen uten navn. Parentesen lukker Connect fra linja der funksjonen startet.";
+      return "Her slutter funksjonen uten navn, og parentesen fra linja der den startet, lukkes.";
     }
+    if ((m = l.match(/^(\w+)\[(\w+)\] = nil$/))) return "Visk ut " + m[2] + " fra huskelista " + m[1] + ".";
+    if ((m = l.match(/^(\w+)\[(\w+)\] = (.+)$/))) return "Skriv inn i huskelista " + m[1] + ", ved " + m[2] + ": " + hva(m[3]) + ".";
+    if (l === "return nil") return "Stopp funksjonen og gi tilbake ingenting (nil). Da blir ingenting endret.";
     if (l === "end") {
       var b = stabel.pop() || {};
       if (b.type === "funksjon") return "Her slutter funksjonen " + b.navn + ".";
@@ -263,7 +317,7 @@
       return "Start en løkke som går gjennom " + hvilke + ", én om gangen. Hver gang heter den vi ser på, " + m[1] + ".";
     }
     if (l === "return") return "Stopp funksjonen her. Linjene under i funksjonen blir hoppet over.";
-    if ((m = l.match(/^return (.+)$/))) return "Stopp funksjonen og gi tilbake " + m[1] + " til den som brukte den.";
+    if ((m = l.match(/^return (.+)$/))) return "Stopp funksjonen og gi tilbake " + hva(m[1]) + ".";
     if ((m = l.match(/^task\.wait\((.+)\)$/))) return "Vent " + sek(m[1]) + ". Ingenting skjer i dette skriptet imens.";
     if ((m = l.match(/^print\((.+)\)$/))) return beskrivPrint(m[1]);
 

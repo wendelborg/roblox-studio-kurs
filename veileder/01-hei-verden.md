@@ -1,6 +1,6 @@
 # Oppdrag 1: Hei, verden!
 
-[← Slik bruker du kurset](00-slik-bruker-du-kurset.md) · [Innhold](../README.md) · [Oppdrag 2: Trylleformler →](02-trylleformler.md)
+[← Før dere starter](00-slik-bruker-du-kurset.md) · [Innhold](../README.md) · [Oppdrag 2: Trylleformler →](02-trylleformler.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/1/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/1/)
 
@@ -38,4 +38,4 @@ print("Jeg heter " .. script.Parent.Name)
 
 ---
 
-[← Slik bruker du kurset](00-slik-bruker-du-kurset.md) · [Innhold](../README.md) · [Oppdrag 2: Trylleformler →](02-trylleformler.md)
+[← Før dere starter](00-slik-bruker-du-kurset.md) · [Innhold](../README.md) · [Oppdrag 2: Trylleformler →](02-trylleformler.md)

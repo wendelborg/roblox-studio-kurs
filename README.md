@@ -11,7 +11,7 @@ Kurset har to deler:
 
 | Kapittel | Veileder | Barnets side |
 | --- | --- | --- |
-| Start | [Slik bruker du kurset](veileder/00-slik-bruker-du-kurset.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/#start) |
+| Start | [Før dere starter](veileder/00-slik-bruker-du-kurset.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/#start) |
 | 1 | [Oppdrag 1: Hei, verden!](veileder/01-hei-verden.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/1/) |
 | 2 | [Oppdrag 2: Trylleformler](veileder/02-trylleformler.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/2/) |
 | 3 | [Oppdrag 3: Fysikk-laben](veileder/03-fysikk-laben.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/3/) |
@@ -29,7 +29,9 @@ Kurset har to deler:
 |  | [Bonus: 3D-modell i Tinkercad](veileder/15-bonus-tinkercad.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-tinkercad/) |
 |  | [Bonus: 3D-modell i Blender](veileder/16-bonus-blender.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-blender/) |
 |  | [Dele spillet med andre](veileder/17-dele-spillet.md) |  |
-|  | [Verktøykasse](veileder/18-verktoykasse.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/hjelp/) |
-|  | [Om nettsiden](veileder/19-om-nettsiden.md) |  |
+|  | [Slik fungerer serveren](veileder/18-serveren.md) |  |
+|  | [Tips og triks](veileder/19-tips-og-triks.md) |  |
+|  | [Verktøykasse](veileder/20-verktoykasse.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/hjelp/) |
+|  | [Om nettsiden](veileder/21-om-nettsiden.md) |  |
 
-Begynn med [Slik bruker du kurset](veileder/00-slik-bruker-du-kurset.md). Der står det hvordan en økt kjøres, og hva som må gjøres klart i Roblox Studio før oppdrag 1.
+Begynn med [Før dere starter](veileder/00-slik-bruker-du-kurset.md). Der står det hva Roblox og Roblox Studio er, hva du bør passe på som voksen, hvordan en økt kjøres, og hva som må gjøres klart i Studio før oppdrag 1.

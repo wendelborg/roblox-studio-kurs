@@ -1,6 +1,6 @@
 # Verktøykasse
 
-[← Dele spillet med andre](17-dele-spillet.md) · [Innhold](../README.md) · [Om nettsiden →](19-om-nettsiden.md)
+[← Tips og triks](19-tips-og-triks.md) · [Innhold](../README.md) · [Om nettsiden →](21-om-nettsiden.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/hjelp/](https://wendelborg.github.io/roblox-studio-kurs/hjelp/)
 
@@ -45,4 +45,4 @@
 
 ---
 
-[← Dele spillet med andre](17-dele-spillet.md) · [Innhold](../README.md) · [Om nettsiden →](19-om-nettsiden.md)
+[← Tips og triks](19-tips-og-triks.md) · [Innhold](../README.md) · [Om nettsiden →](21-om-nettsiden.md)
