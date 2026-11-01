@@ -8,7 +8,7 @@
 
 **Den store ideen:** Én spiller har den og lyser rødt. Rører hen en annen spiller, går den videre. Et dommerskript i ServerScriptService holder styr på hvem som har den, og klistrer en **attributt** (`HarDen = true`) på spilleren. Andre skript, som sakte-feltet, kan lese den samme attributten. Dette er første gang flere skript samarbeider om én felles opplysning.
 
-Har den! er delt i tre oppdrag: 10 er selve leken, 11 er powerups og sakte-felt, og 12 er en robot som spiller med barnet. Oppdrag 10 er det tyngste av de tre. Det er helt greit å bruke to økter på det.
+Har den! er delt i fire oppdrag: 10 er selve leken, 11 er powerups og sakte-felt, 12 er en robot som spiller med barnet, og 13 er en frysepistol. Oppdrag 10 er det tyngste av de fire. Det er helt greit å bruke to økter på det.
 
 **Testing:** Under fanen **Test** kan dere starte en lokal test med 2 spillere. Studio åpner da ett vindu per spiller. Det er tungt for maskinen, så lukk andre programmer. Enda morsommere: publiser spillet og spill sammen med en venn eller et søsken.
 

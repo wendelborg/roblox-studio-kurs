@@ -175,3 +175,6 @@ li[style*="--farge"] > .farget { --farge: inherit; }
   content: ""; position: absolute; right: -2rem; top: -2rem; width: 8rem; height: 8rem;
   border-radius: 1.5rem; background: rgb(255 255 255 / .15); transform: rotate(18deg); pointer-events: none;
 }
+
+.ordliste > li:target { outline: 3px solid var(--ds-color-accent-border-strong); outline-offset: 2px; }
+.ordliste > li { scroll-margin-top: var(--ds-size-6); }

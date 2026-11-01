@@ -71,11 +71,20 @@
     var d = li.querySelector("details");
     var tekst = li.querySelector(".ord").textContent + li.querySelector(".hvor").textContent + " " +
       li.querySelector(".sprak").textContent + " " + d.querySelector("summary").textContent +
-      d.textContent.replace(d.querySelector("summary").textContent, "");
+      d.querySelector(":scope > div").textContent;
     var n = side + "-" + nokkelFra(tekst);
     if (brukt[n]) { brukt[n] += 1; n += "-" + brukt[n]; } else { brukt[n] = 1; }
     boks.setAttribute("data-lagre", n);
   });
+
+  // Lenker mellom ord i ordboka: åpne forklaringen til ordet man hopper til.
+  function aapneOrd() {
+    var mal = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    var d = mal && mal.matches(".ordliste > li") && mal.querySelector("details");
+    if (d) d.open = true;
+  }
+  window.addEventListener("hashchange", aapneOrd);
+  aapneOrd();
 
   // 1b. Gjør «- [ ]»-lister om til ekte avkrysningsbokser.
   document.querySelectorAll("main li").forEach(function (li) {

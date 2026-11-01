@@ -10,6 +10,7 @@
   var EGENSKAP = {
     Transparency: { navn: "gjennomsiktighet", tips: "0 er helt synlig, 1 er usynlig." },
     CanCollide: { navn: "om man kan krasje i den", tips: "false betyr at man går rett gjennom." },
+    CanTouch: { navn: "om den merker berøring", tips: "false betyr at Touched aldri ringer for denne tingen." },
     Anchored: { navn: "om den er festet", tips: "true betyr at den henger fast og ikke faller ned." },
     BrickColor: { navn: "farge" },
     Color: { navn: "farge" },
@@ -65,6 +66,34 @@
   };
 
   var SPESIELLE = {
+    "local Debris = game:GetService(\"Debris\")":
+      "Hent Debris, søppelbøtta som tømmer seg selv, og legg den i boksen Debris.",
+    "local lengde = (til - fra).Magnitude":
+      "Regn ut hvor langt det er fra fra til til, og legg svaret i boksen lengde. Så lang skal strålen bli.",
+    "straale.Color = Color3.fromRGB(120, 200, 255)":
+      "Gi strålen en isblå farge. De tre tallene er hvor mye rødt, grønt og blått fargen har, fra 0 til 255.",
+    "is.FillColor = Color3.fromRGB(120, 200, 255)":
+      "Gjør lyset isblått. De tre tallene er hvor mye rødt, grønt og blått fargen har, fra 0 til 255.",
+    "handtak.Color = Color3.fromRGB(80, 80, 80)":
+      "Gjør pistolen grå, så du ser at den lader.",
+    "handtak.Color = Color3.fromRGB(0, 255, 255)":
+      "Gjør pistolen cyan igjen, så du ser at den er klar.",
+    "straale.CFrame = CFrame.lookAt(fra, til) * CFrame.new(0, 0, -lengde / 2)":
+      "Snu strålen så den peker fra fra mot til, og flytt den halve lengden fram. Da går den akkurat fra pistolen til det den traff.",
+    "Debris:AddItem(straale, 0.2)":
+      "Gi strålen til søppelbøtta: Den blir slettet av seg selv om 0,2 sekunder.",
+    "local retning = figur.HumanoidRootPart.CFrame.LookVector * 60":
+      "Finn retningen figuren ser, og gjør den 60 skritt lang. Legg den i boksen retning.",
+    "local regler = RaycastParams.new()":
+      "Lag en ny liste med regler for den usynlige streken, og legg den i boksen regler.",
+    "regler.FilterDescendantsInstances = { figur }":
+      "Regel: Streken skal se bort fra din egen figur, så du ikke treffer deg selv.",
+    "local treff = workspace:Raycast(fra, retning, regler)":
+      "Send en usynlig strek fra pistolen i retningen, og følg reglene. Det streken traff først, legges i boksen treff. Traff den ingenting, blir boksen tom (nil).",
+    "local truffet = treff.Instance:FindFirstAncestorOfClass(\"Model\")":
+      "Finn modellen tingen streken traff ligger inni. Traff vi en arm eller en hatt, får vi hele figuren. Legg den i boksen truffet.",
+    "task.spawn(frys, truffet)":
+      "Start funksjonen frys med truffet, ved siden av resten av skriptet. Skriptet trenger ikke vente de 3 sekundene.",
     "local tid = os.clock() - startTid[spiller]":
       "Regn ut tida: klokka nå minus klokka da spilleren startet. Legg svaret i boksen tid.",
     "Lighting.ClockTime = (Lighting.ClockTime + 0.05) % 24":

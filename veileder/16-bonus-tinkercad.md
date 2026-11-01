@@ -1,6 +1,6 @@
 # Bonus: 3D-modell i Tinkercad
 
-[← Bonus: Terreng](14-bonus-terreng.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Blender →](16-bonus-blender.md)
+[← Bonus: Terreng](15-bonus-terreng.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Blender →](17-bonus-blender.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/bonus-tinkercad/](https://wendelborg.github.io/roblox-studio-kurs/bonus-tinkercad/)
 
@@ -46,4 +46,4 @@ pokal.CFrame = pokal.CFrame * CFrame.Angles(0, math.rad(10), 0)
 
 ---
 
-[← Bonus: Terreng](14-bonus-terreng.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Blender →](16-bonus-blender.md)
+[← Bonus: Terreng](15-bonus-terreng.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Blender →](17-bonus-blender.md)

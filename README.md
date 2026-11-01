@@ -1,13 +1,13 @@
 # Game on: kod ditt eget Roblox-spill
 
-Et Roblox Studio-kurs for barn på 9–11 år. Kurset har tolv oppdrag på 45–60 minutter, et sluttprosjekt der barnet bygger sin egen obby, og tre bonusoppdrag.
+Et Roblox Studio-kurs for barn på 9–11 år. Kurset har tretten oppdrag på 45–60 minutter, et sluttprosjekt der barnet bygger sin egen obby, og tre bonusoppdrag.
 
 Kurset har to deler:
 
 - **Kurssiden for barnet:** [wendelborg.github.io/roblox-studio-kurs](https://wendelborg.github.io/roblox-studio-kurs/). Den er skrevet direkte til barnet, med steg-for-steg-forklaringer, «Dette ble for vanskelig»-knapper, avkrysning og diplom. Kodeblokkene der kan ikke markeres og kopieres. Det er gjort med vilje, så barnet skriver koden selv.
 - **Veilederguiden for deg som voksen:** kapitlene under. De forteller hvordan en økt kjøres, hva barnet skal lære, og hva du kan spørre om underveis.
 
-Har du forket repoet for å bruke kurset selv? Se [Om nettsiden](veileder/21-om-nettsiden.md) for hvordan du slår på GitHub Pages og bytter lenkene til din egen side.
+Har du forket repoet for å bruke kurset selv? Se [Om nettsiden](veileder/22-om-nettsiden.md) for hvordan du slår på GitHub Pages og bytter lenkene til din egen side.
 
 ## Innhold
 
@@ -26,14 +26,15 @@ Har du forket repoet for å bruke kurset selv? Se [Om nettsiden](veileder/21-om-
 | 10 | [Oppdrag 10: Har den! Del 1: Hvem har den?](veileder/10-har-den.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/10/) |
 | 11 | [Oppdrag 11: Har den! Del 2: Powerups og felter](veileder/11-har-den-powerups.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/11/) |
 | 12 | [Oppdrag 12: Har den! Del 3: Robotmotspiller](veileder/12-har-den-robot.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/12/) |
-|  | [Sluttprosjekt: Min egen obby](veileder/13-sluttprosjekt.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/sluttprosjekt/) |
-|  | [Bonus: Terreng](veileder/14-bonus-terreng.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-terreng/) |
-|  | [Bonus: 3D-modell i Tinkercad](veileder/15-bonus-tinkercad.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-tinkercad/) |
-|  | [Bonus: 3D-modell i Blender](veileder/16-bonus-blender.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-blender/) |
-|  | [Dele spillet med andre](veileder/17-dele-spillet.md) |  |
-|  | [Slik fungerer serveren](veileder/18-serveren.md) |  |
-|  | [Tips og triks](veileder/19-tips-og-triks.md) |  |
-|  | [Verktøykasse](veileder/20-verktoykasse.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/hjelp/) |
-|  | [Om nettsiden](veileder/21-om-nettsiden.md) |  |
+| 13 | [Oppdrag 13: Har den! Del 4: Frysepistol](veileder/13-har-den-frysepistol.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/13/) |
+|  | [Sluttprosjekt: Min egen obby](veileder/14-sluttprosjekt.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/sluttprosjekt/) |
+|  | [Bonus: Terreng](veileder/15-bonus-terreng.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-terreng/) |
+|  | [Bonus: 3D-modell i Tinkercad](veileder/16-bonus-tinkercad.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-tinkercad/) |
+|  | [Bonus: 3D-modell i Blender](veileder/17-bonus-blender.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-blender/) |
+|  | [Dele spillet med andre](veileder/18-dele-spillet.md) |  |
+|  | [Slik fungerer serveren](veileder/19-serveren.md) |  |
+|  | [Tips og triks](veileder/20-tips-og-triks.md) |  |
+|  | [Verktøykasse](veileder/21-verktoykasse.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/hjelp/) |
+|  | [Om nettsiden](veileder/22-om-nettsiden.md) |  |
 
 Begynn med [Før dere starter](veileder/00-slik-bruker-du-kurset.md). Der står det hva Roblox og Roblox Studio er, hva du bør passe på som voksen, hvordan en økt kjøres, og hva som må gjøres klart i Studio før oppdrag 1.

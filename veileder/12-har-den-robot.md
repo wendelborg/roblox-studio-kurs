@@ -1,6 +1,6 @@
 # Oppdrag 12: Har den! Del 3: Robotmotspiller
 
-[← Oppdrag 11: Har den! Del 2: Powerups og felter](11-har-den-powerups.md) · [Innhold](../README.md) · [Sluttprosjekt: Min egen obby →](13-sluttprosjekt.md)
+[← Oppdrag 11: Har den! Del 2: Powerups og felter](11-har-den-powerups.md) · [Innhold](../README.md) · [Oppdrag 13: Har den! Del 4: Frysepistol →](13-har-den-frysepistol.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/12/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/12/)
 
@@ -48,4 +48,4 @@ Barnet erstatter hele skriptet. Sammenlign gjerne den gamle og den nye versjonen
 
 ---
 
-[← Oppdrag 11: Har den! Del 2: Powerups og felter](11-har-den-powerups.md) · [Innhold](../README.md) · [Sluttprosjekt: Min egen obby →](13-sluttprosjekt.md)
+[← Oppdrag 11: Har den! Del 2: Powerups og felter](11-har-den-powerups.md) · [Innhold](../README.md) · [Oppdrag 13: Har den! Del 4: Frysepistol →](13-har-den-frysepistol.md)

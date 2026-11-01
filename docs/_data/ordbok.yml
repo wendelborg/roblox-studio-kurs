@@ -40,6 +40,8 @@
   hemmelig: true
   hvor: Oppdrag 6
   forklaring: Noe som gjentas, som refrenget i en sang. while gjentar for alltid, for gjentar et bestemt antall ganger.
+  se_tekst: "Det finnes tre slags løkker i kurset:"
+  se: [Tellende løkke, Løkke gjennom ting, while-løkke]
 - ord: Funksjon
   engelsk: "function"
   norsk: "funksjon"
@@ -76,6 +78,12 @@
   hemmelig: true
   hvor: Oppdrag 12
   forklaring: En figur i spillet som styres av datamaskinen, ikke av en spiller, som roboten i Har den!
+- ord: Raycast
+  engelsk: "raycast"
+  norsk: "strålekast, å sende ut en usynlig stråle"
+  hemmelig: true
+  hvor: Oppdrag 13
+  forklaring: En usynlig strek som Roblox sender ut for å finne ut hva den treffer først, som en lommelykt du ikke kan se. Frysepistolen bruker den.
 
 - ord: String
   engelsk: "string"
@@ -191,3 +199,24 @@
   hemmelig: false
   hvor: Sluttprosjekt
   forklaring: En bane med hindre du må hoppe, klatre og løpe gjennom for å komme i mål. Obby er en forkortelse som Roblox-spillere bruker.
+- ord: Tellende løkke
+  engelsk: "numeric for loop"
+  norsk: "løkke som teller"
+  hemmelig: false
+  hvor: Oppdrag 6
+  forklaring: «for i = 1, 10 do» gjentar et bestemt antall ganger og teller underveis. i er tallet løkka har kommet til, først 1, så 2, så 3 og helt til 10. Du bestemmer selv hvor mange ganger den går.
+  se: [Løkke, Løkke gjennom ting, while-løkke]
+- ord: Løkke gjennom ting
+  engelsk: "generic for loop"
+  norsk: "løkke gjennom en liste"
+  hemmelig: false
+  hvor: Oppdrag 10
+  forklaring: «for _, del in figur:GetChildren() do» går én gang for hver ting i en liste, uansett hvor mange det er. del er tingen løkka har kommet til. _ er nummeret til tingen, som vi ikke bryr oss om.
+  se: [Løkke, Tellende løkke, while-løkke]
+- ord: while-løkke
+  engelsk: "while loop"
+  norsk: "så lenge-løkke"
+  hemmelig: false
+  hvor: Oppdrag 6
+  forklaring: «while true do» betyr «så lenge svaret er ja, gjør dette». true er alltid ja, så løkka går for alltid. Den må ha task.wait(), ellers prøver datamaskinen å gjøre alt på null sekunder, og Studio fryser.
+  se: [Løkke, Tellende løkke, Løkke gjennom ting]

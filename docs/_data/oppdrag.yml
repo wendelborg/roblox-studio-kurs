@@ -82,3 +82,10 @@
   kort: En datastyrt robot som spiller med deg
   ord: NPC
   farge: "#9333ea"
+- nr: 13
+  nokkel: har-den-frysepistol   # fast ID for lagret fremgang, endres aldri
+  veileder: 13-har-den-frysepistol.md
+  tittel: "Har den! Del 4: Frysepistol"
+  kort: Frys den som har den, og stikk av
+  ord: Raycast
+  farge: "#0284c7"
