@@ -110,6 +110,17 @@
   }
   oppdater();
 
+  // 4. Knappen som bytter mellom lyst og mørkt utseende.
+  var temaKnapp = document.getElementById("tema-knapp");
+  if (temaKnapp) temaKnapp.addEventListener("click", function () {
+    var rot = document.documentElement;
+    var satt = rot.getAttribute("data-theme");
+    var erMork = satt ? satt === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var nytt = erMork ? "light" : "dark";
+    rot.setAttribute("data-theme", nytt);
+    skriv("tema", nytt);
+  });
+
   var skrivUt = document.getElementById("skriv-ut");
   if (skrivUt) skrivUt.addEventListener("click", function () { window.print(); });
 })();

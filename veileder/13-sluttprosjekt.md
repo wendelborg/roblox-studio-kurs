@@ -17,7 +17,7 @@ Sluttprosjektet er en hinderløype barnet designer selv, der alt fra oppdrag 1�
 - [ ] Noe som er bygget med en egen funksjon (oppdrag 7)
 - [ ] Mynter og poengtavle (oppdrag 8)
 - [ ] En låst dør og en gjemt nøkkel (oppdrag 9)
-- [ ] Et sjekkpunkt: sett inn en **SpawnLocation** midt i løypa
+- [ ] Et sjekkpunkt midt i løypa (se under)
 - [ ] En målkloss som skriver «Du vant!» og gir 50 mynter
 
 **Bonusideer for den som vil ha mer:**
@@ -27,6 +27,14 @@ Sluttprosjektet er en hinderløype barnet designer selv, der alt fra oppdrag 1�
 - En ny stat `Fullfort` som teller hvor mange ganger spilleren har kommet i mål.
 
 **Siste økt – testdag:** Inviter noen i familien til å spille. Barnet ser på mens de spiller, uten å hjelpe. Hva var for vanskelig? Hva var kjedelig? Så får barnet fikse én ting. Dette lærer barnet at spill blir gode gjennom testing.
+
+**Sjekkpunkt:** Har spillet flere SpawnLocation-er, velger Roblox en av dem tilfeldig, både når man starter og når man dør. En ekstra SpawnLocation midt i løypa er derfor ikke et sjekkpunkt. Barnet kan til og med starte midt i løypa. Barnets side har et skript, `Sjekkpunkter` i ServerScriptService, som bruker `Player.RespawnLocation`:
+
+- Når en spiller kommer inn, settes `RespawnLocation` til SpawnLocation-en `Startpunkt`. Da starter alle ved start.
+- Når spilleren rører SpawnLocation-en `Sjekkpunkt`, settes `RespawnLocation` til den. Neste gang spilleren dør, starter hen der.
+- Hver spiller har sin egen `RespawnLocation`, og en «Gjett først»-oppgave tar opp akkurat det.
+
+Roblox sin egen dokumentasjon viser også en variant med lag (Teams) der hvert sjekkpunkt er et eget lag. Den er mer omstendelig, og RespawnLocation passer bedre med det barnet kan fra før. Utfordringen med flere sjekkpunkter bruker samme type løkke som dommerskriptet i Har den!.
 
 **Rekordtavle (raskeste tid):** Barnets side har et server-skript, `Tidtaker` i ServerScriptService, som tar tida fra en kloss som heter `Start` til en som heter `Maal`. Det viser hver spillers beste tid som **Tid** på poengtavla, og den raskeste av alle på en tavle med SurfaceGui og TextLabel. Nye ting:
 

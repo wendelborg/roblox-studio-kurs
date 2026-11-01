@@ -25,7 +25,8 @@
     CFrame: { navn: "plass og retning" },
     FillColor: { navn: "fyllfarge" },
     Gravity: { navn: "tyngdekraft" },
-    Text: { navn: "tekst" }
+    Text: { navn: "tekst" },
+    RespawnLocation: { navn: "startsted", tips: "Det er her spilleren dukker opp igjen etter å ha dødd." }
   };
 
   // Hvordan vi sier «X sin Y» på en naturlig måte.
@@ -40,7 +41,7 @@
     var bestemt = { "gjennomsiktighet": "gjennomsiktigheten", "farge": "fargen", "størrelse": "størrelsen",
       "navn": "navnet", "verdi": "verdien", "gåfart": "gåfarten", "hopphøyde": "hopphøyden", "liv": "livet",
       "materiale": "materialet", "fyllfarge": "fyllfargen", "tyngdekraft": "tyngdekraften",
-      "plass i verden": "plassen i verden", "plass og retning": "plassen og retningen", "tekst": "teksten" };
+      "plass i verden": "plassen i verden", "plass og retning": "plassen og retningen", "tekst": "teksten", "startsted": "startstedet" };
     return (bestemt[n] || n) + " til " + x;
   }
 
@@ -205,7 +206,7 @@
     if ((m = b.match(/^(.+?)\s*==\s*false$/))) return m[1] + " er false";
     if ((m = b.match(/^(\w+)\.Name\s*==\s*(.+)$/))) return "navnet til " + m[1] + " er " + m[2];
     if ((m = b.match(/^(.+?)\s*==\s*(.+)$/))) return ledd(m[1]) + " er lik " + ledd(m[2]);
-    if ((m = b.match(/^(.+?)\s*~=\s*(.+)$/))) return m[1] + " ikke er lik " + m[2];
+    if ((m = b.match(/^(.+?)\s*~=\s*(.+)$/))) return ledd(m[1]) + " ikke er lik " + ledd(m[2]);
     if ((m = b.match(/^(.+?)\s*<\s*(.+)$/))) return ledd(m[1]) + " er mindre enn " + ledd(m[2]);
     if ((m = b.match(/^(.+?)\s*>\s*(.+)$/))) return m[1] + " er større enn " + m[2];
     if (/^[\w.]+$/.test(b)) return b + " er true (eller finnes)";

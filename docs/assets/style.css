@@ -35,6 +35,22 @@
     color-scheme: dark;
   }
 }
+:root[data-theme="dark"] {
+  --bg: #14171f;
+  --flate: #1c2029;
+  --tekst: #eef0f5;
+  --dempet: #a5adbd;
+  --kant: #2f3542;
+  --gjett: #3a3220;
+  --gjett-kant: #a8842c;
+  --obs: #3b2326;
+  --obs-kant: #b5575a;
+  --ide: #1f2b40;
+  --ide-kant: #4a6fae;
+  --kode-bg: #0e1016;
+  --skygge: 0 2px 0 rgba(0, 0, 0, .3);
+  color-scheme: dark;
+}
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -341,3 +357,26 @@ details.forklaring li {
 details.forklaring .linjenr { grid-row: span 2; font: 800 13px/1.6 "Nunito", sans-serif; color: var(--dempet); white-space: nowrap; }
 details.forklaring li code { justify-self: start; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none; -webkit-user-select: none; }
 details.forklaring li span:last-child { font-size: 16px; }
+
+/* Bytt mellom lys og mørk */
+.tema-knapp {
+  margin: 0; padding: 6px 10px; border-radius: 999px; border: none; cursor: pointer;
+  background: transparent; color: var(--dempet); display: inline-flex; align-items: center; gap: 6px;
+  font: 700 16px/1.6 "Nunito", sans-serif;
+}
+.tema-knapp:hover { background: var(--flate); color: var(--tekst); }
+.tema-knapp svg { width: 18px; height: 18px; }
+.tema-knapp .mork-ikon { display: none; }
+:root[data-theme="dark"] .tema-knapp .lys-ikon { display: none; }
+:root[data-theme="dark"] .tema-knapp .mork-ikon { display: inline; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tema-knapp .lys-ikon { display: none; }
+  :root:not([data-theme="light"]) .tema-knapp .mork-ikon { display: inline; }
+}
+@media print { .tema-knapp { display: none; } }
+
+/* Mørke flater som ser like ut i begge modus */
+.hemmelig { background: var(--kode-bg); color: var(--kode-tekst); border: 2px solid var(--kant); }
+.kart .sluttkort a { background: var(--kode-bg); color: var(--kode-tekst); border-color: var(--kant); border-top-color: #ef4444; }
+.kart .sluttkort p { color: var(--kode-tekst); opacity: .8; }
+details.forklaring > summary { border-color: var(--kant); }
