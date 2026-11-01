@@ -156,3 +156,22 @@ li.sjekk > :not(.ds-field) { margin-left: var(--ds-size-8); }
   body { background: #fff; color: #000; }
   body[data-side="ordbok"] main > :not(#diplom) { display: none !important; }
 }
+
+/* Farger på kort, merkelapper og sidehoder.
+   Kort med data-color bruker Designsystemet sin farge; oppdragene har sin egen farge (--farge). */
+.farget { --farge: var(--ds-color-base-default); }
+li[style*="--farge"] > .farget { --farge: inherit; }
+.ds-card.farget { border-top: 6px solid var(--farge); }
+.ds-tag.solid { background: var(--ds-color-base-default); color: var(--ds-color-base-contrast-default); font-weight: 600; }
+.ds-tag.nr-merke { background: color-mix(in srgb, var(--farge) 72%, black); color: #fff; }
+.ds-card.farget:hover { border-top-color: var(--farge); }
+
+.side-hode { --farge: var(--ds-color-base-default); background: color-mix(in srgb, var(--farge) 78%, black); color: #fff; border: none; position: relative; overflow: hidden; }
+.side-hode[data-color] { background: var(--farge); color: var(--ds-color-base-contrast-default); }
+.side-hode .ds-heading, .side-hode .ds-paragraph { color: inherit; }
+.side-hode .ds-tag { background: rgb(0 0 0 / .2); color: inherit; font-weight: 600; }
+.side-hode code { background: rgb(0 0 0 / .2); color: inherit; }
+.side-hode::after {
+  content: ""; position: absolute; right: -2rem; top: -2rem; width: 8rem; height: 8rem;
+  border-radius: 1.5rem; background: rgb(255 255 255 / .15); transform: rotate(18deg); pointer-events: none;
+}

@@ -3,7 +3,7 @@ title: Game on!
 vis_tittel: false
 ---
 <section class="helt">
-  <span class="ds-tag" data-color="accent">Kod ditt eget Roblox-spill</span>
+  <span class="ds-tag solid" data-color="danger">Kod ditt eget Roblox-spill</span>
   <h1 class="ds-heading" data-size="2xl">Game on!</h1>
   <p class="ds-paragraph" data-variant="long">Tolv oppdrag i Roblox Studio. Etter hvert oppdrag skjer det noe nytt i spillet ditt. Til slutt bygger du din egen obby med lava, hemmelige dører, mynter og en gjemt nøkkel.</p>
   <div class="fremgang">
@@ -19,9 +19,9 @@ vis_tittel: false
 <h2 class="ds-heading bolk" data-size="lg">Oppdrag</h2>
 <ul class="kort-rutenett">
   {% for m in site.data.oppdrag %}
-  <li data-oppdrag="{{ m.nokkel }}">
-    <a class="ds-card" href="{{ '/oppdrag/' | append: m.nr | append: '/' | relative_url }}">
-      <span class="kort-merker"><span class="ds-tag" data-color="accent">Oppdrag {{ m.nr }}</span><span class="ds-tag fullfort" data-color="success">Fullført</span></span>
+  <li data-oppdrag="{{ m.nokkel }}" style="--farge: {{ m.farge }}">
+    <a class="ds-card farget" href="{{ '/oppdrag/' | append: m.nr | append: '/' | relative_url }}">
+      <span class="kort-merker"><span class="ds-tag solid nr-merke">Oppdrag {{ m.nr }}</span><span class="ds-tag fullfort" data-color="success">Fullført</span></span>
       <h3 class="ds-heading" data-size="xs">{{ m.tittel }}</h3>
       <p class="ds-paragraph" data-size="sm">{{ m.kort }}</p>
     </a>
@@ -32,8 +32,8 @@ vis_tittel: false
 <h2 class="ds-heading bolk" data-size="lg">Sluttprosjekt</h2>
 <ul class="kort-rutenett">
   <li>
-    <a class="ds-card" data-variant="tinted" data-color="danger" href="{{ '/sluttprosjekt/' | relative_url }}">
-      <span class="kort-merker"><span class="ds-tag" data-color="danger">Sluttprosjekt</span></span>
+    <a class="ds-card farget" data-color="danger" href="{{ '/sluttprosjekt/' | relative_url }}">
+      <span class="kort-merker"><span class="ds-tag solid" data-color="danger">Sluttprosjekt</span></span>
       <h3 class="ds-heading" data-size="xs">Min egen obby</h3>
       <p class="ds-paragraph" data-size="sm">Bygg din egen hinderløype med alt du har lært i oppdrag 1–{{ site.data.oppdrag.size }}</p>
     </a>
@@ -46,8 +46,8 @@ vis_tittel: false
   {% assign bonuser = "bonus-terreng|Terreng|Fjell, huler, hav og øyer;bonus-tinkercad|3D-modell i Tinkercad|Bygg din egen pokal av ferdige former;bonus-blender|3D-modell i Blender|Form en sprettsopp som proffene" | split: ";" %}
   {% for b in bonuser %}{% assign d = b | split: "|" %}
   <li>
-    <a class="ds-card" href="{{ '/' | append: d[0] | append: '/' | relative_url }}">
-      <span class="kort-merker"><span class="ds-tag" data-color="brand2">Bonus</span></span>
+    <a class="ds-card farget" data-color="brand2" href="{{ '/' | append: d[0] | append: '/' | relative_url }}">
+      <span class="kort-merker"><span class="ds-tag solid" data-color="brand2">Bonus</span></span>
       <h3 class="ds-heading" data-size="xs">{{ d[1] }}</h3>
       <p class="ds-paragraph" data-size="sm">{{ d[2] }}</p>
     </a>
@@ -57,13 +57,13 @@ vis_tittel: false
 
 <h2 class="ds-heading bolk" data-size="lg" id="utforsk">Utforsk videre</h2>
 <p class="ds-paragraph">Ferdig med alt? Roblox Studio kan mye mer! Her er ting du kan lære deg selv. Hvert kort har en egen side med forklaring, ideer og et lite eksempel du kan prøve, og lenker videre til Roblox sin egen dokumentasjon. Søkeordet nederst på kortet er navnet Roblox bruker.</p>
-<p class="nivaa-forklaring"><span class="ds-tag" data-color="success">Lett</span> <span class="ds-tag" data-color="warning">Middels</span> <span class="ds-tag" data-color="danger">Vanskelig</span></p>
+<p class="nivaa-forklaring"><span class="ds-tag solid" data-color="success">Lett</span> <span class="ds-tag solid" data-color="warning">Middels</span> <span class="ds-tag solid" data-color="danger">Vanskelig</span></p>
 <ul class="kort-rutenett">
   {% assign utforsk = site.data.utforsk | sort: "nivaa" %}
   {% for u in utforsk %}
   <li>
-    <a class="ds-card" href="{{ '/utforsk/' | append: u.slug | append: '/' | relative_url }}">
-      <span class="kort-merker"><span class="ds-tag" data-color="{% if u.nivaa == 1 %}success{% elsif u.nivaa == 2 %}warning{% else %}danger{% endif %}">{% if u.nivaa == 1 %}Lett{% elsif u.nivaa == 2 %}Middels{% else %}Vanskelig{% endif %}</span></span>
+    <a class="ds-card farget" data-color="{% if u.nivaa == 1 %}success{% elsif u.nivaa == 2 %}warning{% else %}danger{% endif %}" href="{{ '/utforsk/' | append: u.slug | append: '/' | relative_url }}">
+      <span class="kort-merker"><span class="ds-tag solid" data-color="{% if u.nivaa == 1 %}success{% elsif u.nivaa == 2 %}warning{% else %}danger{% endif %}">{% if u.nivaa == 1 %}Lett{% elsif u.nivaa == 2 %}Middels{% else %}Vanskelig{% endif %}</span></span>
       <h3 class="ds-heading" data-size="xs">{{ u.tittel }}</h3>
       <p class="ds-paragraph" data-size="sm">{{ u.tekst }}</p>
       <code class="sokeord">{{ u.ord }}</code>

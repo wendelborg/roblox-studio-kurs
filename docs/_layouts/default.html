@@ -34,14 +34,14 @@
 
   <main id="innhold">
     {% if m %}
-    <div class="ds-card side-hode" data-variant="tinted" data-color="accent">
-      <span class="ds-tag" data-color="accent">Oppdrag {{ m.nr }} av {{ site.data.oppdrag.size }}</span>
+    <div class="ds-card side-hode" style="--farge: {{ m.farge }}">
+      <span class="ds-tag">Oppdrag {{ m.nr }} av {{ site.data.oppdrag.size }}</span>
       <h1 class="ds-heading" data-size="xl">{{ m.tittel }}</h1>
       <p class="ds-paragraph"><strong>Du lærer:</strong> {{ page.lerer }}</p>
     </div>
     {% elsif u %}
-    <div class="ds-card side-hode" data-variant="tinted" data-color="{% if u.nivaa == 1 %}success{% elsif u.nivaa == 2 %}warning{% else %}danger{% endif %}">
-      <span class="ds-tag" data-color="{% if u.nivaa == 1 %}success{% elsif u.nivaa == 2 %}warning{% else %}danger{% endif %}">Utforsk videre · {% if u.nivaa == 1 %}Lett{% elsif u.nivaa == 2 %}Middels{% else %}Vanskelig{% endif %}</span>
+    <div class="ds-card side-hode" data-color="{% if u.nivaa == 1 %}success{% elsif u.nivaa == 2 %}warning{% else %}danger{% endif %}">
+      <span class="ds-tag">Utforsk videre · {% if u.nivaa == 1 %}Lett{% elsif u.nivaa == 2 %}Middels{% else %}Vanskelig{% endif %}</span>
       <h1 class="ds-heading" data-size="xl">{{ u.tittel }}</h1>
       <p class="ds-paragraph">{{ u.tekst }} Søkeordet er <code>{{ u.ord }}</code>.</p>
     </div>
