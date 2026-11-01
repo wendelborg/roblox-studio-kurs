@@ -1,6 +1,7 @@
 - nr: 1
   nokkel: hei-verden   # fast ID for lagret fremgang, endres aldri
   veileder: 01-hei-verden.md
+  fasit: solutions/lesson1.rbxl   # ferdig eksempel fra Studio (File → Save to File As…)
   tittel: Hei, verden!
   kort: Få en kloss til å snakke
   ord: Parent
@@ -89,3 +90,17 @@
   kort: Frys den som har den, og stikk av
   ord: Raycast
   farge: "#0284c7"
+- nr: 14
+  nokkel: har-den-runder   # fast ID for lagret fremgang, endres aldri
+  veileder: 14-har-den-runder.md
+  tittel: "Har den! Del 5: Poeng og runder"
+  kort: Poengtavle, rundeklokke og venteområde
+  ord: Spill-løkke (game loop)
+  farge: "#059669"
+- nr: 15
+  nokkel: har-den-butikk   # fast ID for lagret fremgang, endres aldri
+  veileder: 15-har-den-butikk.md
+  tittel: "Har den! Del 6: Butikken"
+  kort: Kjøp powerups for poengene dine
+  ord: Valuta
+  farge: "#ca8a04"

@@ -88,7 +88,7 @@
   <footer>
     <hr class="ds-divider">
     {% assign repo = site.github.repository_url | default: site.repo %}{% assign gren = site.github.source.branch | default: "main" %}
-    <p class="ds-paragraph" data-size="sm">Lagret fremgang ligger bare i denne nettleseren.{% if repo %} · Er du voksen? Les {% if m %}<a class="ds-link" href="{{ repo }}/blob/{{ gren }}/veileder/{{ m.veileder }}">veilederkapitlet for dette oppdraget</a>{% else %}<a class="ds-link" href="{{ repo }}#readme">veilederguiden</a>{% endif %}.{% endif %} Laget med <a class="ds-link" href="https://designsystemet.no">Designsystemet</a>.</p>
+    <p class="ds-paragraph" data-size="sm">Lagret fremgang ligger bare i denne nettleseren.{% if repo %} · Er du voksen? Les {% if m %}<a class="ds-link" href="{{ repo }}/blob/{{ gren }}/veileder/{{ m.veileder }}">veilederkapitlet for dette oppdraget</a>{% if m.fasit %}, eller <a class="ds-link" href="{{ repo }}/raw/{{ gren }}/{{ m.fasit }}">last ned et ferdig eksempel</a> som kan åpnes i Roblox Studio{% endif %}{% else %}<a class="ds-link" href="{{ repo }}#readme">veilederguiden</a>{% endif %}.{% endif %} Laget med <a class="ds-link" href="https://designsystemet.no">Designsystemet</a>.</p>
   </footer>
   <script src="{{ '/assets/kurs.js' | relative_url }}"></script>
   <script src="{{ '/assets/forklar.js' | relative_url }}"></script>

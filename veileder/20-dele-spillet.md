@@ -1,6 +1,6 @@
 # Dele spillet med andre
 
-[← Bonus: 3D-modell i Blender](17-bonus-blender.md) · [Innhold](../README.md) · [Slik fungerer serveren →](19-serveren.md)
+[← Bonus: 3D-modell i Blender](19-bonus-blender.md) · [Innhold](../README.md) · [Slik fungerer serveren →](21-serveren.md)
 
 Før eller siden vil barnet vise fram spillet sitt. Dette kapitlet forklarer de vanligste måtene å dele på, fra den enkleste og mest private til den mest offentlige.
 
@@ -50,7 +50,7 @@ For et barns første spill er dette sjelden verdt det. Hvis dere likevel vil, b�
 
 ## Bygge sammen
 
-Vil barnet bygge spillet sammen med en venn, fra hver sin maskin, finnes **Collaborate** (Team Create) i Studio. Det forklares i [Slik fungerer serveren](19-serveren.md), sammen med hva som deles mellom spillere på en server, og hva som forsvinner når serveren stenges.
+Vil barnet bygge spillet sammen med en venn, fra hver sin maskin, finnes **Collaborate** (Team Create) i Studio. Det forklares i [Slik fungerer serveren](21-serveren.md), sammen med hva som deles mellom spillere på en server, og hva som forsvinner når serveren stenges.
 
 ## Ting å snakke om sammen
 
@@ -67,4 +67,4 @@ Vil barnet bygge spillet sammen med en venn, fra hver sin maskin, finnes **Colla
 
 ---
 
-[← Bonus: 3D-modell i Blender](17-bonus-blender.md) · [Innhold](../README.md) · [Slik fungerer serveren →](19-serveren.md)
+[← Bonus: 3D-modell i Blender](19-bonus-blender.md) · [Innhold](../README.md) · [Slik fungerer serveren →](21-serveren.md)

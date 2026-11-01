@@ -1,6 +1,6 @@
 # Tips og triks
 
-[← Slik fungerer serveren](19-serveren.md) · [Innhold](../README.md) · [Verktøykasse →](21-verktoykasse.md)
+[← Slik fungerer serveren](21-serveren.md) · [Innhold](../README.md) · [Verktøykasse →](23-verktoykasse.md)
 
 Små ting som sparer tid i Roblox Studio, både for deg og barnet. Ta gjerne ett tips om gangen. Barn liker å lære hurtigtaster, og det føles som en superkraft å kunne dem.
 
@@ -95,4 +95,4 @@ Nyere versjoner av Studio har en innebygd AI-assistent som kan skrive skript. De
 
 ---
 
-[← Slik fungerer serveren](19-serveren.md) · [Innhold](../README.md) · [Verktøykasse →](21-verktoykasse.md)
+[← Slik fungerer serveren](21-serveren.md) · [Innhold](../README.md) · [Verktøykasse →](23-verktoykasse.md)

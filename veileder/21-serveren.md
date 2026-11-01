@@ -1,6 +1,6 @@
 # Slik fungerer serveren
 
-[← Dele spillet med andre](18-dele-spillet.md) · [Innhold](../README.md) · [Tips og triks →](20-tips-og-triks.md)
+[← Dele spillet med andre](20-dele-spillet.md) · [Innhold](../README.md) · [Tips og triks →](22-tips-og-triks.md)
 
 Mange av oppdragene handler egentlig om én ting: hva som skjer på **serveren**, og hva som skjer hos **hver spiller**. Dette kapitlet forklarer det for deg som voksen, så du kan svare når barnet lurer på hvorfor noe virker for én spiller men ikke for en annen, eller hvorfor rekorden forsvant.
 
@@ -20,7 +20,7 @@ Når noen spiller et Roblox-spill, er det alltid to slags datamaskiner med:
 
 Alle skriptene i kurset er vanlige **Script**, og de kjører på serveren. Derfor ser alle spillerne den samme døra åpne seg, og derfor kan ingen jukse seg til flere mynter. LocalScript nevnes bare under «Utforsk videre».
 
-**Et vanlig problem:** Et barn legger et LocalScript på en kloss i Workspace, og ingenting skjer. LocalScript kjører ikke der. Feiltabellen i [Verktøykasse](21-verktoykasse.md) nevner dette.
+**Et vanlig problem:** Et barn legger et LocalScript på en kloss i Workspace, og ingenting skjer. LocalScript kjører ikke der. Feiltabellen i [Verktøykasse](23-verktoykasse.md) nevner dette.
 
 ## Hva deles mellom spillerne?
 
@@ -69,7 +69,7 @@ Vil to personer bygge på samme spill, for eksempel barnet og en venn eller dere
 - Roblox krever en aldersjekk for å samarbeide med andre. Aldersgrupper, foreldrekontroll og om dere er venner på Roblox kan også begrense hvem som kan inviteres.
 - Skript kan redigeres samtidig, eller som utkast (drafts) som må lagres inn før de andre ser endringene.
 
-For de fleste familier er det enklest at én person bygger av gangen, og at dere deler spillet som fil eller med privat publisering. Se [Dele spillet med andre](18-dele-spillet.md).
+For de fleste familier er det enklest at én person bygger av gangen, og at dere deler spillet som fil eller med privat publisering. Se [Dele spillet med andre](20-dele-spillet.md).
 
 ## Kilder
 
@@ -79,4 +79,4 @@ For de fleste familier er det enklest at én person bygger av gangen, og at dere
 
 ---
 
-[← Dele spillet med andre](18-dele-spillet.md) · [Innhold](../README.md) · [Tips og triks →](20-tips-og-triks.md)
+[← Dele spillet med andre](20-dele-spillet.md) · [Innhold](../README.md) · [Tips og triks →](22-tips-og-triks.md)

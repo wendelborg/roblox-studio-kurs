@@ -8,9 +8,11 @@
 
 **Den store ideen:** Ting i Explorer ligger inni hverandre. Tingen noe ligger inni, heter **Parent**. En kloss (Part) i Workspace har Workspace som Parent, og klossen er et **Child** av Workspace. Kinderegg-bildet på barnets side forklarer det samme. Et skript inni klossen kan si `script.Parent` og mener da «klossen jeg bor i».
 
+**Ferdig eksempel:** [solutions/lesson1.rbxl](../solutions/lesson1.rbxl) er oppdraget slik det ser ut når det er ferdig. Åpne den i Roblox Studio med **File → Open from File**, og sammenlign med barnets versjon hvis noe ikke virker.
+
 **Steg for steg:**
 
-1. Sett inn en Part (fanen Model → Part). Gi den navnet `Magikloss` i Explorer.
+1. Sett inn en Part (fanen Model → Part). Gi den navnet `Magikloss`: høyreklikk den i Explorer, velg **Rename**, skriv navnet og trykk Enter. Vis barnet dette nøye. Resten av kurset sier bare «gi den navnet …», og store og små bokstaver må stemme.
 2. Hold musa over Magikloss i Explorer og trykk **+** som dukker opp til høyre for navnet. Skriv `Script` og velg **Script**. (Høyreklikk → **Insert Object** gjør det samme.) **+** betyr «legg noe nytt inni denne», og det er verdt å bruke litt tid på: resten av kurset bygger på at barnet skjønner hvor ting havner.
 3. Slett det som står der og skriv:
 

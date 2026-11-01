@@ -1,6 +1,6 @@
 # Bonus: 3D-modell i Blender
 
-[← Bonus: 3D-modell i Tinkercad](16-bonus-tinkercad.md) · [Innhold](../README.md) · [Dele spillet med andre →](18-dele-spillet.md)
+[← Bonus: 3D-modell i Tinkercad](18-bonus-tinkercad.md) · [Innhold](../README.md) · [Dele spillet med andre →](20-dele-spillet.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/bonus-blender/](https://wendelborg.github.io/roblox-studio-kurs/bonus-blender/)
 
@@ -36,4 +36,4 @@
 
 ---
 
-[← Bonus: 3D-modell i Tinkercad](16-bonus-tinkercad.md) · [Innhold](../README.md) · [Dele spillet med andre →](18-dele-spillet.md)
+[← Bonus: 3D-modell i Tinkercad](18-bonus-tinkercad.md) · [Innhold](../README.md) · [Dele spillet med andre →](20-dele-spillet.md)

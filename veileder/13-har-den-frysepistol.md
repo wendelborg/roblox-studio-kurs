@@ -1,6 +1,6 @@
 # Oppdrag 13: Har den! Del 4: Frysepistol
 
-[← Oppdrag 12: Har den! Del 3: Robotmotspiller](12-har-den-robot.md) · [Innhold](../README.md) · [Sluttprosjekt: Min egen obby →](14-sluttprosjekt.md)
+[← Oppdrag 12: Har den! Del 3: Robotmotspiller](12-har-den-robot.md) · [Innhold](../README.md) · [Oppdrag 14: Har den! Del 5: Poeng og runder →](14-har-den-runder.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/13/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/13/)
 
@@ -50,4 +50,4 @@ Ting som er verdt å forklare:
 
 ---
 
-[← Oppdrag 12: Har den! Del 3: Robotmotspiller](12-har-den-robot.md) · [Innhold](../README.md) · [Sluttprosjekt: Min egen obby →](14-sluttprosjekt.md)
+[← Oppdrag 12: Har den! Del 3: Robotmotspiller](12-har-den-robot.md) · [Innhold](../README.md) · [Oppdrag 14: Har den! Del 5: Poeng og runder →](14-har-den-runder.md)

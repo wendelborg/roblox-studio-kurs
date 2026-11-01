@@ -46,11 +46,11 @@ Roblox Studio er i seg selv et trygt sted å bygge. Det meste du bør passe på,
 - **Gratis modeller i Toolbox kan inneholde skjulte skript.** Noen modeller fra andre har skript som gjør ugagn eller åpner «bakdører» i spillet. Hold dere til ting barnet bygger selv, og eksemplene i kurset. Hvis dere henter noe fra Toolbox, se gjennom Explorer etter skript som dere ikke kjenner igjen.
 - **Plugins** er tillegg til Studio som kan gjøre mye. Installer bare plugins dere har avtalt sammen.
 - **Bilder og modeller som lastes opp, sjekkes av Roblox.** Barnet skal bare laste opp egne tegninger og modeller, aldri bilder av seg selv, familien eller andre ekte mennesker, og aldri bilder fra nettet.
-- **AI-assistenten i Studio** kan skrive kode for barnet. Avtal når den kan brukes. Se [Tips og triks](20-tips-og-triks.md).
+- **AI-assistenten i Studio** kan skrive kode for barnet. Avtal når den kan brukes. Se [Tips og triks](22-tips-og-triks.md).
 
 ### Når spillet deles
 
-- **Start privat.** Inviter bare venner og familie som barnet kjenner i virkeligheten. Se [Dele spillet med andre](18-dele-spillet.md).
+- **Start privat.** Inviter bare venner og familie som barnet kjenner i virkeligheten. Se [Dele spillet med andre](20-dele-spillet.md).
 - **Team Create bare med kjente.** Den som får redigere spillet, kan endre og slette alt. Roblox krever i tillegg en aldersjekk for å samarbeide.
 - **Aldersjekk med ansikt eller legitimasjon.** Noen funksjoner krever det. Tenk gjennom om det skal gjøres på barnets konto, og gjør det i så fall sammen.
 - **Tilbakemeldinger kan være slemme.** Hvis andre spiller spillet, kan barnet få kritikk. Snakk om det på forhånd. Testdagen i sluttprosjektet er en trygg måte å øve på.
@@ -72,7 +72,7 @@ Mer om Roblox sin foreldrekontroll: [Parental Controls Overview](https://en.help
 
 ## Om kurset
 
-Tretten oppdrag på 45–60 minutter tar barnet fra å endre en kloss til å bygge en egen obby med poeng, feller og mål. Hvert oppdrag gir noe som virker i spillet med en gang, men målet er å skjønne *hvorfor* det virker.
+Femten oppdrag på 45–60 minutter tar barnet fra å endre en kloss til å bygge en egen obby med poeng, feller og mål. Hvert oppdrag gir noe som virker i spillet med en gang, men målet er å skjønne *hvorfor* det virker.
 
 **Slik kjøres en økt (for deg som voksen):**
 
@@ -93,7 +93,7 @@ Tretten oppdrag på 45–60 minutter tar barnet fra å endre en kloss til å byg
 - Last ned Roblox Studio fra create.roblox.com og logg inn med barnets konto.
 - Lag et nytt **Baseplate**-spill. Lagre det med et navn barnet velger selv.
 - Åpne vinduene **Explorer**, **Properties** og **Output** i menyen **Window**. Disse tre skal alltid være åpne.
-- Øv på å fly rundt i 3D-ruta: **W A S D** og **Q/E** for å fly, hold høyre museknapp og dra for å se rundt, musehjulet for zoom og **F** for å fly til klossen som er valgt. Terningen øverst til høyre i 3D-ruta (View Selector) bytter vinkel: toppen gir oversikt ovenfra, sidene viser verden fra hver kant. Det er lett å miste seg selv i verden, så bruk gjerne fem minutter på dette. Flere taster står i [Tips og triks](20-tips-og-triks.md).
+- Øv på å fly rundt i 3D-ruta: **W A S D** og **Q/E** for å fly, hold høyre museknapp og dra for å se rundt, musehjulet for zoom og **F** for å fly til klossen som er valgt. Terningen øverst til høyre i 3D-ruta (View Selector) bytter vinkel: toppen gir oversikt ovenfra, sidene viser verden fra hver kant. Det er lett å miste seg selv i verden, så bruk gjerne fem minutter på dette. Flere taster står i [Tips og triks](22-tips-og-triks.md).
 - Koden i Roblox heter **Luau**. Den er laget for å være lett å lese, nesten som engelsk.
 
 ---

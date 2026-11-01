@@ -1,6 +1,6 @@
 # Verktøykasse
 
-[← Tips og triks](20-tips-og-triks.md) · [Innhold](../README.md) · [Om nettsiden →](22-om-nettsiden.md)
+[← Tips og triks](22-tips-og-triks.md) · [Innhold](../README.md) · [Om nettsiden →](24-om-nettsiden.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/hjelp/](https://wendelborg.github.io/roblox-studio-kurs/hjelp/)
 
@@ -22,7 +22,7 @@
 | Studio fryser | En `while true`-løkke mangler `task.wait()` |
 | Ingenting skjer | Skriptet ligger feil sted, eller det er et LocalScript i stedet for Script |
 
-**Ordliste – ordene barnet samler:** Hvert oppdrag har ett hemmelig ord. De tretten ordene gir diplom i ordboka på barnets side.
+**Ordliste – ordene barnet samler:** Hvert oppdrag har ett hemmelig ord. De femten ordene gir diplom i ordboka på barnets side.
 
 | Oppdrag | Ord | Engelsk | Med egne ord |
 | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ Ordboka har også en del med flere ord barnet møter, som String, Boolean, nil, 
   - [Engine API reference](https://create.roblox.com/docs/reference/engine): alle klasser, egenskaper, metoder og hendelser.
   - [Luau i Roblox Creator Hub](https://create.roblox.com/docs/luau): språket, med datatyper, løkker, funksjoner og tabeller.
   - [Roblox Studio-dokumentasjonen](https://create.roblox.com/docs/studio): selve programmet, med vinduer, verktøy, testing, samarbeid og innstillinger. Nyttig når dere lurer på hvor en knapp er, eller hva et vindu gjør.
-  - [Hurtigtaster i Studio](https://create.roblox.com/docs/studio/shortcuts): hele lista. Se også [Tips og triks](20-tips-og-triks.md).
+  - [Hurtigtaster i Studio](https://create.roblox.com/docs/studio/shortcuts): hele lista. Se også [Tips og triks](22-tips-og-triks.md).
   - [luau.org](https://luau.org): den offisielle siden til språket, med en kort gjennomgang av syntaksen. Fint for deg som kan programmere fra før.
 - **Søketips:** Søk på «roblox» pluss navnet på det dere lurer på, for eksempel «roblox Humanoid WalkSpeed». Treffet fra create.roblox.com er det offisielle. Svar fra Roblox Developer Forum er ofte gode, men kan være gamle.
 
@@ -59,4 +59,4 @@ Ordboka har også en del med flere ord barnet møter, som String, Boolean, nil, 
 
 ---
 
-[← Tips og triks](20-tips-og-triks.md) · [Innhold](../README.md) · [Om nettsiden →](22-om-nettsiden.md)
+[← Tips og triks](22-tips-og-triks.md) · [Innhold](../README.md) · [Om nettsiden →](24-om-nettsiden.md)

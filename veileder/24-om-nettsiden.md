@@ -1,6 +1,6 @@
 # Om nettsiden
 
-[← Verktøykasse](21-verktoykasse.md) · [Innhold](../README.md)
+[← Verktøykasse](23-verktoykasse.md) · [Innhold](../README.md)
 
 Barnets side ligger i mappa `docs/` og bygges automatisk av GitHub Pages med Jekyll.
 
@@ -42,9 +42,22 @@ Oppdragene er vanlig Markdown. Disse byggeklossene kan brukes i dem:
 
 **Teste lokalt:** `cd docs && jekyll serve`, og åpne http://localhost:4000/. Lokalt mangler lenken tilbake til repoet nederst på sidene, fordi den bare fylles inn på GitHub. Vil du ha den lokalt også, kan du legge til `repo: https://github.com/<brukernavn>/<reponavn>` i `docs/_config.yml`.
 
+
+## Ferdige eksempler fra Studio
+
+Mappa `solutions/` har ferdige utgaver av oppdragene, lagret med **File → Save to File As…** i Roblox Studio. Når et oppdrag har en slik fil, står det en nedlastingslenke nederst på barnets side, ved siden av lenken til veilederkapitlet.
+
+Slik legger du til en ny:
+
+1. Bli ferdig med oppdraget i Studio, og lagre med **File → Save to File As…** som for eksempel `lesson2.rbxl`.
+2. Legg fila i `solutions/`.
+3. Legg til `fasit: solutions/lesson2.rbxl` på det oppdraget i `docs/_data/oppdrag.yml`.
+
+Fila ligger utenfor `docs/`, så den publiseres ikke som en del av nettsiden. Lenken peker til fila i GitHub-repoet. Hold filene under 100 MB, som er grensen for én fil på GitHub.
+
 ---
 
-[← Verktøykasse](21-verktoykasse.md) · [Innhold](../README.md)
+[← Verktøykasse](23-verktoykasse.md) · [Innhold](../README.md)
 
 **Lagret fremgang:** Avkrysningene lagres i nettleseren med faste nøkler, ikke med oppdragsnummer. Hvert oppdrag har en `nokkel` i `docs/_data/oppdrag.yml` som aldri skal endres. Utfordringer og ord lagres med en nøkkel laget av selve teksten. Derfor kan oppdrag flyttes og nummereres om uten at fremgangen havner feil. Endrer du teksten i en utfordring, regnes den som en ny utfordring og må krysses av på nytt.
 

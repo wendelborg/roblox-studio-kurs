@@ -66,6 +66,52 @@
   };
 
   var SPESIELLE = {
+    "if figur ~= den or kanTas == false or workspace:GetAttribute(\"RundeAktiv\") ~= true then":
+      "Spør: Er det ikke den som har den som rørte, eller er pausen etter et tak ikke ferdig, eller er ikke runden i gang? Hvis ett av dem stemmer, gjør linjene under.",
+    "if #kandidater > 0 then":
+      "Spør: Står det minst én på lista kandidater? # betyr «hvor mange».",
+    "giDen(kandidater[math.random(1, #kandidater)])":
+      "Trekk et tilfeldig nummer fra 1 til så mange som står på lista, og gi den til den som har det nummeret.",
+    "local beskjed = game:GetService(\"ServerStorage\"):WaitForChild(\"DenBeskjed\")":
+      "Finn beskjedklokka DenBeskjed i ServerStorage, og legg den i boksen beskjed.",
+    "beskjed.Event:Connect(function(hva)":
+      "Hver gang noen ringer på beskjedklokka, skal funksjonen som starter her, kjøre. hva er beskjeden, for eksempel \"ingen\" eller \"tilfeldig\".",
+    "beskjed:Fire(\"tilfeldig\")":
+      "Ring på beskjedklokka med beskjeden \"tilfeldig\". Dommeren gir den til en tilfeldig spiller.",
+    "beskjed:Fire(\"ingen\")":
+      "Ring på beskjedklokka med beskjeden \"ingen\". Dommeren sørger for at ingen har den.",
+    "local tavle = workspace:WaitForChild(\"Klokke\").SurfaceGui.TextLabel":
+      "Finn tekstfeltet på klokketavla, og legg det i boksen tavle.",
+    "local RUNDETID = 180":
+      "Lag en boks som heter RUNDETID med tallet 180. En runde varer i 180 sekunder, altså 3 minutter. Store bokstaver betyr at tallet ikke endrer seg.",
+    "local VENTETID = 30":
+      "Lag en boks som heter VENTETID med tallet 30. Så mange sekunder venter alle i venteområdet.",
+    "local best = -math.huge":
+      "Lag en boks som heter best, med et uendelig lite tall. Alle sekunder er bedre enn det, så den første spilleren blir alltid best til å begynne med.",
+    "stats.Sekunder.Value = stats.Sekunder.Value - 1":
+      "Trekk 1 fra sekundene til spilleren.",
+    "stats.Sekunder.Value = stats.Sekunder.Value + 1":
+      "Legg 1 til sekundene til spilleren.",
+    "stats.Poeng.Value = stats.Poeng.Value + math.max(stats.Sekunder.Value, 0)":
+      "Legg sekundene til poengene. math.max velger det største av sekundene og 0, så minus blir til 0.",
+    "vinner.leaderstats.Poeng.Value = vinner.leaderstats.Poeng.Value + 20":
+      "Gi vinneren 20 ekstra poeng.",
+    "local pris = vare:GetAttribute(\"Pris\")":
+      "Les lappen Pris på varen, og legg tallet i boksen pris.",
+    "local kraft = vare:GetAttribute(\"Kraft\")":
+      "Les lappen Kraft på varen, for eksempel \"Fart\", og legg den i boksen kraft.",
+    "poeng.Value = poeng.Value - pris":
+      "Trekk prisen fra poengene. Nå har du betalt.",
+    "if spiller:GetAttribute(\"Kjopt\") then":
+      "Spør: Har spilleren allerede en kvittering (lappen Kjopt)? Hvis ja, gjør linjene under.",
+    "local kraft = spiller:GetAttribute(\"Kjopt\")":
+      "Les kvitteringen på spilleren, og legg den i boksen kraft. Har spilleren ikke kjøpt noe, blir boksen tom (nil).",
+    "spiller:SetAttribute(\"Kjopt\", nil)":
+      "Riv av kvitteringen, så spilleren kan kjøpe noe nytt i neste venteområde.",
+    "workspace:GetAttributeChangedSignal(\"RundeAktiv\"):Connect(function()":
+      "Hver gang lappen RundeAktiv på Workspace endrer seg, skal funksjonen som starter her, kjøre.",
+    "task.spawn(brukKraft, spiller)":
+      "Start brukKraft for denne spilleren ved siden av resten, så alle får kraften sin samtidig og ingen må vente 20 sekunder på tur.",
     "local Debris = game:GetService(\"Debris\")":
       "Hent Debris, søppelbøtta som tømmer seg selv, og legg den i boksen Debris.",
     "local lengde = (til - fra).Magnitude":

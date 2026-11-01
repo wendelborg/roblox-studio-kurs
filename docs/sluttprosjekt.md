@@ -3,7 +3,7 @@ title: "Sluttprosjekt: Min egen obby"
 permalink: /sluttprosjekt/
 ---
 
-Nå er det **du** som er sjefen! Du skal lage din egen obby. **Obby** er kort for det engelske ordet *obstacle course*, som betyr **hinderløype**: en bane med hindre du må hoppe, klatre og løpe gjennom for å komme i mål. I obbyen din skal du bruke alt du har lært i oppdrag 1–13. Den voksne er kunden som tester spillet ditt.
+Nå er det **du** som er sjefen! Du skal lage din egen obby. **Obby** er kort for det engelske ordet *obstacle course*, som betyr **hinderløype**: en bane med hindre du må hoppe, klatre og løpe gjennom for å komme i mål. I obbyen din skal du bruke alt du har lært i oppdrag 1–15. Den voksne er kunden som tester spillet ditt.
 
 Sett av 3–4 økter. Det trenger ikke bli ferdig på én dag.
 

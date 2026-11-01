@@ -84,6 +84,19 @@
   hemmelig: true
   hvor: Oppdrag 13
   forklaring: En usynlig strek som Roblox sender ut for å finne ut hva den treffer først, som en lommelykt du ikke kan se. Frysepistolen bruker den.
+- ord: Spill-løkke (game loop)
+  engelsk: "game loop"
+  norsk: "spill-løkke"
+  hemmelig: true
+  hvor: Oppdrag 14
+  forklaring: Løkka som styrer hele spillet, om og om igjen. I Har den! venter alle først, så spilles en runde, så deles poengene ut, og så starter det på nytt.
+  se: [Løkke, while-løkke]
+- ord: Valuta
+  engelsk: "currency"
+  norsk: "valuta, penger"
+  hemmelig: true
+  hvor: Oppdrag 15
+  forklaring: Penger. I et spill kan valutaen være mynter, poeng eller diamanter. Du tjener den ved å spille og bruker den i en butikk.
 
 - ord: String
   engelsk: "string"

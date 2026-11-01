@@ -1,6 +1,6 @@
 # Bonus: Terreng
 
-[← Sluttprosjekt: Min egen obby](14-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Tinkercad →](16-bonus-tinkercad.md)
+[← Sluttprosjekt: Min egen obby](16-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Tinkercad →](18-bonus-tinkercad.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/bonus-terreng/](https://wendelborg.github.io/roblox-studio-kurs/bonus-terreng/)
 
@@ -64,4 +64,4 @@ Terreng har ikke `Touched` som virker på samme måte som en kloss, derfor bruke
 
 ---
 
-[← Sluttprosjekt: Min egen obby](14-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Tinkercad →](16-bonus-tinkercad.md)
+[← Sluttprosjekt: Min egen obby](16-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Tinkercad →](18-bonus-tinkercad.md)

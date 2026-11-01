@@ -1,10 +1,10 @@
 # Sluttprosjekt: Min egen obby
 
-[← Oppdrag 13: Har den! Del 4: Frysepistol](13-har-den-frysepistol.md) · [Innhold](../README.md) · [Bonus: Terreng →](15-bonus-terreng.md)
+[← Oppdrag 15: Har den! Del 6: Butikken](15-har-den-butikk.md) · [Innhold](../README.md) · [Bonus: Terreng →](17-bonus-terreng.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/sluttprosjekt/](https://wendelborg.github.io/roblox-studio-kurs/sluttprosjekt/)
 
-Sluttprosjektet er en hinderløype barnet designer selv, der alt fra oppdrag 1–13 brukes. Sett av 3–4 økter. Her er det *barnet* som er sjefen, og du er kunden som tester.
+Sluttprosjektet er en hinderløype barnet designer selv, der alt fra oppdrag 1–15 brukes. Sett av 3–4 økter. Her er det *barnet* som er sjefen, og du er kunden som tester.
 
 **Økt 1 – tegn før du bygger:** På papir tegner barnet løypa fra start til mål. Hver hindring får et navn og en kort forklaring på hvilken kode den trenger. Dette er ekte spillutvikling: plan først.
 
@@ -50,10 +50,10 @@ Roblox sin egen dokumentasjon viser også en variant med lag (Teams) der hvert s
 - `UpdateAsync` lagrer en ny rekord bare hvis den er bedre enn den som allerede ligger i lageret. Det er riktig når flere servere kan sette rekord samtidig. `SetAsync` ville overskrevet blindt.
 - `pcall` fanger feil, fordi DataStore-kall kan feile, for eksempel ved nettverksproblemer eller kvoter.
 
-**Publisering:** Les kapitlet [Dele spillet med andre](18-dele-spillet.md) før dere publiserer. Kortversjonen: publiser privat og inviter noen få dere kjenner.
+**Publisering:** Les kapitlet [Dele spillet med andre](20-dele-spillet.md) før dere publiserer. Kortversjonen: publiser privat og inviter noen få dere kjenner.
 
-**Vil barnet mer?** Det finnes tre bonuser etter sluttprosjektet: [terreng](15-bonus-terreng.md), [3D-modell i Tinkercad](16-bonus-tinkercad.md) og [3D-modell i Blender](17-bonus-blender.md).
+**Vil barnet mer?** Det finnes tre bonuser etter sluttprosjektet: [terreng](17-bonus-terreng.md), [3D-modell i Tinkercad](18-bonus-tinkercad.md) og [3D-modell i Blender](19-bonus-blender.md).
 
 ---
 
-[← Oppdrag 13: Har den! Del 4: Frysepistol](13-har-den-frysepistol.md) · [Innhold](../README.md) · [Bonus: Terreng →](15-bonus-terreng.md)
+[← Oppdrag 15: Har den! Del 6: Butikken](15-har-den-butikk.md) · [Innhold](../README.md) · [Bonus: Terreng →](17-bonus-terreng.md)
