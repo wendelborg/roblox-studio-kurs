@@ -1,4 +1,4 @@
-# Roblox-koding: fra «hæ?» til eget spill
+# Game on: kod ditt eget Roblox-spill
 
 Et Roblox Studio-kurs for barn på 9–11 år. Kurset har tolv oppdrag på 45–60 minutter, et sluttprosjekt der barnet bygger sin egen obby, og tre bonusoppdrag.
 
