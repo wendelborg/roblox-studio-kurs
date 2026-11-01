@@ -1,0 +1,40 @@
+- nr: 1
+  tittel: Hei, verden!
+  kort: Få en kloss til å snakke
+  ord: Parent
+  farge: "#2f7cf6"
+- nr: 2
+  tittel: Trylleformler
+  kort: Bytt farge, størrelse og usynlighet
+  ord: variabel
+  farge: "#8b5cf6"
+- nr: 3
+  tittel: Gulvet er lava
+  kort: Lag en kloss som er farlig å tråkke på
+  ord: hendelse
+  farge: "#ef4444"
+- nr: 4
+  tittel: Den hemmelige døra
+  kort: En dør som bare åpner seg for deg
+  ord: betingelse
+  farge: "#f59e0b"
+- nr: 5
+  tittel: Disko og forsvinnende trapp
+  kort: Gjenta ting uten å skrive dem mange ganger
+  ord: løkke
+  farge: "#ec4899"
+- nr: 6
+  tittel: Lag dine egne trylleord
+  kort: Finn opp dine egne kommandoer
+  ord: funksjon
+  farge: "#10b981"
+- nr: 7
+  tittel: Myntjakt med poengtavle
+  kort: Samle mynter og få poeng
+  ord: debounce
+  farge: "#eab308"
+- nr: 8
+  tittel: Den gylne nøkkelen
+  kort: Finn nøkkelen og lås opp døra
+  ord: Backpack
+  farge: "#d97706"

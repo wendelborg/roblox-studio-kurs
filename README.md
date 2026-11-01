@@ -1,33 +1,45 @@
 # Roblox-koding: fra «hæ?» til eget spill
 
+> **Veilederguide for forelder eller veileder.** Denne siden er for deg som voksen.
+> Barnet følger kurset på sin egen side: **[wendelborg.github.io/roblox-studio-kurs](https://wendelborg.github.io/roblox-studio-kurs/)**
+>
+> Barnets side har de samme oppdragene, men er skrevet direkte til barnet («du»). I tillegg har den:
+>
+> - en «Hva skjer når du trykker Play?»-del som forklarer koden steg for steg
+> - en «Dette ble for vanskelig»-knapp med en enda enklere forklaring
+> - avkrysning av utfordringer og oppdrag, som lagres i nettleseren
+> - ordbok med diplom til utskrift når alle ordene er forklart
+>
+> Kodeblokkene på barnets side kan ikke markeres og kopieres. Det er gjort med vilje, så barnet skriver koden selv.
+
 ## Om kurset
 
-Åtte oppdrag på 45–60 minutter tar ham fra å endre en kloss til å bygge sin egen obby med poeng, feller og mål. Hvert oppdrag gir noe som virker i spillet med en gang, men målet er at han skal skjønne *hvorfor* det virker.
+Åtte oppdrag på 45–60 minutter tar barnet fra å endre en kloss til å bygge en egen obby med poeng, feller og mål. Hvert oppdrag gir noe som virker i spillet med en gang, men målet er å skjønne *hvorfor* det virker.
 
 **Slik kjøres en økt (for deg som voksen):**
 
-1. **Lek først (5 min):** Han tester ferdig oppførsel i spillet eller leser oppdraget høyt.
-2. **Tipp før du kjører (5 min):** Han gjetter hva koden vil gjøre før han trykker Play. Feil gjetning er gull – det er der forståelsen bygges.
-3. **Skriv selv (20–30 min):** Han skriver koden selv, ikke kopierer. Skrivefeil og feilmeldinger er en del av læringen.
+1. **Lek først (5 min):** Barnet tester ferdig oppførsel i spillet eller leser oppdraget høyt.
+2. **Tipp før du kjører (5 min):** Barnet gjetter hva koden vil gjøre før Play trykkes. Feil gjetning er gull – det er der forståelsen bygges.
+3. **Skriv selv (20–30 min):** Barnet skriver koden selv, ikke kopierer. Skrivefeil og feilmeldinger er en del av læringen.
 4. **Endre og ødelegg (10 min):** «Hva skjer hvis du bytter 5 med 50?» Hvert oppdrag har slike utfordringer.
-5. **Forklar tilbake (2 min):** Han forklarer deg ett nytt ord med egne ord. Kan han det, sitter det.
+5. **Forklar tilbake (2 min):** Barnet forklarer deg ett nytt ord med egne ord. Klarer barnet det, sitter det.
 
 **Tre regler som gjør det gøy:**
 
-- Han eier tastaturet. Du peker og spør, men skriver ikke for ham.
-- Han får lov til å pynte, tulle og gjøre spillet sitt rart. Eierskap gir motivasjon.
+- Barnet eier tastaturet. Du peker og spør, men skriver ikke for barnet.
+- Barnet får lov til å pynte, tulle og gjøre spillet sitt rart. Eierskap gir motivasjon.
 - Stopp mens det fortsatt er gøy. Heller én økt for kort enn én for lang.
 
 **Oppsett:**
 
-- Last ned Roblox Studio fra create.roblox.com og logg inn med kontoen hans.
-- Lag et nytt **Baseplate**-spill. Lagre det med et navn han velger selv.
+- Last ned Roblox Studio fra create.roblox.com og logg inn med barnets konto.
+- Lag et nytt **Baseplate**-spill. Lagre det med et navn barnet velger selv.
 - Åpne vinduene **Explorer**, **Properties** og **Output** under fanen **View**. Disse tre skal alltid være åpne.
 - Koden i Roblox heter **Luau**. Den er laget for å være lett å lese, nesten som engelsk.
 
 ## Oppdrag 1: Hei, verden!
 
-**Han lærer:** at et spill er en stor familie av ting, og at et skript er en beskjed til datamaskinen.
+**Barnet lærer:** at et spill er en stor familie av ting, og at et skript er en beskjed til datamaskinen.
 
 **Den store ideen:** Alt i Explorer henger sammen som et slektstre. En kloss (Part) som ligger i Workspace er **barn** av Workspace. Workspace er **forelder** til klossen. Et skript inni klossen kan si `script.Parent` og mener da «klossen jeg bor i».
 
@@ -61,7 +73,7 @@ print("Jeg heter " .. script.Parent.Name)
 
 ## Oppdrag 2: Trylleformler
 
-**Han lærer:** variabler (navngitte bokser) og egenskaper (det som står i Properties-vinduet).
+**Barnet lærer:** variabler (navngitte bokser) og egenskaper (det som står i Properties-vinduet).
 
 **Den store ideen:** Alt du kan endre i Properties-vinduet med musa, kan koden også endre. En **variabel** er en boks med navnelapp som vi legger noe i, så vi slipper å skrive det samme om og om igjen.
 
@@ -89,7 +101,7 @@ print("Pang! Klossen byttet farge.")
 - `true` og `false` er ja og nei. De kalles **boolean**.
 - `task.wait(3)` sier «vent 3 sekunder».
 
-**Lekeoppgave før koding:** Klikk på klossen og endre Transparency i Properties med hånden. Spør: «Hvilket tall gjør den usynlig?» Så lar han koden gjøre det samme.
+**Lekeoppgave før koding:** Klikk på klossen og endre Transparency i Properties med hånden. Spør: «Hvilket tall gjør den usynlig?» Så får koden gjøre det samme.
 
 **Utfordringer:**
 
@@ -101,7 +113,7 @@ print("Pang! Klossen byttet farge.")
 
 ## Oppdrag 3: Gulvet er lava
 
-**Han lærer:** hendelser (events) – kode som venter på at noe skal skje.
+**Barnet lærer:** hendelser (events) – kode som venter på at noe skal skje.
 
 **Den store ideen:** Til nå har koden kjørt fra topp til bunn med en gang. En **hendelse** er som en dørklokke: koden står og venter, og når noen ringer på, kjører den. `Touched` ringer hver gang noe rører klossen.
 
@@ -143,7 +155,7 @@ lava.Touched:Connect(naarNoeRorer)
 
 ## Oppdrag 4: Den hemmelige døra
 
-**Han lærer:** `if`, `elseif` og `else` – å la koden ta valg.
+**Barnet lærer:** `if`, `elseif` og `else` – å la koden ta valg.
 
 **Den store ideen:** En **betingelse** er et ja/nei-spørsmål koden stiller. «*Hvis* det er deg, åpne døra. *Ellers* si nei.» Sammenligning bruker `==` (er lik), `~=` (er ikke lik), `<` og `>`.
 
@@ -182,7 +194,7 @@ dor.Touched:Connect(naarNoeRorer)
 - `CanCollide = false` betyr at man kan gå gjennom klossen.
 - Innrykk (tab) viser hva som hører til `if`-en. Det gjør koden lettere å lese.
 
-**Tippeoppgave:** Før han kjører: «Hva skjer hvis du skriver navnet ditt med liten forbokstav?» (Døra åpner seg ikke – datamaskinen er pirkete.)
+**Tippeoppgave:** Før koden kjøres: «Hva skjer hvis du skriver navnet ditt med liten forbokstav?» (Døra åpner seg ikke – datamaskinen er pirkete.)
 
 **Utfordringer:**
 
@@ -194,7 +206,7 @@ dor.Touched:Connect(naarNoeRorer)
 
 ## Oppdrag 5: Disko og forsvinnende trapp
 
-**Han lærer:** løkker – å gjenta noe uten å skrive det mange ganger.
+**Barnet lærer:** løkker – å gjenta noe uten å skrive det mange ganger.
 
 **Den store ideen:** En **løkke** er som et refreng i en sang. `while true do` gjentar for alltid. `for i = 1, 10 do` gjentar et bestemt antall ganger og teller underveis.
 
@@ -209,7 +221,7 @@ while true do
 end
 ```
 
-**Viktig:** En `while true`-løkke *må* ha `task.wait()`. Uten den prøver datamaskinen å gjøre alt på null sekunder, og Studio fryser. La ham gjerne oppleve det én gang – det glemmer han aldri.
+**Viktig:** En `while true`-løkke *må* ha `task.wait()`. Uten den prøver datamaskinen å gjøre alt på null sekunder, og Studio fryser. La barnet gjerne oppleve det én gang – det blir aldri glemt.
 
 **Del B – klossen som forsvinner gradvis (telle-løkke):**
 
@@ -242,11 +254,11 @@ kloss.CanCollide = false
 
 ## Oppdrag 6: Lag dine egne trylleord
 
-**Han lærer:** funksjoner med parametere – å finne opp egne kommandoer.
+**Barnet lærer:** funksjoner med parametere – å finne opp egne kommandoer.
 
 **Den store ideen:** En **funksjon** er en oppskrift med et navn. Du skriver oppskriften én gang, og bruker den så mange ganger du vil. **Parametere** er ingrediensene du sender inn, for eksempel hvilken farge eller hvor stor.
 
-Han har faktisk allerede laget funksjoner (`naarNoeRorer`). Nå lager han en som han kaller på selv.
+Barnet har faktisk allerede laget funksjoner (`naarNoeRorer`). Nå lages en funksjon som barnet kaller på selv.
 
 **Kode (Script i ServerScriptService):**
 
@@ -273,7 +285,7 @@ kjempe.Material = Enum.Material.Neon
 - `return kloss` gir klossen tilbake, så vi kan gjøre mer med den etterpå.
 - `kloss.Parent = workspace` er det som gjør at klossen dukker opp i verden. Uten den finnes den bare i lufta.
 
-**Sammenlign:** Be ham skrive tre klosser *uten* funksjon først. Hvor mange linjer ble det? Så med funksjon. Det er hele poenget med funksjoner.
+**Sammenlign:** Be barnet skrive tre klosser *uten* funksjon først. Hvor mange linjer ble det? Så med funksjon. Det er hele poenget med funksjoner.
 
 **Utfordringer:**
 
@@ -285,7 +297,7 @@ kjempe.Material = Enum.Material.Neon
 
 ## Oppdrag 7: Myntjakt med poengtavle
 
-**Han lærer:** å lagre poeng per spiller, og «debounce» – å hindre at noe skjer for mange ganger.
+**Barnet lærer:** å lagre poeng per spiller, og «debounce» – å hindre at noe skjer for mange ganger.
 
 **Den store ideen:** Roblox viser automatisk en poengtavle oppe i hjørnet hvis hver spiller har en mappe som heter nøyaktig `leaderstats`. Det er en avtale mellom deg og Roblox: følger du navnet, gjør Roblox resten.
 
@@ -335,7 +347,7 @@ end
 mynt.Touched:Connect(naarNoeRorer)
 ```
 
-**Detektivoppgave:** Kjør først mynt-skriptet *uten* `opptatt`-linjene. Hvor mange poeng får han for én mynt? (Mange, fordi flere kroppsdeler treffer – akkurat som i oppdrag 3.) Så legger han inn `opptatt` og ser forskjellen. Det er **debounce**.
+**Detektivoppgave:** Kjør først mynt-skriptet *uten* `opptatt`-linjene. Hvor mange poeng gir én mynt? (Mange, fordi flere kroppsdeler treffer – akkurat som i oppdrag 3.) Så legges `opptatt` inn og ser forskjellen. Det er **debounce**.
 
 **Forklar sammen:**
 
@@ -346,25 +358,25 @@ mynt.Touched:Connect(naarNoeRorer)
 
 - [ ] Lag en gullmynt som er verdt 10.
 - [ ] Legg til en ekstra stat, for eksempel `Dodsfall` (uten ø – kode tåler ikke æøå i navn), og tell opp i lavaskriptet.
-- [ ] Lag en butikk-kloss: hvis spilleren har minst 5 mynter, trekk fra 5 og gi ham superfart.
+- [ ] Lag en butikk-kloss: hvis spilleren har minst 5 mynter, trekk fra 5 og gi spilleren superfart.
 
 **Hemmelig ord å forklare tilbake:** debounce
 
 ## Oppdrag 8: Den gylne nøkkelen
 
-**Han lærer:** verktøy (Tool), forskjellen på å *ha* noe og å *holde* noe, og å sjekke hva en spiller bærer på.
+**Barnet lærer:** verktøy (Tool), forskjellen på å *ha* noe og å *holde* noe, og å sjekke hva en spiller bærer på.
 
-**Den store ideen:** Et **verktøy** er en ting spilleren kan plukke opp og bære. Når han plukker det opp, havner det i ryggsekken (**Backpack**). Når han holder det i hånden, flytter det seg inn i selve spillerfiguren. Døra kan derfor spørre: «Har figuren en nøkkel i hånden akkurat nå?»
+**Den store ideen:** Et **verktøy** er en ting spilleren kan plukke opp og bære. Når spilleren plukker det opp, havner det i ryggsekken (**Backpack**). Når spilleren holder det i hånden, flytter det seg inn i selve spillerfiguren. Døra kan derfor spørre: «Har figuren en nøkkel i hånden akkurat nå?»
 
 **Steg 1 – lag nøkkelen (ingen kode ennå):**
 
 1. Høyreklikk Workspace → Insert Object → **Tool**. Gi den navnet `Nokkel` (uten ø).
 2. Høyreklikk Nokkel → Insert Object → **Part**. Gi parten navnet `Handle`, nøyaktig slik, med stor H. Det er den delen spilleren holder i.
 3. Gjør Handle liten og gul, for eksempel størrelse 1 × 1 × 3.
-4. **Viktig:** Handle må *ikke* være Anchored. Da sitter spilleren fast i lufta når han tar den opp.
+4. **Viktig:** Handle må *ikke* være Anchored. Da sitter spilleren fast i lufta når nøkkelen tas opp.
 5. Gjem nøkkelen et sted i verden. Den plukkes opp ved å gå på den.
 
-**Detektivoppgave:** Trykk Play, plukk opp nøkkelen og se i Explorer. Hvor ligger den nå? Trykk 1 for å holde den, og se igjen. Trykk 1 en gang til. Han vil se at nøkkelen hopper mellom `Players → navnet hans → Backpack` og `Workspace → navnet hans`. Det er hele hemmeligheten bak dette oppdraget.
+**Detektivoppgave:** Trykk Play, plukk opp nøkkelen og se i Explorer. Hvor ligger den nå? Trykk 1 for å holde den, og se igjen. Trykk 1 en gang til. Barnet vil se at nøkkelen hopper mellom `Players → spillernavnet → Backpack` og `Workspace → spillernavnet`. Det er hele hemmeligheten bak dette oppdraget.
 
 **Steg 2 – døra med nøkkelhull (lag en dør som heter Laast, med et Script inni):**
 
@@ -409,15 +421,15 @@ dor.Touched:Connect(naarNoeRorer)
 **Forklar sammen:**
 
 - `figur:FindFirstChild("Nokkel")` leter etter et barn med det navnet. Finnes det ikke, får vi `nil`.
-- Nøkkelen i ryggsekken teller ikke, fordi den ikke er barn av figuren. Han må *holde* den.
+- Nøkkelen i ryggsekken teller ikke, fordi den ikke er barn av figuren. Spilleren må *holde* den.
 - `IsA("Tool")` spør «er du et verktøy?». Hvis det var nøkkelen som traff døra, er forelderen nøkkelen og ikke figuren, så vi går ett hakk opp i slektstreet.
 - `aapen` er den samme vakten (debounce) som i oppdrag 7.
 
-**Tippeoppgave:** «Hva skjer hvis du går inn i døra med nøkkelen i ryggsekken, men ikke i hånden?» La ham gjette, så teste.
+**Tippeoppgave:** «Hva skjer hvis du går inn i døra med nøkkelen i ryggsekken, men ikke i hånden?» La barnet gjette, så teste.
 
 **Utfordringer:**
 
-- [ ] Gjør nøkkelen engangs: legg til `nokkel:Destroy()` når døra åpnes. Nå må han finne en ny nøkkel neste gang.
+- [ ] Gjør nøkkelen engangs: legg til `nokkel:Destroy()` når døra åpnes. Nå må spilleren finne en ny nøkkel neste gang.
 - [ ] Lag to nøkler, `RodNokkel` og `BlaaNokkel`, og to dører som hver bare åpner for sin farge.
 - [ ] Lag en butikk som selger nøkkelen for 10 mynter (kombinerer med oppdrag 7). Tips: `nokkel:Clone()` og legg kopien i `spiller.Backpack`.
 - [ ] Bonus – et verktøy som gjør noe når du klikker: legg et Script i verktøyet med `script.Parent.Activated:Connect(...)` og la det for eksempel gi superhopp.
@@ -426,9 +438,9 @@ dor.Touched:Connect(naarNoeRorer)
 
 ## Sluttprosjekt: Min egen obby
 
-Sluttprosjektet er en hinderløype han designer selv, der alt fra oppdrag 1–8 brukes. Sett av 3–4 økter. Her er det *han* som er sjefen, og du er kunden som tester.
+Sluttprosjektet er en hinderløype barnet designer selv, der alt fra oppdrag 1–8 brukes. Sett av 3–4 økter. Her er det *barnet* som er sjefen, og du er kunden som tester.
 
-**Økt 1 – tegn før du bygger:** På papir tegner han løypa fra start til mål. Hver hindring får et navn og en kort forklaring på hvilken kode den trenger. Dette er ekte spillutvikling: plan først.
+**Økt 1 – tegn før du bygger:** På papir tegner barnet løypa fra start til mål. Hver hindring får et navn og en kort forklaring på hvilken kode den trenger. Dette er ekte spillutvikling: plan først.
 
 **Krav til løypa (kryss av underveis):**
 
@@ -441,15 +453,15 @@ Sluttprosjektet er en hinderløype han designer selv, der alt fra oppdrag 1–8 
 - [ ] Et sjekkpunkt: sett inn en **SpawnLocation** midt i løypa
 - [ ] En målkloss som skriver «Du vant!» og gir 50 mynter
 
-**Bonusideer hvis han vil mer:**
+**Bonusideer for den som vil ha mer:**
 
 - En bevegelig plattform som går fram og tilbake med en `while`-løkke.
 - En tidtaker som teller sekunder fra start til mål.
-- En ny stat `Fullfort` som teller hvor mange ganger han har kommet i mål.
+- En ny stat `Fullfort` som teller hvor mange ganger spilleren har kommet i mål.
 
-**Siste økt – testdag:** Inviter noen i familien til å spille. Han ser på mens de spiller, uten å hjelpe. Hva var for vanskelig? Hva var kjedelig? Så får han fikse én ting. Dette lærer ham at spill blir gode gjennom testing.
+**Siste økt – testdag:** Inviter noen i familien til å spille. Barnet ser på mens de spiller, uten å hjelpe. Hva var for vanskelig? Hva var kjedelig? Så får barnet fikse én ting. Dette lærer barnet at spill blir gode gjennom testing.
 
-**Publisering:** Via **File → Publish to Roblox** kan spillet lagres i skyen. Han kan beholde det privat, eller dele det med venner. Snakk sammen om hvem som skal kunne spille det før du gjør det offentlig.
+**Publisering:** Via **File → Publish to Roblox** kan spillet lagres i skyen. Det kan holdes privat, eller dele det med venner. Snakk sammen om hvem som skal kunne spille det før du gjør det offentlig.
 
 ## Verktøykasse
 
@@ -471,7 +483,7 @@ Sluttprosjektet er en hinderløype han designer selv, der alt fra oppdrag 1–8 
 | Studio fryser | En `while true`-løkke mangler `task.wait()` |
 | Ingenting skjer | Skriptet ligger feil sted, eller det er et LocalScript i stedet for Script |
 
-**Ordliste – ordene han samler:**
+**Ordliste – ordene barnet samler:**
 
 | Ord | Med egne ord |
 | --- | --- |
@@ -486,6 +498,34 @@ Sluttprosjektet er en hinderløype han designer selv, der alt fra oppdrag 1–8 
 | Parameter | Ingrediensen du sender inn i oppskriften |
 | Debounce | En vakt som hindrer at ting skjer for mange ganger |
 
-**Gjør det til et spill:** Skriv ut ordlista og la ham krysse av hvert ord han kan forklare. Ti kryss betyr diplom og en belønning dere har avtalt på forhånd.
+**Gjør det til et spill:** Skriv ut ordlista og la barnet krysse av hvert ord det kan forklare. Ti kryss betyr diplom og en belønning dere har avtalt på forhånd.
 
 **Når kurset er ferdig:** Roblox sin egen dokumentasjon på create.roblox.com/docs har gode, gratis gjennomganger. Neste naturlige steg er LocalScripts og knapper på skjermen (GUI), og ModuleScripts for å dele kode mellom skript.
+
+## Om nettsiden
+
+Barnets side ligger i mappa `docs/` og bygges automatisk av GitHub Pages med Jekyll.
+
+**Slå på GitHub Pages (én gang):** Gå til **Settings → Pages** i repoet. Under **Build and deployment** velger du **Deploy from a branch**, så branch `main` og mappe `/docs`. Etter et par minutter ligger siden på adressen øverst i denne guiden.
+
+**Slik er den bygget opp:**
+
+| Fil | Innhold |
+| --- | --- |
+| `docs/index.html` | Forsiden med oppdragskart, fremdrift og oppsett av Studio |
+| `docs/oppdrag/1.md` … `8.md` | Ett oppdrag per fil |
+| `docs/sluttprosjekt.md` | Min egen obby |
+| `docs/hjelp.md` | Detektivmetoden og vanlige feilmeldinger |
+| `docs/ordbok.html` | Ordbok og diplom |
+| `docs/_data/oppdrag.yml` | Titler, hemmelige ord og farger for hvert oppdrag |
+| `docs/_data/ordbok.yml` | Ordene i ordboka |
+
+Oppdragene er vanlig Markdown. Disse byggeklossene kan brukes i dem:
+
+- `- [ ] tekst` blir en avkrysningsboks som huskes.
+- `<details class="enklere" markdown="1">` gir en «Dette ble for vanskelig»-knapp.
+- `<div class="boks gjett" markdown="1">` lager en «Gjett først!»-boks. Bytt `gjett` med `obs`, `ide` eller `detektiv` for andre typer bokser.
+- `<div class="hva-skjer" markdown="1">` gjør en nummerert liste til en tidslinje.
+- `<div class="skriv-selv" markdown="1">` rundt en kodeblokk hindrer kopiering.
+
+**Teste lokalt:** `cd docs && jekyll serve`, og åpne http://localhost:4000/roblox-studio-kurs/

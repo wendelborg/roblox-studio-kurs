@@ -1,0 +1,20 @@
+- ord: Parent / Child
+  forklaring: Forelder og barn i Explorer-treet. Klossen er forelder til skriptet som ligger inni den.
+- ord: String
+  forklaring: Tekst i anførselstegn, som "Hei!".
+- ord: Variabel
+  forklaring: En boks med navnelapp. Du legger noe oppi og bruker navnet etterpå.
+- ord: Boolean
+  forklaring: "Ja eller nei: true eller false."
+- ord: Hendelse (event)
+  forklaring: En dørklokke som koden venter på, for eksempel Touched.
+- ord: Betingelse
+  forklaring: Et ja/nei-spørsmål med if.
+- ord: Løkke
+  forklaring: Noe som gjentas, som refrenget i en sang.
+- ord: Funksjon
+  forklaring: En oppskrift med navn som du kan bruke mange ganger.
+- ord: Parameter
+  forklaring: Ingrediensen du sender inn i oppskriften.
+- ord: Debounce
+  forklaring: En vakt som hindrer at ting skjer for mange ganger.

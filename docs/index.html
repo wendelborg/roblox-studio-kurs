@@ -1,0 +1,52 @@
+---
+title: Roblox-koding
+vis_tittel: false
+---
+<section class="helt">
+  <h1>Fra «hæ?» til eget spill</h1>
+  <p>Åtte oppdrag i Roblox Studio. Etter hvert oppdrag skjer det noe nytt i spillet ditt. Til slutt bygger du din egen obby med lava, hemmelige dører, mynter og en gjemt nøkkel.</p>
+  <div class="fremgang">
+    <div class="fremgang-bane"><div id="fremgang-stolpe"></div></div>
+    <p id="fremgang-tekst">0 av 8 oppdrag fullført</p>
+  </div>
+</section>
+
+<ul class="kart">
+  {% for m in site.data.oppdrag %}
+  <li data-oppdrag="{{ m.nr }}" style="--farge: {{ m.farge }}">
+    <a href="{{ '/oppdrag/' | append: m.nr | append: '/' | relative_url }}">
+      <span class="nr">Oppdrag {{ m.nr }}</span>
+      <h3>{{ m.tittel }}</h3>
+      <p>{{ m.kort }}</p>
+    </a>
+  </li>
+  {% endfor %}
+  <li class="sluttkort">
+    <a href="{{ '/sluttprosjekt/' | relative_url }}">
+      <span class="nr" style="color:#ef4444">Sluttprosjekt</span>
+      <h3>Min egen obby</h3>
+      <p>Bygg din egen hinderløype med alt du har lært</p>
+    </a>
+  </li>
+</ul>
+
+<h2>Før første oppdrag</h2>
+<p>Gjør klar Roblox Studio sammen med en voksen. Kryss av etter hvert som du blir ferdig.</p>
+<ul>
+  <li>[ ] Last ned <strong>Roblox Studio</strong> fra <a href="https://create.roblox.com">create.roblox.com</a> og logg inn.</li>
+  <li>[ ] Lag et nytt spill av typen <strong>Baseplate</strong>.</li>
+  <li>[ ] Lagre spillet med et navn du finner på selv.</li>
+  <li>[ ] Åpne fanen <strong>View</strong> og slå på <strong>Explorer</strong>, <strong>Properties</strong> og <strong>Output</strong>. Disse tre skal alltid være åpne.</li>
+</ul>
+
+<div class="boks ide">
+  <h3>Slik løser du et oppdrag</h3>
+  <ol>
+    <li><strong>Gjett først.</strong> Hva tror du skjer når du trykker Play? Det er helt greit å gjette feil. Det er sånn hjernen lærer.</li>
+    <li><strong>Skriv koden selv.</strong> Ikke kopier. Skrivefeil og røde feilmeldinger er en del av moroa.</li>
+    <li><strong>Ødelegg og endre.</strong> Prøv utfordringene. Hva skjer hvis du bytter 5 med 50?</li>
+    <li><strong>Forklar det hemmelige ordet</strong> til en voksen. Da er oppdraget fullført!</li>
+  </ol>
+</div>
+
+<p>Koden i Roblox heter <strong>Luau</strong>. Den er laget for å være lett å lese, nesten som engelsk. Står du fast? Se på <a href="{{ '/hjelp/' | relative_url }}">Hjelp-siden</a>.</p>

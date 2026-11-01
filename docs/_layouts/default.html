@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.nr %}Oppdrag {{ page.nr }}: {{ page.title }} · {% elsif page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='24' height='24' rx='5' fill='%232f7cf6' transform='rotate(12 16 16)'/%3E%3C/svg%3E">
+</head>
+{% assign m = site.data.oppdrag | where: "nr", page.nr | first %}
+<body{% if m %} style="--tema: {{ m.farge }}"{% endif %} data-side="{% if page.nr %}oppdrag-{{ page.nr }}{% else %}{{ page.url | remove: '/' | default: 'forside' }}{% endif %}">
+  <header class="topp">
+    <a class="logo" href="{{ '/' | relative_url }}"><span class="logo-kloss" aria-hidden="true"></span>{{ site.title }}</a>
+    <nav>
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Oppdrag</a>
+      <a href="{{ '/hjelp/' | relative_url }}"{% if page.url == '/hjelp/' %} aria-current="page"{% endif %}>Hjelp</a>
+      <a href="{{ '/ordbok/' | relative_url }}"{% if page.url == '/ordbok/' %} aria-current="page"{% endif %}>Ordbok</a>
+    </nav>
+  </header>
+
+  <main>
+    {% if m %}
+    <div class="oppdrag-hode">
+      <span class="merke">Oppdrag {{ m.nr }} av {{ site.data.oppdrag.size }}</span>
+      <h1>{{ m.tittel }}</h1>
+      <p class="du-laerer"><strong>Du lærer:</strong> {{ page.lerer }}</p>
+    </div>
+    {% elsif page.title and page.vis_tittel != false %}
+    <h1>{{ page.title }}</h1>
+    {% endif %}
+
+    {{ content }}
+
+    {% if m %}
+    <section class="hemmelig">
+      <h2>Hemmelig ord: <em>{{ m.ord }}</em></h2>
+      <p>Forklar ordet <strong>{{ m.ord }}</strong> til en voksen med dine egne ord. Klarer du det, er oppdraget fullført!</p>
+      <label class="fullfort"><input type="checkbox" data-lagre="ferdig-{{ m.nr }}"> Jeg har forklart ordet. Oppdraget er fullført!</label>
+    </section>
+
+    {% assign forrige = m.nr | minus: 1 %}{% assign neste = m.nr | plus: 1 %}
+    <nav class="bla">
+      {% if forrige >= 1 %}<a href="{{ '/oppdrag/' | append: forrige | append: '/' | relative_url }}">← Oppdrag {{ forrige }}</a>{% else %}<a href="{{ '/' | relative_url }}">← Alle oppdrag</a>{% endif %}
+      {% if neste <= site.data.oppdrag.size %}<a class="neste" href="{{ '/oppdrag/' | append: neste | append: '/' | relative_url }}">Oppdrag {{ neste }} →</a>{% else %}<a class="neste" href="{{ '/sluttprosjekt/' | relative_url }}">Sluttprosjekt →</a>{% endif %}
+    </nav>
+    {% endif %}
+  </main>
+
+  <footer>
+    <p>Lagret fremgang ligger bare i denne nettleseren. · Er du voksen? Les <a href="{{ site.repo }}#readme">veilederguiden</a>.</p>
+  </footer>
+  <script src="{{ '/assets/kurs.js' | relative_url }}"></script>
+</body>
+</html>

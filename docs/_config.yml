@@ -1,0 +1,14 @@
+title: Roblox-koding
+description: Fra «hæ?» til eget spill – åtte oppdrag i Roblox Studio
+lang: nb
+baseurl: /roblox-studio-kurs
+url: https://wendelborg.github.io
+repo: https://github.com/wendelborg/roblox-studio-kurs
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }

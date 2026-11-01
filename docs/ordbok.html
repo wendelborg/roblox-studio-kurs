@@ -1,0 +1,24 @@
+---
+title: Ordbok
+permalink: /ordbok/
+---
+<p>Her er alle de hemmelige ordene. Prøv å forklare hvert ord til en voksen med dine egne ord. Klarer du det, krysser du av. Kikk på forklaringen bare hvis du står helt fast!</p>
+<p>Du kan: <span id="ord-teller">0 av {{ site.data.ordbok.size }} ord</span>. Ti kryss gir deg et diplom.</p>
+
+<ul class="ordliste">
+  {% for o in site.data.ordbok %}
+  <li><input type="checkbox" aria-label="{{ o.ord }}"><span class="ord">{{ o.ord }}</span>
+    <details><summary>Kikk på forklaringen</summary>{{ o.forklaring | escape }}</details>
+  </li>
+  {% endfor %}
+</ul>
+
+<section id="diplom" hidden>
+  <p class="ikke-skriv-ut">Du kan alle ordene! Skriv navnet ditt og skriv ut diplomet.</p>
+  <input id="diplom-navn" data-lagre="diplom-navn" placeholder="Navnet ditt" aria-label="Navnet ditt">
+  <h2>Diplom</h2>
+  <p>Dette bekrefter at</p>
+  <p class="navn" id="diplom-navn-ut">…</p>
+  <p>kan forklare alle de ti ordene i Roblox-koding<br>og er en ekte <strong>Luau-programmerer</strong>!</p>
+  <button id="skriv-ut" type="button">Skriv ut diplomet</button>
+</section>
