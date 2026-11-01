@@ -38,3 +38,5 @@ Oppdragene er vanlig Markdown. Disse byggeklossene kan brukes i dem:
 [← Verktøykasse](18-verktoykasse.md) · [Innhold](../README.md)
 
 **Lagret fremgang:** Avkrysningene lagres i nettleseren med faste nøkler, ikke med oppdragsnummer. Hvert oppdrag har en `nokkel` i `docs/_data/oppdrag.yml` som aldri skal endres. Utfordringer og ord lagres med en nøkkel laget av selve teksten. Derfor kan oppdrag flyttes og nummereres om uten at fremgangen havner feil. Endrer du teksten i en utfordring, regnes den som en ny utfordring og må krysses av på nytt.
+
+**Forklar hver linje:** Under hvert skript på barnets side er det en knapp som viser en forklaring på barnespråk for hver linje. Forklaringene lages automatisk av `docs/assets/forklar.js`, som kjenner igjen byggeklossene kurset bruker: variabler, egenskaper, if, løkker, funksjoner, hendelser og så videre. Hvis du skriver et nytt skript med en linje den ikke forstår, står det «Denne linjen har ingen ferdig forklaring ennå». Da kan du legge linjen og en egen forklaring i `SPESIELLE` øverst i filen.

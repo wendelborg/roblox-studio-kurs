@@ -321,3 +321,23 @@ h2.bolk { margin-top: 32px; }
 .kart.utforsk .nivaa { align-self: flex-start; }
 .helt .overtittel { margin: 0; font: 800 16px/1.2 "Nunito", sans-serif; text-transform: uppercase; letter-spacing: .08em; color: #ef4444; }
 .helt h1 { margin-top: 2px; }
+
+/* «Forklar hver linje» */
+details.forklaring { background: none; padding: 0; margin: -8px 0 24px; }
+details.forklaring > summary {
+  list-style: none; display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 16px; border-radius: 999px; font-size: 16px;
+  background: var(--kode-bg); color: var(--kode-tekst); border: 2px solid var(--kode-bg);
+}
+details.forklaring > summary::-webkit-details-marker { display: none; }
+details.forklaring > summary::before { content: "↓"; font-size: 18px; }
+details.forklaring[open] > summary::before { content: "↑"; }
+details.forklaring > summary:hover { background: var(--flate); color: var(--tekst); }
+details.forklaring ol { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 8px; }
+details.forklaring li {
+  display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: start;
+  background: var(--flate); border: 2px solid var(--kant); border-radius: 12px; padding: 10px 14px;
+}
+details.forklaring .linjenr { grid-row: span 2; font: 800 13px/1.6 "Nunito", sans-serif; color: var(--dempet); white-space: nowrap; }
+details.forklaring li code { justify-self: start; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none; -webkit-user-select: none; }
+details.forklaring li span:last-child { font-size: 16px; }
