@@ -16,7 +16,7 @@ Vi bruker `JumpHeight` (standard 7.2) i stedet for `JumpPower` fra oppdrag 4. De
 
 Teleport-boksen bruker `math.random(-50, 50)` for å finne et tilfeldig sted, og `figur:PivotTo(...)` for å flytte hele figuren dit.
 
-**Egne bilder på powerups:** Barnet tegner et bilde (PNG), setter inn et **Decal** i boksen (Insert Object → Decal) og velger bildet under **Texture** i Properties. **Face** bestemmer hvilken side bildet havner på. Kopier Decal-et for flere sider.
+**Egne bilder på powerups:** Barnet tegner et bilde (PNG), setter inn et **Decal** i boksen (Insert Object → Decal) og velger bildet under **Texture** i Properties. **Face** bestemmer hvilken side bildet havner på. Kopier Decal-et for flere sider. Vil barnet ikke tegne selv, ligger det fire ferdige eksempelbilder på barnets side (lyn, pil opp, portal og snegle). Bildene ligger også i `docs/assets/powerups/`.
 
 - Bilder som lastes opp, blir sjekket av Roblox før de vises. Det kan ta litt tid.
 - Opplasting kan kreve innlogging eller godkjenning på kontoen. Gjør dette sammen.

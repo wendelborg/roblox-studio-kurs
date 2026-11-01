@@ -307,3 +307,8 @@ h2.bolk { margin-top: 32px; }
 .kart.enkel { grid-template-columns: 1fr; }
 .kart.enkel .sluttkort a { padding: 22px 24px; }
 .kart.enkel .sluttkort h3 { font-size: 28px; }
+.bildegalleri { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px; margin: 16px 0; }
+.bildegalleri a { display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: var(--tekst); background: var(--flate); border: 2px solid var(--kant); border-radius: 14px; padding: 10px; }
+.bildegalleri a:hover { border-color: var(--tema); }
+.bildegalleri img { width: 100%; max-width: 120px; height: auto; }
+.bildegalleri span { font-weight: 800; font-size: 15px; }
