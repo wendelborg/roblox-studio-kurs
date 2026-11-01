@@ -4,7 +4,16 @@
 
 Barnets side ligger i mappa `docs/` og bygges automatisk av GitHub Pages med Jekyll.
 
-**Slå på GitHub Pages (én gang):** Gå til **Settings → Pages** i repoet. Under **Build and deployment** velger du **Deploy from a branch**, så branch `main` og mappe `/docs`. Etter et par minutter ligger siden på https://wendelborg.github.io/roblox-studio-kurs/.
+**Slå på GitHub Pages (én gang):** Gå til **Settings → Pages** i repoet. Under **Build and deployment** velger du **Deploy from a branch**, så branch `main` og mappe `/docs`. Etter et par minutter ligger siden på `https://<brukernavn>.github.io/<reponavn>/`. Adressen står også øverst på Pages-siden i Settings.
+
+**Har du forket repoet?** Siden virker uten endringer. GitHub Pages finner selv riktig adresse og riktig lenke tilbake til repoet ditt. Det eneste som peker til originalen, er lenkene til barnets side i README og veilederkapitlene. De kan byttes ut med én kommando, kjørt fra roten av repoet:
+
+```sh
+grep -rl --exclude='*om-nettsiden.md' 'wendelborg.github.io/roblox-studio-kurs' README.md veileder \
+  | xargs perl -pi -e 's#wendelborg\.github\.io/roblox-studio-kurs#BRUKERNAVN.github.io/REPONAVN#g'
+```
+
+Bytt ut `BRUKERNAVN` og `REPONAVN` med dine egne før du kjører den.
 
 **Slik er den bygget opp:**
 
@@ -31,7 +40,7 @@ Oppdragene er vanlig Markdown. Disse byggeklossene kan brukes i dem:
 - `<div class="hva-skjer" markdown="1">` gjør en nummerert liste til en tidslinje.
 - `<div class="skriv-selv" markdown="1">` rundt en kodeblokk hindrer kopiering.
 
-**Teste lokalt:** `cd docs && jekyll serve`, og åpne http://localhost:4000/roblox-studio-kurs/
+**Teste lokalt:** `cd docs && jekyll serve`, og åpne http://localhost:4000/. Lokalt mangler lenken tilbake til repoet nederst på sidene, fordi den bare fylles inn på GitHub. Vil du ha den lokalt også, kan du legge til `repo: https://github.com/<brukernavn>/<reponavn>` i `docs/_config.yml`.
 
 ---
 

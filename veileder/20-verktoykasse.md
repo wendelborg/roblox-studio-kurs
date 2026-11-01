@@ -41,6 +41,18 @@
 
 **Gjør det til et spill:** Skriv ut ordlista og la barnet krysse av hvert ord det kan forklare. Når alle ordene er krysset av, blir det diplom og en belønning dere har avtalt på forhånd.
 
+**Oppslagsverk:** Roblox har et fullstendig oppslagsverk på engelsk. Bør barnet bruke det? Ja, men gradvis og sammen med deg. Å slå opp er en av de viktigste ferdighetene en programmerer har, og barnet merker fort at navnene i oppslagsverket er de samme som i koden.
+
+- **Fra rundt oppdrag 4** (Humanoid) kan dere slå opp sammen: «Hva mer kan en Humanoid gjøre?» Hjelp-siden på barnets side har en del som heter «Slå opp selv», med en tabell som forklarer Properties, Methods og Events, og tre små oppgaver.
+- **Etter Har den!** kan barnet ofte prøve selv, med nettleserens oversettelse som hjelp. Kortene under «Utforsk videre» på forsiden lenker rett til riktig side i oppslagsverket.
+- **For deg som voksen** er disse mest nyttige:
+  - [Engine API reference](https://create.roblox.com/docs/reference/engine): alle klasser, egenskaper, metoder og hendelser.
+  - [Luau i Roblox Creator Hub](https://create.roblox.com/docs/luau): språket, med datatyper, løkker, funksjoner og tabeller.
+  - [Roblox Studio-dokumentasjonen](https://create.roblox.com/docs/studio): selve programmet, med vinduer, verktøy, testing, samarbeid og innstillinger. Nyttig når dere lurer på hvor en knapp er, eller hva et vindu gjør.
+  - [Hurtigtaster i Studio](https://create.roblox.com/docs/studio/shortcuts): hele lista. Se også [Tips og triks](19-tips-og-triks.md).
+  - [luau.org](https://luau.org): den offisielle siden til språket, med en kort gjennomgang av syntaksen. Fint for deg som kan programmere fra før.
+- **Søketips:** Søk på «roblox» pluss navnet på det dere lurer på, for eksempel «roblox Humanoid WalkSpeed». Treffet fra create.roblox.com er det offisielle. Svar fra Roblox Developer Forum er ofte gode, men kan være gamle.
+
 **Når kurset er ferdig:** Forsiden på barnets side har en bolk som heter «Utforsk videre». Den har 14 konsepter sortert etter vanskelighetsgrad, fra «Trykk E»-knapper, lyd og partikler til GUI, RemoteEvent og DataStore. Hvert konsept lenker til Roblox sin engelske dokumentasjon. Listen ligger i `docs/_data/utforsk.yml` og er lett å utvide. Roblox har også egne gratis kurs på create.roblox.com/docs.
 
 ---

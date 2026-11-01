@@ -51,7 +51,8 @@
   </main>
 
   <footer>
-    <p>Lagret fremgang ligger bare i denne nettleseren. · Er du voksen? Les {% if m %}<a href="{{ site.repo }}/blob/main/veileder/{{ m.veileder }}">veilederkapitlet for dette oppdraget</a>{% else %}<a href="{{ site.repo }}#readme">veilederguiden</a>{% endif %}.</p>
+    {% assign repo = site.github.repository_url | default: site.repo %}{% assign gren = site.github.source.branch | default: "main" %}
+    <p>Lagret fremgang ligger bare i denne nettleseren.{% if repo %} · Er du voksen? Les {% if m %}<a href="{{ repo }}/blob/{{ gren }}/veileder/{{ m.veileder }}">veilederkapitlet for dette oppdraget</a>{% else %}<a href="{{ repo }}#readme">veilederguiden</a>{% endif %}.{% endif %}</p>
   </footer>
   <script src="{{ '/assets/kurs.js' | relative_url }}"></script>
   <script src="{{ '/assets/forklar.js' | relative_url }}"></script>

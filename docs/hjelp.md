@@ -35,6 +35,34 @@ Finner du det ikke? Spør en voksen. Det er helt lov!
 | Studio fryser | En `while true`-løkke mangler `task.wait()`. |
 | Ingenting skjer | Skriptet ligger på feil sted, eller det er et LocalScript i stedet for et Script. |
 
+## Slå opp selv {#sla-opp}
+
+Ekte programmerere husker ikke alt. De slår opp! Roblox har et stort oppslagsverk som forteller alt om alle tingene i Studio. Det er på engelsk, så gjør det gjerne sammen med en voksen første gangene.
+
+Hver ting i Roblox, som en **Part** eller en **Humanoid**, har sin egen side. Siden er delt i tre:
+
+| På siden står det | Det betyr | Eksempel fra Humanoid |
+| --- | --- | --- |
+| **Properties** | Egenskaper, det du kan endre | `WalkSpeed`, `JumpHeight`, `Health` |
+| **Methods** | Ting den kan gjøre, med kolon | `TakeDamage`, `MoveTo` |
+| **Events** | Dørklokker som ringer | `Died`, `Running` |
+
+Prøv selv:
+
+- [ ] Åpne siden om [Humanoid](https://create.roblox.com/docs/reference/engine/classes/Humanoid) og finn `WalkSpeed`. Hva står det om den? Prøv å finne `JumpHeight` også.
+- [ ] Finn en Event på Humanoid-siden som heter `Died`. Kan du lage en kloss som skriver «Å nei!» i Output når du dør?
+- [ ] Åpne siden om [Part](https://create.roblox.com/docs/reference/engine/classes/Part) og finn en egenskap du ikke har prøvd før. Prøv den!
+
+<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – hvordan leser jeg en engelsk side?</summary>
+<div class="enkel-tekst" markdown="1">
+Du trenger ikke forstå alt. Se etter **navnene** du kjenner fra koden, som `WalkSpeed`. De er de samme på engelsk og i koden din.
+
+Nettleseren kan også oversette siden til norsk. Høyreklikk og velg **Oversett** eller **Translate**. Navnene i koden blir ikke oversatt, og det er bra, for de må skrives akkurat sånn.
+</div>
+</details>
+
+Roblox har også en side om [selve Luau-språket](https://create.roblox.com/docs/luau), med variabler, if, løkker og funksjoner, og en egen guide til [Roblox Studio](https://create.roblox.com/docs/studio), som forklarer knappene, vinduene og verktøyene i programmet.
+
 ## Liten ordbok for feilmeldinger
 
 - **Expected** betyr «forventet». Datamaskinen ventet på noe som ikke kom.

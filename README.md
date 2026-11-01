@@ -7,6 +7,8 @@ Kurset har to deler:
 - **Kurssiden for barnet:** [wendelborg.github.io/roblox-studio-kurs](https://wendelborg.github.io/roblox-studio-kurs/). Den er skrevet direkte til barnet, med steg-for-steg-forklaringer, «Dette ble for vanskelig»-knapper, avkrysning og diplom. Kodeblokkene der kan ikke markeres og kopieres. Det er gjort med vilje, så barnet skriver koden selv.
 - **Veilederguiden for deg som voksen:** kapitlene under. De forteller hvordan en økt kjøres, hva barnet skal lære, og hva du kan spørre om underveis.
 
+Har du forket repoet for å bruke kurset selv? Se [Om nettsiden](veileder/21-om-nettsiden.md) for hvordan du slår på GitHub Pages og bytter lenkene til din egen side.
+
 ## Innhold
 
 | Kapittel | Veileder | Barnets side |

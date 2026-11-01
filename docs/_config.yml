@@ -1,9 +1,8 @@
 title: Game on
 description: Game on – kod ditt eget Roblox-spill i tolv oppdrag
 lang: nb
-baseurl: /roblox-studio-kurs
-url: https://wendelborg.github.io
-repo: https://github.com/wendelborg/roblox-studio-kurs
+# url, baseurl og lenken til repoet settes automatisk av GitHub Pages
+# ut fra hvilket repo siden bygges fra. Da virker siden også i en fork.
 markdown: kramdown
 kramdown:
   input: GFM
