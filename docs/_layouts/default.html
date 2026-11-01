@@ -1,10 +1,11 @@
 <!doctype html>
 {% assign m = nil %}{% if page.nr %}{% assign m = site.data.oppdrag | where: "nr", page.nr | first %}{% endif %}
+{% assign u = nil %}{% if page.utforsk %}{% assign u = site.data.utforsk | where: "ord", page.utforsk | first %}{% endif %}
 <html lang="{{ site.lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if m %}Oppdrag {{ m.nr }}: {{ m.tittel }} · {% elsif page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <title>{% if m %}Oppdrag {{ m.nr }}: {{ m.tittel }} · {% elsif u %}{{ u.tittel }} · Utforsk videre · {% elsif page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
   <script>try { var t = localStorage.getItem("roblox-kurs:tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='24' height='24' rx='5' fill='%232f7cf6' transform='rotate(12 16 16)'/%3E%3C/svg%3E">
 </head>
-<body{% if m %} style="--tema: {{ m.farge }}"{% endif %} data-side="{% if m %}oppdrag-{{ m.nokkel }}{% else %}{{ page.url | remove: '/' | default: 'forside' }}{% endif %}">
+<body{% if m %} style="--tema: {{ m.farge }}"{% elsif u %} style="--tema: {% if u.nivaa == 1 %}#059669{% elsif u.nivaa == 2 %}#d97706{% else %}#dc2626{% endif %}"{% endif %} data-side="{% if m %}oppdrag-{{ m.nokkel }}{% else %}{{ page.url | remove: '/' | default: 'forside' }}{% endif %}">
   <header class="topp">
     <a class="logo" href="{{ '/' | relative_url }}"><span class="logo-kloss" aria-hidden="true"></span>{{ site.title }}</a>
     <nav>
@@ -34,6 +35,12 @@
       <h1>{{ m.tittel }}</h1>
       <p class="du-laerer"><strong>Du lærer:</strong> {{ page.lerer }}</p>
     </div>
+    {% elsif u %}
+    <div class="oppdrag-hode">
+      <span class="merke">Utforsk videre · {% if u.nivaa == 1 %}Lett{% elsif u.nivaa == 2 %}Middels{% else %}Vanskelig{% endif %}</span>
+      <h1>{{ u.tittel }}</h1>
+      <p class="du-laerer">{{ u.tekst }} Søkeordet er <code>{{ u.ord }}</code>.</p>
+    </div>
     {% elsif page.title and page.vis_tittel != false %}
     <h1>{{ page.title }}</h1>
     {% endif %}
@@ -51,6 +58,22 @@
     <nav class="bla">
       {% if forrige >= 1 %}<a href="{{ '/oppdrag/' | append: forrige | append: '/' | relative_url }}">← Oppdrag {{ forrige }}</a>{% else %}<a href="{{ '/' | relative_url }}">← Alle oppdrag</a>{% endif %}
       {% if neste <= site.data.oppdrag.size %}<a class="neste" href="{{ '/oppdrag/' | append: neste | append: '/' | relative_url }}">Oppdrag {{ neste }} →</a>{% else %}<a class="neste" href="{{ '/sluttprosjekt/' | relative_url }}">Sluttprosjekt →</a>{% endif %}
+    </nav>
+    {% endif %}
+
+    {% if u %}
+    {% if u.ord == "table" %}{% assign klasse = "https://create.roblox.com/docs/reference/engine/libraries/table" %}{% else %}{% assign klasse = "https://create.roblox.com/docs/reference/engine/classes/" | append: u.ord %}{% endif %}
+    <section class="boks ide les-mer">
+      <h3>Les mer i Roblox sin dokumentasjon</h3>
+      <p>Sidene er på engelsk. Høyreklikk og velg «Oversett» hvis du vil lese på norsk, og spør gjerne en voksen.</p>
+      <ul>
+        <li><a href="{{ u.guide }}" target="_blank" rel="noopener">{{ u.guidetittel }}</a>: en forklaring med eksempler</li>
+        <li><a href="{{ klasse }}" target="_blank" rel="noopener">{{ u.ord }}</a> i oppslagsverket: alle egenskaper, metoder og hendelser</li>
+      </ul>
+    </section>
+    <nav class="bla">
+      <a href="{{ '/' | relative_url }}#utforsk">← Alle konsepter</a>
+      <a class="neste" href="{{ '/hjelp/' | relative_url }}#sla-opp">Slik slår du opp →</a>
     </nav>
     {% endif %}
   </main>

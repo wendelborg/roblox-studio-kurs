@@ -26,6 +26,9 @@
     FillColor: { navn: "fyllfarge" },
     Gravity: { navn: "tyngdekraft" },
     Text: { navn: "tekst" },
+    Enabled: { navn: "på eller av", tips: "false betyr at den er slått av." },
+    AnimationId: { navn: "animasjonsnummer" },
+    CameraType: { navn: "kameratype" },
     RespawnLocation: { navn: "startsted", tips: "Det er her spilleren dukker opp igjen etter å ha dødd." }
   };
 
@@ -35,8 +38,12 @@
     if (prop === "Character") return "figuren til " + x;
     if (prop === "Terrain" && x === "workspace") return "terrenget i verden";
     if (prop === "HumanoidRootPart") return "midten av " + x;
+    if (prop === "LocalPlayer") return "deg, spilleren ved denne maskinen";
+    if (prop === "CurrentCamera") return "kameraet ditt";
+    if (prop === "UserId") return "det faste nummeret til " + x;
     var e = EGENSKAP[prop];
     if (!e && /^[a-z]/.test(prop)) return "«" + prop + "» fra " + x;
+    if (!e) return prop + " som ligger i " + x;
     var n = e ? e.navn : prop;
     var bestemt = { "gjennomsiktighet": "gjennomsiktigheten", "farge": "fargen", "størrelse": "størrelsen",
       "navn": "navnet", "verdi": "verdien", "gåfart": "gåfarten", "hopphøyde": "hopphøyden", "liv": "livet",
@@ -50,12 +57,20 @@
     PlayerAdded: "en ny spiller kommer inn i spillet",
     PlayerRemoving: "en spiller forlater spillet",
     CharacterAdded: "figuren til spilleren dukker opp",
-    Activated: "spilleren klikker med verktøyet"
+    Activated: "noen klikker på knappen eller med verktøyet",
+    Triggered: "noen trykker på knappen",
+    InputBegan: "du trykker på en tast, musa eller skjermen",
+    OnServerEvent: "en spiller sender en beskjed til serveren",
+    Changed: "verdien endrer seg"
   };
 
   var SPESIELLE = {
     "local tid = os.clock() - startTid[spiller]":
       "Regn ut tida: klokka nå minus klokka da spilleren startet. Legg svaret i boksen tid.",
+    "Lighting.ClockTime = (Lighting.ClockTime + 0.05) % 24":
+      "Flytt klokka i spillet litt fram. % 24 gjør at den starter på 0 igjen når den når 24, som en ekte klokke.",
+    "local maal = { Position = plattform.Position + Vector3.new(0, 0, 20) }":
+      "Lag en huskeliste som sier hvor plattformen skal ende: 20 skritt bortover fra der den står nå.",
     "tid = math.floor(tid * 100) / 100":
       "Rund av tida til to desimaler. 12.3456 blir for eksempel til 12.34.",
     "local avstand = (figur.HumanoidRootPart.Position - rot.Position).Magnitude":
@@ -130,6 +145,16 @@
     if (e === "script.Parent.Name") return "navnet til tingen skriptet ligger inni";
     if (e === "i") return "tallet i";
     if (e === "{}") return "en tom huskeliste (en tabell)";
+    if ((m = e.match(/^#(\w+)$/))) return "antall ting i lista " + m[1];
+    if ((m = e.match(/^Enum\.(\w+)\.(\w+)$/))) return m[2] + " (en ferdig verdi fra Roblox)";
+    if ((m = e.match(/^require\((.+)\)$/))) return "verktøykassa som ligger i " + m[1];
+    if ((m = e.match(/^(\w+):LoadAnimation\((\w+)\)$/))) return "animasjonen " + m[2] + ", klar til å spilles";
+    if ((m = e.match(/^TweenService:Create\((\w+), (\w+), (\w+)\)$/))) return "en ny myk bevegelse for " + m[1] + ", laget fra " + m[2] + " og " + m[3];
+    if ((m = e.match(/^TweenInfo\.new\((.+)\)$/))) return "oppskriften på bevegelsen: Den tar " + delArgs(m[1])[0] + " sekunder";
+    if ((m = e.match(/^CFrame\.lookAt\((.+)\)$/))) { var c2 = delArgs(m[1]); return "en plass ved " + c2[0].replace(/^Vector3\.new/, "") + " som ser mot " + c2[1].replace(/^Vector3\.new/, ""); }
+    if ((m = e.match(/^BrickColor\.new\((\w+)\[(\w+)\]\)$/))) return "fargen som står på plass " + m[2] + " i lista " + m[1];
+    if ((m = e.match(/^(\w+):GetAsync\(([\w.]+)\)$/))) return "det som er lagret i " + m[1] + " for " + hva(m[2]);
+    if ((m = e.match(/^(\w+(?:\.\w+){3,})$/))) { var d = m[1].split("."); return (d[d.length - 1] === "Value" ? "verdien til " + d.slice(0, -1).reverse().join(" inni ") : d.reverse().join(" inni ")); }
     if (e === "os.clock()") return "klokka akkurat nå, i sekunder";
     if (splitTopp(e, "..").length > 1) return splitTopp(e, "..").map(function (b) {
       var t = b.match(/^"(.*)"$/); return t ? "«" + t[1] + "»" : hva(b); }).join(" + ");
@@ -137,6 +162,7 @@
     if ((m = e.match(/^(\w+):GetDataStore\("(\w+)"\)$/))) return "lageret som heter «" + m[2] + "»";
     if ((m = e.match(/^(\w+):GetAsync\("(\w+)"\)$/))) return "det som er lagret under «" + m[2] + "» i " + m[1];
     if ((m = e.match(/^\{(.*)\}$/))) return "en liten huskeliste med " + liste(delArgs(m[1]).map(function (d) { return d.split("=")[0].trim(); }));
+    if ((m = e.match(/^(\w+)\.(\w+)\.Name$/))) return "navnet til " + m[2] + " som ligger i " + m[1];
     if ((m = e.match(/^(\w+)\.(\w+)\.(\w+)$/))) return m[3] + " inni " + m[2] + " inni " + m[1];
     if (e === "nil") return "ingenting (nil)";
     if (e === "true") return "true (ja)";
@@ -157,7 +183,7 @@
       return "en liste over alle deler som er inni " + m[1] + " akkurat nå";
     if ((m = e.match(/^math\.random\((.+)\)$/))) {
       var a = delArgs(m[1]);
-      return "et tilfeldig tall mellom " + a[0] + " og " + a[1];
+      return "et tilfeldig tall mellom " + hvaKort(a[0]) + " og " + hvaKort(a[1]);
     }
     if ((m = e.match(/^BrickColor\.new\("(.+)"\)$/))) return "fargen «" + m[1] + "»";
     if ((m = e.match(/^BrickColor\.new\((\w+)\)$/))) return "fargen som står i " + m[1];
@@ -182,10 +208,14 @@
     return "`" + e + "`";
   }
 
+  function hvaKort(x) { var m = x.match(/^#(\w+)$/); return m ? "antall ting i " + m[1] : x; }
+
   // Oversetter en betingelse (det mellom if og then) til et spørsmål.
   function ledd(x) {
     var m;
     x = x.trim();
+    if ((m = x.match(/^Enum\.KeyCode\.(\w+)$/))) return "tasten " + m[1];
+    if ((m = x.match(/^Enum\.(\w+)\.(\w+)$/))) return m[2];
     if ((m = x.match(/^(\w+)\.(\w+)$/)) && !/^(nil|true|false)$/.test(x)) return sin(m[1], m[2]);
     return x;
   }
@@ -207,8 +237,11 @@
     if ((m = b.match(/^(\w+)\.Name\s*==\s*(.+)$/))) return "navnet til " + m[1] + " er " + m[2];
     if ((m = b.match(/^(.+?)\s*==\s*(.+)$/))) return ledd(m[1]) + " er lik " + ledd(m[2]);
     if ((m = b.match(/^(.+?)\s*~=\s*(.+)$/))) return ledd(m[1]) + " ikke er lik " + ledd(m[2]);
+    if ((m = b.match(/^(.+?)\s*>=\s*(.+)$/))) return ledd(m[1]) + " er minst " + ledd(m[2]);
+    if ((m = b.match(/^(.+?)\s*<=\s*(.+)$/))) return ledd(m[1]) + " er høyst " + ledd(m[2]);
     if ((m = b.match(/^(.+?)\s*<\s*(.+)$/))) return ledd(m[1]) + " er mindre enn " + ledd(m[2]);
     if ((m = b.match(/^(.+?)\s*>\s*(.+)$/))) return m[1] + " er større enn " + m[2];
+    if (/^\w+\.\w+$/.test(b)) return ledd(b) + " finnes";
     if (/^[\w.]+$/.test(b)) return b + " er true (eller finnes)";
     return "`" + b + "`";
   }
@@ -247,6 +280,13 @@
     var m;
     if (SPESIELLE[l]) return SPESIELLE[l];
 
+    if ((m = l.match(/^function (\w+)\.(\w+)\((.*)\)$/))) {
+      stabel.push({ type: "funksjon", navn: m[2] });
+      var pp = delArgs(m[3]);
+      return "Her starter en funksjon som heter " + m[2] + ", og den legges i verktøykassa " + m[1] + "." +
+        (pp.length ? " Den får inn " + liste(pp) + " når den brukes." : "");
+    }
+    if ((m = l.match(/^table\.insert\((\w+), (.+)\)$/))) return "Legg " + hva(m[2]) + " til på slutten av lista " + m[1] + ".";
     if ((m = l.match(/^local function (\w+)\((.*)\)$/))) {
       stabel.push({ type: "funksjon", navn: m[1] });
       var p = delArgs(m[2]);
@@ -325,6 +365,8 @@
     if ((m = l.match(/^local (\w+) = (.+)$/)))
       return "Lag en boks (variabel) som heter " + m[1] + ". Oppi den legger vi " + hva(m[2]) + ".";
 
+    if ((m = l.match(/^([\w.]+)\.(\w+) -= (.+)$/)))
+      return "Trekk " + m[3] + " fra " + sin(m[1], m[2]) + ".";
     if ((m = l.match(/^([\w.]+)\.(\w+) \+= (.+)$/)))
       return "Legg " + m[3] + " til " + sin(m[1], m[2]) + ".";
 
@@ -340,11 +382,19 @@
       switch (m[2]) {
         case "SetAttribute": return "Klistre en lapp på " + m[1] + ": " + a[0].replace(/"/g, "") + " = " + a[1] + ".";
         case "Destroy": return "Slett " + m[1] + " helt.";
+        case "Play": return "Start " + m[1] + ". Nå spilles den av.";
+        case "Emit": return "Send ut " + a[0] + " partikler fra " + m[1] + " på én gang.";
+        case "FireServer": return "Send en beskjed til serveren gjennom " + m[1] + ".";
+        case "SetAsync": return "Lagre " + hva(a[1]) + " i " + m[1] + ", under " + hva(a[0]) + ".";
         case "PivotTo": return "Flytt hele " + m[1] + " til et nytt sted på én gang.";
         case "MoveTo": return "Be " + m[1] + " om å gå til stedet som ligger i boksen " + a[0] + ".";
         case "TakeDamage": return /^\d+$/.test(a[0]) ? "Ta " + a[0] + " liv fra figuren." : "Ta liv fra figuren. Hvor mye står i boksen " + a[0] + ".";
       }
       return "Bruk " + m[2] + " på " + m[1] + (a.length ? " med " + liste(a) : "") + ".";
+    }
+    if ((m = l.match(/^(\w+)\.(\w+)\((.*)\)$/))) {
+      var aa = delArgs(m[3]);
+      return "Bruk funksjonen " + m[2] + " fra verktøykassa " + m[1] + (aa.length ? " med " + liste(aa) : "") + ".";
     }
     if ((m = l.match(/^(\w+)\((.*)\)$/))) {
       var args = delArgs(m[2]);

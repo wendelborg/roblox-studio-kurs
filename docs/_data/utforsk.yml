@@ -1,57 +1,102 @@
 # Konsepter å utforske videre. nivaa: 1 = lett, 2 = middels, 3 = vanskelig
+# slug: adressen til siden i docs/utforsk/ (for eksempel /utforsk/lyd/)
+# guide og guidetittel: en forklarende side i Roblox sin dokumentasjon.
+# Lenken til oppslagsverket (klassen) lages automatisk fra ord.
 - tittel: «Trykk E»-knapper
   ord: ProximityPrompt
+  slug: trykk-e
+  guide: https://create.roblox.com/docs/ui/proximity-prompts
+  guidetittel: "Proximity prompts"
   nivaa: 1
   tekst: Få en knapp til å dukke opp når du står nær noe, som en kiste du kan åpne eller en dør du kan banke på.
 - tittel: Lyd og musikk
   ord: Sound
+  slug: lyd
+  guide: https://create.roblox.com/docs/audio
+  guidetittel: "Audio"
   nivaa: 1
   tekst: Spill av et «pling» når du tar en mynt, eller legg på bakgrunnsmusikk.
 - tittel: Gnister, røyk og ild
   ord: ParticleEmitter
+  slug: partikler
+  guide: https://create.roblox.com/docs/effects/particle-emitters
+  guidetittel: "Particle emitters"
   nivaa: 1
   tekst: La lavaen sprute gnister, eller la powerupen glitre.
 - tittel: Lys, dag og natt
   ord: Lighting
+  slug: lys
+  guide: https://create.roblox.com/docs/environment/lighting
+  guidetittel: "Global lighting"
   nivaa: 1
   tekst: Gjør det mørkt og skummelt, eller la sola gå ned mens du spiller. Prøv å endre ClockTime.
 - tittel: Myke bevegelser
   ord: TweenService
+  slug: myke-bevegelser
+  guide: https://create.roblox.com/docs/ui/animation
+  guidetittel: "UI animation/tweens"
   nivaa: 2
   tekst: Få en dør til å gli opp, eller en plattform til å flyte fram og tilbake, uten hakking.
 - tittel: Knapper og tekst på skjermen
   ord: ScreenGui
+  slug: skjerm
+  guide: https://create.roblox.com/docs/ui/on-screen-containers
+  guidetittel: "On-screen UI containers"
   nivaa: 2
   tekst: Lag din egen poengtavle, en tidtaker eller en meny med knapper.
 - tittel: Kode på din egen maskin
   ord: LocalScript
+  slug: localscript
+  guide: https://create.roblox.com/docs/scripting/locations
+  guidetittel: "Script types and locations"
   nivaa: 2
   tekst: Kode som kjører hos spilleren. Den trengs for knapper på skjermen, tastetrykk og kamera.
 - tittel: Lag
   ord: Teams
+  slug: lag
+  guide: https://create.roblox.com/docs/players/teams
+  guidetittel: "Implement teams"
   nivaa: 2
   tekst: Del spillerne i rødt og blått lag, med hver sin startplass og farge.
 - tittel: Egne bevegelser
   ord: Animation
+  slug: animasjon
+  guide: https://create.roblox.com/docs/animation/editor
+  guidetittel: "Animation Editor"
   nivaa: 2
   tekst: Lag en dans, en vinking eller et superhelt-hopp med Animation Editor.
 - tittel: Kameraet
   ord: Camera
+  slug: kamera
+  guide: https://create.roblox.com/docs/workspace/camera
+  guidetittel: "Customize the camera"
   nivaa: 3
   tekst: Lag et filmklipp, eller se spillet ovenfra som i et brettspill.
 - tittel: Beskjeder mellom spiller og server
   ord: RemoteEvent
+  slug: remoteevent
+  guide: https://create.roblox.com/docs/scripting/events/remote
+  guidetittel: "Remote events and callbacks"
   nivaa: 3
   tekst: Når en knapp på skjermen skal gjøre noe i spillverdenen, må spilleren sende en beskjed til serveren.
 - tittel: Del kode mellom skript
   ord: ModuleScript
+  slug: modulescript
+  guide: https://create.roblox.com/docs/scripting/module
+  guidetittel: "Reuse code"
   nivaa: 3
   tekst: Skriv en funksjon én gang og bruk den i mange skript, som lagKloss fra oppdrag 7.
 - tittel: Husk poengene til neste gang
   ord: DataStoreService
+  slug: datastore
+  guide: https://create.roblox.com/docs/cloud-services/data-stores
+  guidetittel: "Data stores"
   nivaa: 3
   tekst: Lagre myntene, så de er der når du kommer tilbake i morgen. Spillet må være publisert.
 - tittel: Lister og tabeller
   ord: table
+  slug: tabeller
+  guide: https://create.roblox.com/docs/luau/tables
+  guidetittel: "Tables"
   nivaa: 3
   tekst: Ta vare på mange ting i én variabel, for eksempel en liste over alle powerups eller en toppliste.

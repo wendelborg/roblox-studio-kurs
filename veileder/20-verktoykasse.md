@@ -55,7 +55,7 @@ Ordboka har også en del med flere ord barnet møter, som String, Boolean, nil, 
   - [luau.org](https://luau.org): den offisielle siden til språket, med en kort gjennomgang av syntaksen. Fint for deg som kan programmere fra før.
 - **Søketips:** Søk på «roblox» pluss navnet på det dere lurer på, for eksempel «roblox Humanoid WalkSpeed». Treffet fra create.roblox.com er det offisielle. Svar fra Roblox Developer Forum er ofte gode, men kan være gamle.
 
-**Når kurset er ferdig:** Forsiden på barnets side har en bolk som heter «Utforsk videre». Den har 14 konsepter sortert etter vanskelighetsgrad, fra «Trykk E»-knapper, lyd og partikler til GUI, RemoteEvent og DataStore. Hvert konsept lenker til Roblox sin engelske dokumentasjon. Listen ligger i `docs/_data/utforsk.yml` og er lett å utvide. Roblox har også egne gratis kurs på create.roblox.com/docs.
+**Når kurset er ferdig:** Forsiden på barnets side har en bolk som heter «Utforsk videre» med 14 konsepter sortert etter vanskelighetsgrad, fra «Trykk E»-knapper, lyd og partikler til GUI, RemoteEvent og DataStore. Hvert konsept har en egen side under `docs/utforsk/` med forklaring, ideer, et lite eksempel med «Forklar hver linje», utfordringer og lenker videre til Roblox sin dokumentasjon: både en forklarende side og oppslagsverket. Lista ligger i `docs/_data/utforsk.yml`, der `slug` er adressen til siden og `guide` er lenken til Roblox sin forklaring. Roblox har også egne gratis kurs på create.roblox.com/docs.
 
 ---
 
