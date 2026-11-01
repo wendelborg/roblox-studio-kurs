@@ -4,14 +4,14 @@
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/1/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/1/)
 
-**Barnet lærer:** at et spill er en stor familie av ting, og at et skript er en beskjed til datamaskinen.
+**Barnet lærer:** at ting i spillet ligger inni hverandre, og at et skript er en beskjed til datamaskinen.
 
-**Den store ideen:** Alt i Explorer henger sammen som et slektstre. En kloss (Part) som ligger i Workspace er **barn** av Workspace. Workspace er **forelder** til klossen. Et skript inni klossen kan si `script.Parent` og mener da «klossen jeg bor i».
+**Den store ideen:** Ting i Explorer ligger inni hverandre. Tingen noe ligger inni, heter **Parent**. En kloss (Part) i Workspace har Workspace som Parent, og klossen er et **Child** av Workspace. Kinderegg-bildet på barnets side forklarer det samme. Et skript inni klossen kan si `script.Parent` og mener da «klossen jeg bor i».
 
 **Steg for steg:**
 
 1. Sett inn en Part (fanen Home → Part). Gi den navnet `Magikloss` i Explorer.
-2. Høyreklikk Magikloss → Insert Object → **Script**.
+2. Hold musa over Magikloss i Explorer og trykk **+** som dukker opp til høyre for navnet. Skriv `Script` og velg **Script**. (Høyreklikk → **Insert Object** gjør det samme.) **+** betyr «legg noe nytt inni denne», og det er verdt å bruke litt tid på: resten av kurset bygger på at barnet skjønner hvor ting havner.
 3. Slett det som står der og skriv:
 
 ```lua

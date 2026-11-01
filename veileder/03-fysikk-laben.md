@@ -19,17 +19,18 @@ Dette oppdraget er mest bygging og eksperimentering, og bare ett lite skript. De
 
 1. Bygg en bil eller figur av 3–4 klosser.
 2. Marker alle med Ctrl-klikk (Mac: Cmd-klikk) og trykk **Ctrl+G** (Mac: **Cmd+G**). Nå er de samlet i en **Model**.
-3. Se i Explorer at klossene ligger inni modellen. Det er det samme slektstreet som i oppdrag 1.
+3. Se i Explorer at klossene ligger inni modellen. Det er det samme «ting inni ting» som i oppdrag 1.
 4. Flytt modellen. Alle klossene blir med.
 
 **Tippeoppgave:** «Hvis bilen henger i lufta uten Anchored, faller den ned i ett stykke eller i biter?» (I biter. En Model er bare en mappe, den limer ingenting sammen. Mange voksne tror også at gruppering limer.)
 
 **Del C – sveising:**
 
-1. Gi den største klossen navnet `Kropp`.
-2. Høyreklikk Kropp → **Insert Object → WeldConstraint**.
-3. Sett **Part0** til Kropp og **Part1** til en av de andre klossene. Man klikker på feltet i Properties og så på klossen i Explorer.
-4. Gjenta for hver kloss. Trykk Play. Nå faller bilen i ett stykke.
+1. Marker alle klossene i bilen (klikk den første i Explorer, Shift-klikk den siste).
+2. Fanen **Model** → **Weld**. Klosser som rører eller overlapper hverandre, sveises automatisk, og det dukker opp en **WeldConstraint** per sveis.
+3. Trykk Play. Nå faller bilen i ett stykke. Faller en kloss av, rørte den ikke de andre. Flytt den inntil og trykk Weld igjen.
+
+Det går også an å lage sveisen for hånd: legg inn en WeldConstraint med **+** i Explorer og sett **Part0** og **Part1** i Properties. Det er nyttig å vite når barnet senere ser sveiser i skript, men knappen er enklest å starte med.
 
 Fortell gjerne at det holder å forankre **én** kloss i en sveiset gruppe for at hele gruppen skal stå stille.
 

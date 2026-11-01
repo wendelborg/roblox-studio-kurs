@@ -62,7 +62,7 @@ dor.Touched:Connect(naarNoeRorer)
 
 - `figur:FindFirstChild("Nokkel")` leter etter et barn med det navnet. Finnes det ikke, får vi `nil`.
 - Nøkkelen i ryggsekken teller ikke, fordi den ikke er barn av figuren. Spilleren må *holde* den.
-- `IsA("Tool")` spør «er du et verktøy?». Hvis det var nøkkelen som traff døra, er forelderen nøkkelen og ikke figuren, så vi går ett hakk opp i slektstreet.
+- `IsA("Tool")` spør «er du et verktøy?». Hvis det var nøkkelen som traff døra, er forelderen nøkkelen og ikke figuren, så vi går ett nivå opp, til figuren som holder nøkkelen.
 - `aapen` er den samme vakten (debounce) som i oppdrag 8.
 
 **Tippeoppgave:** «Hva skjer hvis du går inn i døra med nøkkelen i ryggsekken, men ikke i hånden?» La barnet gjette, så teste.

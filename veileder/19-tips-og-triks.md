@@ -26,9 +26,11 @@ På Mac bruker du **Cmd** der det står **Ctrl**.
 | Tast | Hva den gjør |
 | --- | --- |
 | **F** | Zoom inn på det som er valgt. Det beste tipset av alle når man har «mistet» en kloss! |
-| Høyre museknapp + **W A S D** | Fly rundt i verden |
-| **Q** og **E** | Fly ned og opp, mens du holder høyre museknapp |
+| **W A S D** | Fly rundt i verden. Klikk i 3D-ruta først. |
+| **Q** og **E** | Fly ned og opp |
+| Høyre museknapp + dra | Snu deg og se deg rundt |
 | **Shift** | Hold inne for å fly saktere og mer nøyaktig |
+| Terningen øverst til høyre | Klikk en side eller et hjørne for å se fra den vinkelen. Toppen gir oversikt ovenfra. Slås på under **View → View Selector**. |
 
 **Teste**
 

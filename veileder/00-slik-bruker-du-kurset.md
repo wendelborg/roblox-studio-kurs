@@ -1,6 +1,6 @@
 # Før dere starter
 
-[← Innhold](../README.md) · [Innhold](../README.md) · [Oppdrag 1: Hei, verden! →](01-hei-verden.md)
+[← Innhold](../README.md) · [Oppdrag 1: Hei, verden! →](01-hei-verden.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/#start](https://wendelborg.github.io/roblox-studio-kurs/#start)
 
@@ -93,8 +93,9 @@ Tolv oppdrag på 45–60 minutter tar barnet fra å endre en kloss til å bygge 
 - Last ned Roblox Studio fra create.roblox.com og logg inn med barnets konto.
 - Lag et nytt **Baseplate**-spill. Lagre det med et navn barnet velger selv.
 - Åpne vinduene **Explorer**, **Properties** og **Output** under fanen **View**. Disse tre skal alltid være åpne.
+- Øv på å fly rundt i 3D-ruta: **W A S D** og **Q/E** for å fly, hold høyre museknapp og dra for å se rundt, musehjulet for zoom og **F** for å fly til klossen som er valgt. Terningen øverst til høyre i 3D-ruta (View Selector) bytter vinkel: toppen gir oversikt ovenfra, sidene viser verden fra hver kant. Den slås av og på under fanen **View**. Det er lett å miste seg selv i verden, så bruk gjerne fem minutter på dette. Flere taster står i [Tips og triks](19-tips-og-triks.md).
 - Koden i Roblox heter **Luau**. Den er laget for å være lett å lese, nesten som engelsk.
 
 ---
 
-[← Innhold](../README.md) · [Innhold](../README.md) · [Oppdrag 1: Hei, verden! →](01-hei-verden.md)
+[← Innhold](../README.md) · [Oppdrag 1: Hei, verden! →](01-hei-verden.md)

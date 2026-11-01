@@ -86,7 +86,7 @@
     "sopp.Size = vanlig * Vector3.new(1, 0.7, 1)":
       "Gjør soppen 70 % så høy som vanlig, men like bred. Det ser ut som den blir klemt!",
     "figur = figur.Parent":
-      "Gå ett hakk opp i slektstreet: Det var nøkkelen som traff, så vi vil ha den som holder nøkkelen.",
+      "Det var nøkkelen som traff, så vi ser på tingen nøkkelen ligger inni. Det er figuren som holder den.",
     "terreng:FillBlock(CFrame.new(0, -2, 0), Vector3.new(500, 8, 500), Enum.Material.Water)":
       "Fyll en kjempestor, flat boks med vann, 500 bred og 500 dyp. Det blir havet.",
     "terreng:FillBall(Vector3.new(x, 0, z), storrelse, Enum.Material.Grass)":
