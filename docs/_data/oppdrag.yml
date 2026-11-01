@@ -1,39 +1,47 @@
 - nr: 1
+  veileder: 01-hei-verden.md
   tittel: Hei, verden!
   kort: Få en kloss til å snakke
   ord: Parent
   farge: "#2f7cf6"
 - nr: 2
+  veileder: 02-trylleformler.md
   tittel: Trylleformler
   kort: Bytt farge, størrelse og usynlighet
   ord: variabel
   farge: "#8b5cf6"
 - nr: 3
+  veileder: 03-gulvet-er-lava.md
   tittel: Gulvet er lava
   kort: Lag en kloss som er farlig å tråkke på
   ord: hendelse
   farge: "#ef4444"
 - nr: 4
+  veileder: 04-den-hemmelige-dora.md
   tittel: Den hemmelige døra
   kort: En dør som bare åpner seg for deg
   ord: betingelse
   farge: "#f59e0b"
 - nr: 5
+  veileder: 05-disko-og-forsvinnende-trapp.md
   tittel: Disko og forsvinnende trapp
   kort: Gjenta ting uten å skrive dem mange ganger
   ord: løkke
   farge: "#ec4899"
 - nr: 6
+  veileder: 06-lag-dine-egne-trylleord.md
   tittel: Lag dine egne trylleord
   kort: Finn opp dine egne kommandoer
   ord: funksjon
   farge: "#10b981"
 - nr: 7
+  veileder: 07-myntjakt-med-poengtavle.md
   tittel: Myntjakt med poengtavle
   kort: Samle mynter og få poeng
   ord: debounce
   farge: "#eab308"
 - nr: 8
+  veileder: 08-den-gylne-nokkelen.md
   tittel: Den gylne nøkkelen
   kort: Finn nøkkelen og lås opp døra
   ord: Backpack

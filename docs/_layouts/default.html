@@ -51,7 +51,7 @@
   </main>
 
   <footer>
-    <p>Lagret fremgang ligger bare i denne nettleseren. · Er du voksen? Les <a href="{{ site.repo }}#readme">veilederguiden</a>.</p>
+    <p>Lagret fremgang ligger bare i denne nettleseren. · Er du voksen? Les {% if m %}<a href="{{ site.repo }}/blob/main/veileder/{{ m.veileder }}">veilederkapitlet for dette oppdraget</a>{% else %}<a href="{{ site.repo }}#readme">veilederguiden</a>{% endif %}.</p>
   </footer>
   <script src="{{ '/assets/kurs.js' | relative_url }}"></script>
 </body>
