@@ -32,7 +32,7 @@ vis_tittel: false
       <p>Bygg din egen hinderløype med alt du har lært</p>
     </a>
   </li>
-  {% assign bonuser = "bonus-terreng|Terreng|Fjell, huler, hav og øyer;bonus-3d|Egen 3D-modell|Form din egen pokal eller figur" | split: ";" %}
+  {% assign bonuser = "bonus-terreng|Terreng|Fjell, huler, hav og øyer;bonus-tinkercad|3D-modell i Tinkercad|Bygg din egen pokal av ferdige former;bonus-blender|3D-modell i Blender|Form en sprettsopp som proffene" | split: ";" %}
   {% for b in bonuser %}{% assign d = b | split: "|" %}
   <li class="bonuskort" style="--farge: #7c3aed">
     <a href="{{ '/' | append: d[0] | append: '/' | relative_url }}">

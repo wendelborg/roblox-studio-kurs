@@ -122,5 +122,5 @@ Fordi stedene er tilfeldige, ser verdenen forskjellig ut hver gang.
 
 <nav class="bla">
   <a href="{{ '/sluttprosjekt/' | relative_url }}">← Sluttprosjekt</a>
-  <a class="neste" href="{{ '/bonus-3d/' | relative_url }}">Bonus: Egen 3D-modell →</a>
+  <a class="neste" href="{{ '/bonus-tinkercad/' | relative_url }}">Bonus: Tinkercad →</a>
 </nav>

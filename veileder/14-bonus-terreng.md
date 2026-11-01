@@ -1,6 +1,6 @@
 # Bonus: Terreng
 
-[← Sluttprosjekt: Min egen obby](13-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: Egen 3D-modell →](15-bonus-3d-modell.md)
+[← Sluttprosjekt: Min egen obby](13-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Tinkercad →](15-bonus-tinkercad.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/bonus-terreng/](https://wendelborg.github.io/roblox-studio-kurs/bonus-terreng/)
 
@@ -52,4 +52,4 @@ end
 
 ---
 
-[← Sluttprosjekt: Min egen obby](13-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: Egen 3D-modell →](15-bonus-3d-modell.md)
+[← Sluttprosjekt: Min egen obby](13-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Tinkercad →](15-bonus-tinkercad.md)

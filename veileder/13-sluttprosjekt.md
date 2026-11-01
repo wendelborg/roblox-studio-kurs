@@ -28,9 +28,9 @@ Sluttprosjektet er en hinderløype barnet designer selv, der alt fra oppdrag 1�
 
 **Siste økt – testdag:** Inviter noen i familien til å spille. Barnet ser på mens de spiller, uten å hjelpe. Hva var for vanskelig? Hva var kjedelig? Så får barnet fikse én ting. Dette lærer barnet at spill blir gode gjennom testing.
 
-**Publisering:** Les kapitlet [Dele spillet med andre](16-dele-spillet.md) før dere publiserer. Kortversjonen: publiser privat og inviter noen få dere kjenner.
+**Publisering:** Les kapitlet [Dele spillet med andre](17-dele-spillet.md) før dere publiserer. Kortversjonen: publiser privat og inviter noen få dere kjenner.
 
-**Vil barnet mer?** Det finnes to bonuser etter sluttprosjektet: [terreng](14-bonus-terreng.md) og [egen 3D-modell](15-bonus-3d-modell.md).
+**Vil barnet mer?** Det finnes tre bonuser etter sluttprosjektet: [terreng](14-bonus-terreng.md), [3D-modell i Tinkercad](15-bonus-tinkercad.md) og [3D-modell i Blender](16-bonus-blender.md).
 
 ---
 

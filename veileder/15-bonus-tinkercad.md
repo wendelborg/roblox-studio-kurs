@@ -1,10 +1,12 @@
-# Bonus: Egen 3D-modell
+# Bonus: 3D-modell i Tinkercad
 
-[← Bonus: Terreng](14-bonus-terreng.md) · [Innhold](../README.md) · [Dele spillet med andre →](16-dele-spillet.md)
+[← Bonus: Terreng](14-bonus-terreng.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Blender →](16-bonus-blender.md)
 
-> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/bonus-3d/](https://wendelborg.github.io/roblox-studio-kurs/bonus-3d/)
+> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/bonus-tinkercad/](https://wendelborg.github.io/roblox-studio-kurs/bonus-tinkercad/)
 
-**Barnet lærer:** å lage egne former, både med solid modellering i Studio og i et eget 3D-program, og å bruke modellen i spillet med kode.
+**Barnet lærer:** å lage egne former, først med solid modellering i Studio og så i Tinkercad, og å bruke modellen i spillet med kode.
+
+Dette er den enkleste av de to 3D-bonusene. Blender-bonusen er for den som vil videre.
 
 **Den store ideen:** Det finnes to veier til egne former. **Solid modellering** i Studio setter sammen deler (Union) og skjærer bort biter (Negate). **Et eget 3D-program** som Tinkercad lager en fil som importeres og blir en **MeshPart**. En MeshPart oppfører seg som en vanlig kloss, med `Touched`, `Anchored` og alt det andre.
 
@@ -42,4 +44,4 @@ pokal.CFrame = pokal.CFrame * CFrame.Angles(0, math.rad(10), 0)
 
 ---
 
-[← Bonus: Terreng](14-bonus-terreng.md) · [Innhold](../README.md) · [Dele spillet med andre →](16-dele-spillet.md)
+[← Bonus: Terreng](14-bonus-terreng.md) · [Innhold](../README.md) · [Bonus: 3D-modell i Blender →](16-bonus-blender.md)

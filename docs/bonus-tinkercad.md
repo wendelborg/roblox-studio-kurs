@@ -1,9 +1,11 @@
 ---
-title: "Bonus: Lag din egen 3D-modell"
-permalink: /bonus-3d/
+title: "Bonus: 3D-modell i Tinkercad"
+permalink: /bonus-tinkercad/
 ---
 
 Klosser er fine, men hva om du vil ha en pokal, et romskip eller en figur du har funnet på selv? Da lager du en **3D-modell**. Dette er en bonus. Du gjør den bare hvis du har lyst!
+
+Tinkercad er den enkleste måten å starte på. Vil du videre etterpå, finnes det en bonus til med [Blender]({{ '/bonus-blender/' | relative_url }}).
 
 ## Den store ideen
 
@@ -141,5 +143,5 @@ Når du rører pokalen, snurrer den én runde rundt seg selv, som en ballerina. 
 
 <nav class="bla">
   <a href="{{ '/bonus-terreng/' | relative_url }}">← Bonus: Terreng</a>
-  <a class="neste" href="{{ '/' | relative_url }}">Tilbake til alle oppdrag →</a>
+  <a class="neste" href="{{ '/bonus-blender/' | relative_url }}">Bonus: Blender →</a>
 </nav>

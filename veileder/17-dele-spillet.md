@@ -1,6 +1,6 @@
 # Dele spillet med andre
 
-[← Bonus: Egen 3D-modell](15-bonus-3d-modell.md) · [Innhold](../README.md) · [Verktøykasse →](17-verktoykasse.md)
+[← Bonus: 3D-modell i Blender](16-bonus-blender.md) · [Innhold](../README.md) · [Verktøykasse →](18-verktoykasse.md)
 
 Før eller siden vil barnet vise fram spillet sitt. Dette kapitlet forklarer de vanligste måtene å dele på, fra den enkleste og mest private til den mest offentlige.
 
@@ -52,7 +52,7 @@ For et barns første spill er dette sjelden verdt det. Hvis dere likevel vil, b�
 
 - **Hvem skal spille?** Det er lurt å starte med folk dere kjenner.
 - **Hva skjer hvis noen ikke liker spillet?** Tilbakemelding er en del av å lage spill. Testdagen i sluttprosjektet er god trening.
-- **Bilder og modeller** som lastes opp (oppdrag 11 og bonusen med 3D-modell), blir sjekket av Roblox. Det skal være barnets egne tegninger, ikke bilder av ekte mennesker.
+- **Bilder og modeller** som lastes opp (oppdrag 11 og 3D-bonusene), blir sjekket av Roblox. Det skal være barnets egne tegninger, ikke bilder av ekte mennesker.
 - **Foreldrekontroll:** Hvis barnets konto har foreldrekontroll, kan noen av valgene over være begrenset. Innstillingene finner dere under **Settings → Parental Controls** på roblox.com.
 
 ## Kilder
@@ -63,4 +63,4 @@ For et barns første spill er dette sjelden verdt det. Hvis dere likevel vil, b�
 
 ---
 
-[← Bonus: Egen 3D-modell](15-bonus-3d-modell.md) · [Innhold](../README.md) · [Verktøykasse →](17-verktoykasse.md)
+[← Bonus: 3D-modell i Blender](16-bonus-blender.md) · [Innhold](../README.md) · [Verktøykasse →](18-verktoykasse.md)

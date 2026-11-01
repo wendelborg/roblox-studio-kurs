@@ -72,4 +72,5 @@ Vil du at venner skal spille obbyen din på sine egne maskiner? Da må spillet p
 Når obbyen er ferdig, kan du prøve disse:
 
 - [Lag din egen verden med terreng]({{ '/bonus-terreng/' | relative_url }})
-- [Lag din egen 3D-modell]({{ '/bonus-3d/' | relative_url }})
+- [Lag en 3D-modell i Tinkercad]({{ '/bonus-tinkercad/' | relative_url }})
+- [Lag en 3D-modell i Blender]({{ '/bonus-blender/' | relative_url }})

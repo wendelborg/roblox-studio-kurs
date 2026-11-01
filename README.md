@@ -1,6 +1,6 @@
 # Roblox-koding: fra «hæ?» til eget spill
 
-Et Roblox Studio-kurs for barn på 9–11 år. Kurset har tolv oppdrag på 45–60 minutter, et sluttprosjekt der barnet bygger sin egen obby, og to bonusoppdrag.
+Et Roblox Studio-kurs for barn på 9–11 år. Kurset har tolv oppdrag på 45–60 minutter, et sluttprosjekt der barnet bygger sin egen obby, og tre bonusoppdrag.
 
 Kurset har to deler:
 
@@ -26,9 +26,10 @@ Kurset har to deler:
 | 12 | [Oppdrag 12: Har den! Del 3: Robotmotspiller](veileder/12-har-den-robot.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/12/) |
 |  | [Sluttprosjekt: Min egen obby](veileder/13-sluttprosjekt.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/sluttprosjekt/) |
 |  | [Bonus: Terreng](veileder/14-bonus-terreng.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-terreng/) |
-|  | [Bonus: Egen 3D-modell](veileder/15-bonus-3d-modell.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-3d/) |
-|  | [Dele spillet med andre](veileder/16-dele-spillet.md) |  |
-|  | [Verktøykasse](veileder/17-verktoykasse.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/hjelp/) |
-|  | [Om nettsiden](veileder/18-om-nettsiden.md) |  |
+|  | [Bonus: 3D-modell i Tinkercad](veileder/15-bonus-tinkercad.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-tinkercad/) |
+|  | [Bonus: 3D-modell i Blender](veileder/16-bonus-blender.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-blender/) |
+|  | [Dele spillet med andre](veileder/17-dele-spillet.md) |  |
+|  | [Verktøykasse](veileder/18-verktoykasse.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/hjelp/) |
+|  | [Om nettsiden](veileder/19-om-nettsiden.md) |  |
 
 Begynn med [Slik bruker du kurset](veileder/00-slik-bruker-du-kurset.md). Der står det hvordan en økt kjøres, og hva som må gjøres klart i Roblox Studio før oppdrag 1.
