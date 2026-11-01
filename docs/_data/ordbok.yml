@@ -185,3 +185,9 @@
   hemmelig: false
   hvor: Bonus
   forklaring: Formen til en 3D-modell, laget av mange små flater. Modeller fra Tinkercad og Blender blir en MeshPart.
+- ord: Obby
+  engelsk: "obstacle course"
+  norsk: "hinderløype"
+  hemmelig: false
+  hvor: Sluttprosjekt
+  forklaring: En bane med hindre du må hoppe, klatre og løpe gjennom for å komme i mål. Obby er en forkortelse som Roblox-spillere bruker.
