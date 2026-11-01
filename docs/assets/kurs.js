@@ -14,6 +14,43 @@
 
   var side = document.body.getAttribute("data-side") || "side";
 
+  // 0. Gi innholdet fra markdown klassene til Designsystemet
+  //    (designsystemet.no), så overskrifter, avsnitt, lister, lenker og
+  //    tabeller ser ut som komponentene der.
+  var main = document.querySelector("main");
+  function klasse(sel, k, attr) {
+    main.querySelectorAll(sel).forEach(function (el) {
+      if (el.closest(".ds-tag, .ds-button, pre, .highlight")) return;
+      if (/\bds-/.test(el.className)) return;
+      el.classList.add(k);
+      if (attr) Object.keys(attr).forEach(function (a) { if (!el.hasAttribute(a)) el.setAttribute(a, attr[a]); });
+    });
+  }
+  if (main) {
+    var storrelser = { H1: "xl", H2: "lg", H3: "md", H4: "sm" };
+    main.querySelectorAll("h1, h2, h3, h4").forEach(function (h) {
+      if (/\bds-/.test(h.className)) return;
+      var iBoks = h.closest(".ds-alert, .ds-card, .ds-details");
+      h.classList.add("ds-heading");
+      h.setAttribute("data-size", iBoks ? (h.tagName === "H4" ? "2xs" : "xs") : storrelser[h.tagName]);
+    });
+    klasse("p", "ds-paragraph");
+    klasse("ul, ol", "ds-list");
+    klasse("a:not(.ds-button):not(.ds-card)", "ds-link");
+    main.querySelectorAll("table").forEach(function (t) {
+      t.classList.add("ds-table");
+      t.setAttribute("data-border", "true");
+    });
+    // Merkelapp over kode som skal skrives av for hånd
+    main.querySelectorAll(".skriv-selv").forEach(function (b) {
+      var tag = document.createElement("span");
+      tag.className = "ds-tag skriv-selv-merke";
+      tag.setAttribute("data-color", "warning");
+      tag.textContent = "Skriv selv – ikke kopier!";
+      b.parentNode.insertBefore(tag, b);
+    });
+  }
+
   // Lager en kort, fast nøkkel fra en tekst. Nøkkelen avhenger av hva
   // som står i punktet, ikke av hvor det står, så fremgangen overlever
   // at oppdrag og punkter flyttes eller nummereres om.
@@ -27,7 +64,20 @@
   }
   var brukt = {};
 
-  // 1. Gjør «- [ ]»-lister om til ekte avkrysningsbokser.
+  // 1a. Ordboka har ferdige bokser. Nøkkelen lages av den samme teksten
+  //     som før, så avkrysninger fra den gamle utgaven av siden huskes.
+  document.querySelectorAll(".ordliste > li").forEach(function (li) {
+    var boks = li.querySelector("input[type=checkbox]");
+    var d = li.querySelector("details");
+    var tekst = li.querySelector(".ord").textContent + li.querySelector(".hvor").textContent + " " +
+      li.querySelector(".sprak").textContent + " " + d.querySelector("summary").textContent +
+      d.textContent.replace(d.querySelector("summary").textContent, "");
+    var n = side + "-" + nokkelFra(tekst);
+    if (brukt[n]) { brukt[n] += 1; n += "-" + brukt[n]; } else { brukt[n] = 1; }
+    boks.setAttribute("data-lagre", n);
+  });
+
+  // 1b. Gjør «- [ ]»-lister om til ekte avkrysningsbokser.
   document.querySelectorAll("main li").forEach(function (li) {
     var boks = li.querySelector(":scope > input[type=checkbox]");
     if (!boks) {
@@ -46,19 +96,27 @@
     if (brukt[n]) { brukt[n] += 1; n += "-" + brukt[n]; } else { brukt[n] = 1; }
     boks.setAttribute("data-lagre", n);
     li.classList.add("sjekk");
-    // Pakk teksten inn i ett element, så flex-layouten ikke deler den opp
-    var tekst = document.createElement("span");
-    tekst.className = "sjekk-tekst";
-    while (boks.nextSibling) tekst.appendChild(boks.nextSibling);
-    li.appendChild(tekst);
+    // Gjør punktet om til et Designsystemet-felt: boks + label
+    boks.className = "ds-input";
+    boks.id = "sjekk-" + n;
+    var felt = document.createElement("div");
+    felt.className = "ds-field";
+    var etikett = document.createElement("label");
+    etikett.setAttribute("for", boks.id);
+    etikett.className = "sjekk-tekst";
+    var etterpå = [];
+    while (boks.nextSibling) {
+      var neste = boks.nextSibling;
+      // Underlister og «enklere»-bokser legges under feltet, ikke i labelen
+      if (neste.nodeType === 1 && /^(UL|OL|DETAILS|DIV|PRE)$/.test(neste.tagName)) { etterpå.push(neste); li.removeChild(neste); }
+      else etikett.appendChild(neste);
+    }
+    felt.appendChild(boks);
+    felt.appendChild(etikett);
+    li.appendChild(felt);
+    etterpå.forEach(function (el) { li.appendChild(el); });
     var ul = li.parentElement;
     if (ul) ul.classList.add("sjekkliste");
-    // Hele raden er klikkbar
-    li.addEventListener("click", function (e) {
-      if (e.target === boks || e.target.closest("a, details")) return;
-      boks.checked = !boks.checked;
-      boks.dispatchEvent(new Event("change", { bubbles: true }));
-    });
   });
 
   // 2. Last inn og lagre alt som har data-lagre.
@@ -114,10 +172,10 @@
   var temaKnapp = document.getElementById("tema-knapp");
   if (temaKnapp) temaKnapp.addEventListener("click", function () {
     var rot = document.documentElement;
-    var satt = rot.getAttribute("data-theme");
-    var erMork = satt ? satt === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var satt = rot.getAttribute("data-color-scheme");
+    var erMork = satt === "dark" || (satt !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
     var nytt = erMork ? "light" : "dark";
-    rot.setAttribute("data-theme", nytt);
+    rot.setAttribute("data-color-scheme", nytt);
     skriv("tema", nytt);
   });
 

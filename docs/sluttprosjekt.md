@@ -7,8 +7,8 @@ Nå er det **du** som er sjefen! Du skal lage din egen hinderløype, og der skal
 
 Sett av 3–4 økter. Det trenger ikke bli ferdig på én dag.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – hvor skal jeg begynne?</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – hvor skal jeg begynne?</summary>
+<div markdown="1">
 Ikke prøv å lage alt på en gang. Gjør én ting om gangen:
 
 1. Lag en start og et mål.
@@ -23,7 +23,7 @@ Alle løyper er bygget én kloss om gangen. Du kan kopiere kode fra dine egne op
 
 Ta fram et ark og tegn løypa fra start til mål. Gi hver hindring et navn, og skriv kort hvilken kode den trenger. Ekte spillutviklere planlegger alltid før de bygger.
 
-<div class="boks ide" markdown="1">
+<div class="ds-alert" data-color="info" markdown="1">
 ### Eksempel på en plan
 
 **Start** → tre lavaklosser du må hoppe over → en trapp som forsvinner → en låst dør (nøkkelen er gjemt bak en stein) → mynter på taket → **Mål**
@@ -41,7 +41,7 @@ Ta fram et ark og tegn løypa fra start til mål. Gi hver hindring et navn, og s
 - [ ] Et sjekkpunkt midt i løypa, så du slipper å begynne helt på nytt når du dør (se under)
 - [ ] En målkloss som skriver «Du vant!» og gir 50 mynter
 
-<details markdown="1"><summary>Hint: målklossen</summary>
+<details class="ds-details" markdown="1"><summary>Hint: målklossen</summary>
 Målklossen ligner mye på mynten fra oppdrag 8. Bruk `Touched`, finn spilleren, legg til 50 i stedet for 1, og skriv «Du vant!» med `print`. Husk debounce, ellers får du mange hundre mynter!
 </details>
 
@@ -49,14 +49,14 @@ Målklossen ligner mye på mynten fra oppdrag 8. Bruk `Touched`, finn spilleren,
 
 Lang løype? Da er det kjedelig å begynne helt fra start hver gang du dør. Et **sjekkpunkt** husker hvor langt du har kommet.
 
-<div class="boks obs" markdown="1">
+<div class="ds-alert" data-color="danger" markdown="1">
 ### Felle: Bare en SpawnLocation er ikke nok!
 
 Har spillet flere **SpawnLocation**-er, velger Roblox en av dem **tilfeldig**. Det var smart i Har den!, men her ville du kanskje startet midt i løypa, eller havnet tilbake på start selv om du hadde nådd sjekkpunktet. Derfor trenger vi et lite skript som bestemmer hvor hver spiller skal starte.
 </div>
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på et brettspill der du flytter brikken din. Når du kommer til en stjerne på brettet, legger du en lapp der det står «Her begynner jeg igjen hvis jeg må gå tilbake».
 
 Hver spiller har sin egen lapp. Skriptet flytter lappen din når du rører sjekkpunktet.
@@ -97,7 +97,7 @@ sjekkpunkt.Touched:Connect(naarSjekkpunktRores)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du spiller?
 
 1. Når du kommer inn i spillet, setter skriptet **RespawnLocation** din til `Startpunkt`. Det er lappen som sier hvor du skal starte. Derfor starter alle ved start, ikke på et tilfeldig sted.
@@ -106,12 +106,12 @@ sjekkpunkt.Touched:Connect(naarSjekkpunktRores)
 4. Sjekken `~= sjekkpunkt` gjør at meldingen bare kommer første gang. Det er en slags debounce.
 </div>
 
-<div class="boks gjett" markdown="1">
+<div class="ds-alert gjett" data-color="warning" markdown="1">
 ### Gjett først!
 
 Du har nådd sjekkpunktet. En venn har ikke det. Dere faller begge i lavaen. Hvor havner dere?
 
-<details markdown="1"><summary>Se svaret</summary>
+<details class="ds-details" markdown="1"><summary>Se svaret</summary>
 Du havner på sjekkpunktet, og vennen din havner på start. Hver spiller har sin egen RespawnLocation, sin egen lapp.
 </details>
 </div>
@@ -122,8 +122,8 @@ Du havner på sjekkpunktet, og vennen din havner på start. Hver spiller har sin
 
 Nå skal obbyen din holde styr på hvem som kommer raskest i mål! Tida starter når du rører startklossen og stopper når du rører målklossen. Den beste tida vises på en tavle i spillet.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på en stoppeklokke i gymtimen. Læreren trykker «start» når du løper fra streken, og «stopp» når du er i mål. Den beste tida skrives på tavla.
 
 Skriptet er læreren med stoppeklokka. Det husker når hver spiller startet, regner ut tida i mål og skriver rekorden på tavla.
@@ -204,7 +204,7 @@ maal.Touched:Connect(naarMaalRores)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du løper løypa?
 
 1. Når du kommer inn i spillet, får du en ny verdi på poengtavla som heter **Tid**. Den starter på 0.
@@ -217,8 +217,8 @@ maal.Touched:Connect(naarMaalRores)
 8. Er den bedre enn rekorden til **alle**, får du rekorden, og tavla viser navnet ditt!
 </div>
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 `startTid` er en **huskeliste**, som en liste på kjøleskapet:
 
 - Ola startet klokka 12.
@@ -230,12 +230,12 @@ Når Ola kommer i mål klokka 40, regner skriptet 40 minus 12. Ola brukte 28 sek
 </div>
 </details>
 
-<div class="boks gjett" markdown="1">
+<div class="ds-alert gjett" data-color="warning" markdown="1">
 ### Gjett først!
 
 Hva skjer med rekorden hvis alle forlater spillet og du starter det igjen?
 
-<details markdown="1"><summary>Se svaret</summary>
+<details class="ds-details" markdown="1"><summary>Se svaret</summary>
 Den er borte! Når den siste spilleren går, slår Roblox av serveren, og alt i variablene forsvinner. Vil du at rekorden skal huskes for alltid, må du lagre den. Det lærer du i neste del.
 </details>
 </div>
@@ -244,7 +244,7 @@ Den er borte! Når den siste spilleren går, slår Roblox av serveren, og alt i 
 
 Roblox har et lager som heter **DataStore**. Der kan du lagre ting som skal huskes, selv når ingen spiller.
 
-<div class="boks obs" markdown="1">
+<div class="ds-alert" data-color="danger" markdown="1">
 ### Gjør dette sammen med en voksen
 
 - Spillet må være **publisert** (se Publisering lenger ned).
@@ -291,7 +291,7 @@ end)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer nå?
 
 1. Når serveren starter, spør skriptet lageret: «Har du en rekord som heter Raskeste?» Får det et svar, settes den på tavla.

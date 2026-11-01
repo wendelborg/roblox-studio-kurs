@@ -14,8 +14,8 @@ Det finnes to måter å lage egne former på:
 1. **Inni Roblox Studio:** Du setter sammen klosser og skjærer bort biter. Det heter **solid modellering**.
 2. **I et eget 3D-program:** Du tegner modellen i et program som **Tinkercad** og henter den inn i Roblox. Da blir den en **MeshPart**.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på en ostehøvel og en leirklump.
 
 - **Solid modellering** er som å lime klosser sammen og skjære hull i dem.
@@ -33,12 +33,12 @@ Her lager du en mynt med hull i midten, som en smultring.
 4. Marker begge og trykk **Union** (**Ctrl+Shift+G**, på Mac **Cmd+Shift+G**).
 5. Nå har du én mynt med hull i!
 
-<div class="boks gjett" markdown="1">
+<div class="ds-alert gjett" data-color="warning" markdown="1">
 ### Gjett først!
 
 Hva skjer hvis du velger mynten og trykker **Separate** (**Ctrl+Shift+U**, på Mac **Cmd+Shift+U**)?
 
-<details markdown="1"><summary>Se svaret</summary>
+<details class="ds-details" markdown="1"><summary>Se svaret</summary>
 Den deles opp i de to sylindrene igjen. Solid modellering kan alltid angres. Du ødelegger aldri noe!
 </details>
 </div>
@@ -49,7 +49,7 @@ Den deles opp i de to sylindrene igjen. Solid modellering kan alltid angres. Du 
 
 **Tinkercad** er et gratis 3D-program som virker i nettleseren, og det er laget for barn og nybegynnere. Du bygger med ferdige former, akkurat som i Studio, men med flere former å velge mellom.
 
-<div class="boks obs" markdown="1">
+<div class="ds-alert" data-color="danger" markdown="1">
 ### Be en voksen om hjelp
 
 Du trenger en konto i Tinkercad. For barn må en voksen hjelpe til med å lage den.
@@ -62,13 +62,13 @@ Du trenger en konto i Tinkercad. For barn må en voksen hjelpe til med å lage d
 
 ## Del C: Hent modellen inn i Roblox
 
-<div class="boks ide" markdown="1">
+<div class="ds-alert" data-color="info" markdown="1">
 ### Bruk eksempelmodellen
 
 Har du ikke laget en modell ennå, eller vil du se hvordan det blir? Last ned eksempelpokalen og bruk den i stedet for din egen. Du kan også åpne den i Tinkercad med **Import** for å se hvordan den er bygget.
 
 <div class="bildegalleri">
-  <a href="{{ '/assets/modeller/pokal.obj' | relative_url }}" download><img src="{{ '/assets/modeller/pokal.png' | relative_url }}" alt="Pokal"><span>Last ned pokal.obj</span></a>
+  <a href="{{ '/assets/modeller/pokal.obj' | relative_url }}" class="ds-card" download><img src="{{ '/assets/modeller/pokal.png' | relative_url }}" alt="Pokal"><span>Last ned pokal.obj</span></a>
 </div>
 </div>
 
@@ -79,7 +79,7 @@ Har du ikke laget en modell ennå, eller vil du se hvordan det blir? Last ned ek
 4. Er den altfor stor eller altfor liten? Bruk **Scale**-verktøyet i fanen Home.
 5. Husk å sette **Anchored** på, ellers faller den ned!
 
-<div class="boks obs" markdown="1">
+<div class="ds-alert" data-color="danger" markdown="1">
 ### Litt tålmodighet
 
 Roblox sjekker alle modeller som lastes opp, akkurat som bilder. Det kan ta litt tid før den vises for andre spillere. Ber Studio om noe du ikke skjønner, så spør en voksen.
@@ -120,7 +120,7 @@ pokal.Touched:Connect(naarNoeRorer)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du rører pokalen?
 
 1. Debounce passer på at det bare skjer én gang om gangen, som i oppdrag 8.
@@ -129,8 +129,8 @@ pokal.Touched:Connect(naarNoeRorer)
 4. 36 × 10 = 360 grader. Det er én hel runde! Pokalen snurrer rundt for å feire.
 </div>
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Når du rører pokalen, snurrer den én runde rundt seg selv, som en ballerina. Den snur seg litt om gangen, 36 ganger, helt til den er tilbake der den startet.
 
 `CFrame` er hvor noe er og hvilken vei det peker. `CFrame.Angles` snur det.
@@ -153,6 +153,6 @@ Når du rører pokalen, snurrer den én runde rundt seg selv, som en ballerina. 
 - [ ] Gi modellen din en farge og et materiale i Properties (`Color` og `Material`).
 
 <nav class="bla">
-  <a href="{{ '/bonus-terreng/' | relative_url }}">← Bonus: Terreng</a>
-  <a class="neste" href="{{ '/bonus-blender/' | relative_url }}">Bonus: Blender →</a>
+  <a class="ds-button" data-variant="secondary" href="{{ '/bonus-terreng/' | relative_url }}">← Bonus: Terreng</a>
+  <a class="ds-button" href="{{ '/bonus-blender/' | relative_url }}">Bonus: Blender →</a>
 </nav>

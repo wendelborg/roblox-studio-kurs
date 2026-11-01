@@ -9,8 +9,8 @@ En **animasjon** er en bevegelse for en figur: en dans, en vinking, et salto ell
 
 En animasjon består av **keyframes**, bilder av hvordan figuren står på bestemte tidspunkter. Studio fyller inn bevegelsen mellom dem, akkurat som en tween.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på en flipbok der du tegner en figur på hver side. Når du blar fort, ser det ut som figuren beveger seg.
 
 I Animation Editor setter du figuren i noen stillinger, og Studio lager flipboka for deg.
@@ -52,7 +52,7 @@ spor:Play()
 ```
 </div>
 
-<div class="boks obs" markdown="1">
+<div class="ds-alert" data-color="danger" markdown="1">
 ### Be en voksen om hjelp med å publisere
 
 Animasjonen må lastes opp av den samme kontoen som eier spillet, ellers vil den ikke spille. Studio kan be om innlogging eller godkjenning.

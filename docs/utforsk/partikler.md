@@ -9,8 +9,8 @@ En **ParticleEmitter** sender ut mange små bilder, kalt partikler, som flyr, sv
 
 Det finnes også tre ferdige effekter som er enda enklere: **Fire** (ild), **Smoke** (røyk) og **Sparkles** (glitter). Høyreklikk en kloss, velg **Insert Object** og prøv dem!
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 En ParticleEmitter er som en liten fontene. I stedet for vann spruter den ut små bilder, for eksempel gnister eller bobler. Du bestemmer fargen, hvor fort de flyr og hvor mange det er.
 </div>
 </details>
@@ -53,7 +53,7 @@ kloss.Touched:Connect(naarNoeRorer)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer?
 
 1. `Enabled = false` gjør at klossen ikke sender ut gnister av seg selv.

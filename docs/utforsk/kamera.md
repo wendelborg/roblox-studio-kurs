@@ -9,8 +9,8 @@ permalink: /utforsk/kamera/
 
 Hver spiller har sitt eget kamera. Derfor styres det fra et **LocalScript**.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på en filmfotograf som vanligvis går rett bak deg. Med kode kan du be fotografen om å klatre opp i et tre og filme hele banen ovenfra, og så komme ned igjen.
 </div>
 </details>
@@ -38,7 +38,7 @@ kamera.CameraType = Enum.CameraType.Custom
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du trykker Play?
 
 1. `workspace.CurrentCamera` er kameraet ditt.

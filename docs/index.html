@@ -3,77 +3,77 @@ title: Game on!
 vis_tittel: false
 ---
 <section class="helt">
-  <p class="overtittel">Kod ditt eget Roblox-spill</p>
-  <h1>Game on!</h1>
-  <p>Tolv oppdrag i Roblox Studio. Etter hvert oppdrag skjer det noe nytt i spillet ditt. Til slutt bygger du din egen obby med lava, hemmelige dører, mynter og en gjemt nøkkel.</p>
+  <span class="ds-tag" data-color="accent">Kod ditt eget Roblox-spill</span>
+  <h1 class="ds-heading" data-size="2xl">Game on!</h1>
+  <p class="ds-paragraph" data-variant="long">Tolv oppdrag i Roblox Studio. Etter hvert oppdrag skjer det noe nytt i spillet ditt. Til slutt bygger du din egen obby med lava, hemmelige dører, mynter og en gjemt nøkkel.</p>
   <div class="fremgang">
-    <div class="fremgang-bane"><div id="fremgang-stolpe"></div></div>
-    <p id="fremgang-tekst">0 av 8 oppdrag fullført</p>
+    <div class="fremgang-bane" aria-hidden="true"><div id="fremgang-stolpe"></div></div>
+    <p class="ds-paragraph" data-size="sm" id="fremgang-tekst" aria-live="polite">0 av {{ site.data.oppdrag.size }} oppdrag fullført</p>
   </div>
-  <div class="boks gjett">
-    <h3>Første gang?</h3>
-    <p>Før oppdrag 1 må Roblox Studio gjøres klart. <a href="#start">Start her</a>. Det tar cirka 15 minutter, og dere gjør det bare én gang.</p>
+  <div class="ds-alert" data-color="warning">
+    <h2 class="ds-heading" data-size="xs">Første gang?</h2>
+    <p class="ds-paragraph">Før oppdrag 1 må Roblox Studio gjøres klart. <a class="ds-link" href="#start">Start her</a>. Det tar cirka 15 minutter, og dere gjør det bare én gang.</p>
   </div>
 </section>
 
-<h2 class="bolk">Oppdrag</h2>
-<ul class="kart">
+<h2 class="ds-heading bolk" data-size="lg">Oppdrag</h2>
+<ul class="kort-rutenett">
   {% for m in site.data.oppdrag %}
-  <li data-oppdrag="{{ m.nokkel }}" style="--farge: {{ m.farge }}">
-    <a href="{{ '/oppdrag/' | append: m.nr | append: '/' | relative_url }}">
-      <span class="nr">Oppdrag {{ m.nr }}</span>
-      <h3>{{ m.tittel }}</h3>
-      <p>{{ m.kort }}</p>
+  <li data-oppdrag="{{ m.nokkel }}">
+    <a class="ds-card" href="{{ '/oppdrag/' | append: m.nr | append: '/' | relative_url }}">
+      <span class="kort-merker"><span class="ds-tag" data-color="accent">Oppdrag {{ m.nr }}</span><span class="ds-tag fullfort" data-color="success">Fullført</span></span>
+      <h3 class="ds-heading" data-size="xs">{{ m.tittel }}</h3>
+      <p class="ds-paragraph" data-size="sm">{{ m.kort }}</p>
     </a>
   </li>
   {% endfor %}
 </ul>
 
-<h2 class="bolk">Sluttprosjekt</h2>
-<ul class="kart enkel">
-  <li class="sluttkort">
-    <a href="{{ '/sluttprosjekt/' | relative_url }}">
-      <span class="nr" style="color:#ef4444">Sluttprosjekt</span>
-      <h3>Min egen obby</h3>
-      <p>Bygg din egen hinderløype med alt du har lært i oppdrag 1–{{ site.data.oppdrag.size }}</p>
+<h2 class="ds-heading bolk" data-size="lg">Sluttprosjekt</h2>
+<ul class="kort-rutenett">
+  <li>
+    <a class="ds-card" data-variant="tinted" data-color="danger" href="{{ '/sluttprosjekt/' | relative_url }}">
+      <span class="kort-merker"><span class="ds-tag" data-color="danger">Sluttprosjekt</span></span>
+      <h3 class="ds-heading" data-size="xs">Min egen obby</h3>
+      <p class="ds-paragraph" data-size="sm">Bygg din egen hinderløype med alt du har lært i oppdrag 1–{{ site.data.oppdrag.size }}</p>
     </a>
   </li>
 </ul>
 
-<h2 class="bolk">Bonusoppdrag</h2>
-<p>Ferdig med obbyen og vil ha mer? Velg det du har lyst til.</p>
-<ul class="kart">
+<h2 class="ds-heading bolk" data-size="lg">Bonusoppdrag</h2>
+<p class="ds-paragraph">Ferdig med obbyen og vil ha mer? Velg det du har lyst til.</p>
+<ul class="kort-rutenett">
   {% assign bonuser = "bonus-terreng|Terreng|Fjell, huler, hav og øyer;bonus-tinkercad|3D-modell i Tinkercad|Bygg din egen pokal av ferdige former;bonus-blender|3D-modell i Blender|Form en sprettsopp som proffene" | split: ";" %}
   {% for b in bonuser %}{% assign d = b | split: "|" %}
-  <li class="bonuskort" style="--farge: #7c3aed">
-    <a href="{{ '/' | append: d[0] | append: '/' | relative_url }}">
-      <span class="nr">Bonus</span>
-      <h3>{{ d[1] }}</h3>
-      <p>{{ d[2] }}</p>
+  <li>
+    <a class="ds-card" href="{{ '/' | append: d[0] | append: '/' | relative_url }}">
+      <span class="kort-merker"><span class="ds-tag" data-color="brand2">Bonus</span></span>
+      <h3 class="ds-heading" data-size="xs">{{ d[1] }}</h3>
+      <p class="ds-paragraph" data-size="sm">{{ d[2] }}</p>
     </a>
   </li>
   {% endfor %}
 </ul>
 
-<h2 class="bolk" id="utforsk">Utforsk videre</h2>
-<p>Ferdig med alt? Roblox Studio kan mye mer! Her er ting du kan lære deg selv. Hvert kort har en egen side med forklaring, ideer og et lite eksempel du kan prøve, og lenker videre til Roblox sin egen dokumentasjon. Søkeordet i den lille boksen er navnet Roblox bruker.</p>
-<p class="nivaa-forklaring"><span class="nivaa n1">Lett</span> <span class="nivaa n2">Middels</span> <span class="nivaa n3">Vanskelig</span></p>
-<ul class="kart utforsk">
+<h2 class="ds-heading bolk" data-size="lg" id="utforsk">Utforsk videre</h2>
+<p class="ds-paragraph">Ferdig med alt? Roblox Studio kan mye mer! Her er ting du kan lære deg selv. Hvert kort har en egen side med forklaring, ideer og et lite eksempel du kan prøve, og lenker videre til Roblox sin egen dokumentasjon. Søkeordet nederst på kortet er navnet Roblox bruker.</p>
+<p class="nivaa-forklaring"><span class="ds-tag" data-color="success">Lett</span> <span class="ds-tag" data-color="warning">Middels</span> <span class="ds-tag" data-color="danger">Vanskelig</span></p>
+<ul class="kort-rutenett">
   {% assign utforsk = site.data.utforsk | sort: "nivaa" %}
   {% for u in utforsk %}
-  <li style="--farge: {% if u.nivaa == 1 %}#10b981{% elsif u.nivaa == 2 %}#f59e0b{% else %}#ef4444{% endif %}">
-    <a href="{{ '/utforsk/' | append: u.slug | append: '/' | relative_url }}">
-      <span class="nivaa n{{ u.nivaa }}">{% if u.nivaa == 1 %}Lett{% elsif u.nivaa == 2 %}Middels{% else %}Vanskelig{% endif %}</span>
-      <h3>{{ u.tittel }}</h3>
-      <p>{{ u.tekst }}</p>
-      <code>{{ u.ord }}</code>
+  <li>
+    <a class="ds-card" href="{{ '/utforsk/' | append: u.slug | append: '/' | relative_url }}">
+      <span class="kort-merker"><span class="ds-tag" data-color="{% if u.nivaa == 1 %}success{% elsif u.nivaa == 2 %}warning{% else %}danger{% endif %}">{% if u.nivaa == 1 %}Lett{% elsif u.nivaa == 2 %}Middels{% else %}Vanskelig{% endif %}</span></span>
+      <h3 class="ds-heading" data-size="xs">{{ u.tittel }}</h3>
+      <p class="ds-paragraph" data-size="sm">{{ u.tekst }}</p>
+      <code class="sokeord">{{ u.ord }}</code>
     </a>
   </li>
   {% endfor %}
 </ul>
 
-<h2 id="start">Start her: Gjør klar Roblox Studio</h2>
-<p>Dette er ikke et oppdrag. Det er forberedelsene, og dere gjør dem bare én gang, sammen med en voksen. Det tar cirka 15 minutter. Når alt er krysset av, er du klar for oppdrag 1.</p>
+<h2 class="ds-heading bolk" data-size="lg" id="start">Start her: Gjør klar Roblox Studio</h2>
+<p class="ds-paragraph">Dette er ikke et oppdrag. Det er forberedelsene, og dere gjør dem bare én gang, sammen med en voksen. Det tar cirka 15 minutter. Når alt er krysset av, er du klar for oppdrag 1.</p>
 <ul>
   <li>[ ] <strong>Installer Roblox Studio.</strong> Gå til <a href="https://create.roblox.com">create.roblox.com</a> og last ned Studio. Det er et eget program for å <em>lage</em> spill. Det er ikke det samme som Roblox-appen du spiller i.</li>
   <li>[ ] <strong>Logg inn.</strong> Åpne Roblox Studio og logg inn med Roblox-kontoen din.</li>
@@ -84,7 +84,7 @@ vis_tittel: false
 </ul>
 
 <div class="tabell">
-<table>
+<table class="ds-table" data-border="true">
   <thead><tr><th>Vindu</th><th>Hva det er til</th></tr></thead>
   <tbody>
     <tr><td><strong>Explorer</strong></td><td>En liste over alt som finnes i spillet ditt: gulvet, klossene og skriptene. Her gir du ting navn og legger skript inni klosser.</td></tr>
@@ -94,10 +94,10 @@ vis_tittel: false
 </table>
 </div>
 
-<nav class="bla"><a class="neste" href="{{ '/oppdrag/1/' | relative_url }}">Klar! Gå til oppdrag 1 →</a></nav>
+<nav class="bla"><a class="ds-button" href="{{ '/oppdrag/1/' | relative_url }}">Klar! Gå til oppdrag 1 →</a></nav>
 
-<div class="boks ide">
-  <h3>Slik løser du et oppdrag</h3>
+<div class="ds-alert" data-color="info">
+  <h2 class="ds-heading" data-size="xs">Slik løser du et oppdrag</h2>
   <ol>
     <li><strong>Gjett først.</strong> Hva tror du skjer når du trykker Play? Det er helt greit å gjette feil. Det er sånn hjernen lærer.</li>
     <li><strong>Skriv koden selv.</strong> Ikke kopier. Skrivefeil og røde feilmeldinger er en del av moroa.</li>
@@ -106,4 +106,4 @@ vis_tittel: false
   </ol>
 </div>
 
-<p>Koden i Roblox heter <strong>Luau</strong>. Den er laget for å være lett å lese, nesten som engelsk. Står du fast? Se på <a href="{{ '/hjelp/' | relative_url }}">Hjelp-siden</a>. Der lærer du også å <a href="{{ '/hjelp/' | relative_url }}#sla-opp">slå opp i Roblox sitt eget oppslagsverk</a>, akkurat som ekte programmerere.</p>
+<p class="ds-paragraph">Koden i Roblox heter <strong>Luau</strong>. Den er laget for å være lett å lese, nesten som engelsk. Står du fast? Se på <a href="{{ '/hjelp/' | relative_url }}">Hjelp-siden</a>. Der lærer du også å <a href="{{ '/hjelp/' | relative_url }}#sla-opp">slå opp i Roblox sitt eget oppslagsverk</a>, akkurat som ekte programmerere.</p>

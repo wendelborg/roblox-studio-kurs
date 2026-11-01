@@ -9,8 +9,8 @@ Knapper på skjermen og tastetrykk styres av et **LocalScript** på maskinen din
 
 Svaret er en **RemoteEvent**. Det er en beskjed som LocalScriptet sender til serveren: «Spilleren trykket på kjøp-knappen!» Serveren bestemmer så om det skal skje noe.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på en restaurant. Du sitter ved bordet og bestemmer hva du vil ha, men det er kjøkkenet som lager maten.
 
 LocalScriptet er deg ved bordet. Serveren er kjøkkenet. RemoteEvent er bestillingslappen du gir til kelneren.
@@ -67,7 +67,7 @@ hendelse.OnServerEvent:Connect(naarKjop)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du klikker?
 
 1. LocalScriptet merker klikket med `Activated` og sender en beskjed med `FireServer`.
@@ -76,7 +76,7 @@ hendelse.OnServerEvent:Connect(naarKjop)
 4. Har spilleren minst 5 mynter, trekkes 5 fra, og spilleren får superfart.
 </div>
 
-<div class="boks ide" markdown="1">
+<div class="ds-alert" data-color="info" markdown="1">
 ### Hvorfor sjekker serveren myntene?
 
 Alt som skjer på din egen maskin, kan i teorien jukses med. Derfor er regelen: **Serveren bestemmer.** LocalScriptet ber bare om noe. Det er serveren som sjekker og sier ja eller nei.

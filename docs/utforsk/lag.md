@@ -7,8 +7,8 @@ permalink: /utforsk/lag/
 
 Med **Teams** kan du dele spillerne i lag, for eksempel Rødt lag og Blått lag. Hvert lag har sin egen farge, og lagene vises på poengtavla. Hvert lag kan også ha sitt eget startsted.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på når dere deler dere i lag i gymtimen. Alle på samme lag har samme farge på vesten, og hvert lag starter på sin side av banen.
 </div>
 </details>

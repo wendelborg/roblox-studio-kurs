@@ -12,8 +12,8 @@ Det finnes to slags tabeller:
 - **Lister**, der tingene står i rekkefølge: `{ "rød", "blå", "grønn" }`. Den første er nummer 1, den andre nummer 2 og så videre.
 - **Oppslag**, der hver ting har et navn: `{ tid = 12, navn = "Ola" }`. Den så du i rekordtavla i sluttprosjektet.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 En liste er som en handleliste: melk, brød, egg. Du kan spørre «Hva står på plass nummer 2?» og få svaret «brød».
 
 Et oppslag er som en navneskilt-vegg: Ved navnet «Ola» står det 12.
@@ -48,7 +48,7 @@ kloss.BrickColor = BrickColor.new(farger[tall])
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du trykker Play?
 
 1. Skriptet lager en liste med fire farger.

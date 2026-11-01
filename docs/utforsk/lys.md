@@ -11,8 +11,8 @@ Den viktigste egenskapen er **ClockTime**, som er klokka i spillet. Den går fra
 
 Vil du ha lys bare ett sted, for eksempel en lampe eller en fakkel, kan du legge en **PointLight** inni en kloss.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Lighting er lysbryteren for hele verden. Du kan skru på sola, skru den av, eller la den gå ned sakte, som en solnedgang.
 </div>
 </details>
@@ -46,7 +46,7 @@ end
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du trykker Play?
 
 1. Skriptet henter Lighting.

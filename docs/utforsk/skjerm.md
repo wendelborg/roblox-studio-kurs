@@ -9,8 +9,8 @@ En **ScreenGui** er en flate som ligger oppå skjermen din, foran selve spillet.
 
 En ScreenGui legges i **StarterGui**. Når en spiller kommer inn i spillet, får hen sin egen kopi. Derfor styres alt på skjermen av et **LocalScript**, som kjører hos hver enkelt spiller.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk deg at du har et klistremerke på innsiden av brilleglasset ditt. Uansett hvor du ser, er klistremerket der.
 
 En ScreenGui er et sånt klistremerke på skjermen. Den flytter seg ikke når du går rundt i spillet.
@@ -51,7 +51,7 @@ mynter.Changed:Connect(oppdater)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du tar en mynt?
 
 1. `Players.LocalPlayer` er deg, spilleren som sitter ved denne maskinen. Det finnes bare i et LocalScript.

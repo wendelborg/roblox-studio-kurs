@@ -11,13 +11,13 @@ Med **DataStore** kan spillet huske ting til neste gang: mynter, rekorder og hva
 
 Du har kanskje allerede prøvd DataStore i rekordtavla i sluttprosjektet.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på et dataspill med «lagre spill». Uten lagring må du begynne helt på nytt hver gang. DataStore er lagringen i Roblox-spillet ditt.
 </div>
 </details>
 
-<div class="boks obs" markdown="1">
+<div class="ds-alert" data-color="danger" markdown="1">
 ### Gjør dette sammen med en voksen
 
 - Spillet må være **publisert** til Roblox.
@@ -59,7 +59,7 @@ Players.PlayerRemoving:Connect(spillerGikk)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer?
 
 1. Når du kommer inn, spør skriptet lageret: «Har du noen mynter lagret for denne spilleren?»
@@ -69,7 +69,7 @@ Players.PlayerRemoving:Connect(spillerGikk)
 5. `pcall` passer på at spillet ikke krasjer hvis lageret ikke svarer.
 </div>
 
-<div class="boks ide" markdown="1">
+<div class="ds-alert" data-color="info" markdown="1">
 ### Hvorfor forsvant myntene i Studio?
 
 Når du trykker Stop i Studio, slås alt av med en gang, og det er ikke sikkert lagringen rekker å skje. I et publisert spill går det som regel fint. Proffene bruker i tillegg `game:BindToClose` for å lagre helt til slutt.

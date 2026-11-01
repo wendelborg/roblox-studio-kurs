@@ -9,8 +9,8 @@ En **Sound** er en lyd du legger inn i spillet: et «pling», et smell, en fottr
 
 En lyd som ligger inni en kloss, høres best når du står nær klossen, akkurat som i virkeligheten. En lyd som ligger rett i **Workspace** eller i **SoundService**, høres like godt overalt. Det passer for bakgrunnsmusikk.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 En Sound er som en liten høyttaler du kan sette hvor du vil. Legger du den i en mynt, kommer lyden fra mynten. Koden bestemmer når høyttaleren skal spille.
 </div>
 </details>
@@ -54,7 +54,7 @@ kloss.Touched:Connect(naarNoeRorer)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du tråkker på klossen?
 
 1. Skriptet finner lyden som ligger inni klossen.

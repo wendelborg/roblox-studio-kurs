@@ -7,8 +7,8 @@ permalink: /utforsk/trykk-e/
 
 Har du sett en liten knapp dukke opp i et spill når du går nær en dør eller en kiste, med teksten «E Åpne»? Det er en **ProximityPrompt**. «Proximity» betyr nærhet. Knappen dukker bare opp når du står nær nok, og når du trykker på den, ringer en dørklokke i koden.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på en ringeklokke ved en dør. Du ser den først når du står foran døra. Trykker du på den, skjer det noe inne i huset.
 
 ProximityPrompt er en sånn ringeklokke i spillet ditt.
@@ -44,7 +44,7 @@ knapp.Triggered:Connect(naarTrykket)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du trykker E?
 
 1. Skriptet finner kista og knappen som ligger inni den.

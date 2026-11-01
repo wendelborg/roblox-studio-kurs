@@ -11,8 +11,8 @@ I Tinkercad bygger du med ferdige former. I Blender kan du **forme alt selv**: d
 
 Modellen du lager, lagres som en fil og hentes inn i Roblox. Der blir den en **MeshPart**, akkurat som Tinkercad-modellen.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tinkercad er som Lego: du setter sammen ferdige biter.
 
 Blender er som leire: du kan forme akkurat det du vil, men det tar litt lengre tid å lære.
@@ -23,7 +23,7 @@ Blender er som leire: du kan forme akkurat det du vil, men det tar litt lengre t
 
 **Blender** er et gratis 3D-program. Det er det samme programmet som ekte spillutviklere og filmskapere bruker! Blender har veldig mange knapper, men du trenger bare noen få av dem.
 
-<div class="boks obs" markdown="1">
+<div class="ds-alert" data-color="danger" markdown="1">
 ### Be en voksen om hjelp
 
 - En voksen må laste ned og installere Blender fra **blender.org**. Du trenger ingen konto.
@@ -45,8 +45,8 @@ Hold musepekeren over 3D-vinduet når du trykker.
 
 Trykker du **Z** rett etter **S**, **G** eller **R**, gjelder det bare opp og ned. **X** og **Y** gjelder bare til siden. Klikk med musa når du er fornøyd. Høyreklikk avbryter.
 
-<details class="enklere" markdown="1"><summary>Jeg har ikke mus med hjul, hvordan snur jeg modellen?</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Jeg har ikke mus med hjul, hvordan snur jeg modellen?</summary>
+<div markdown="1">
 Oppe til høyre i 3D-vinduet er det et lite kors med fargede kuler. Klikk og dra i det for å snu deg rundt modellen. Klikk på en farget kule for å se rett fra siden eller ovenfra.
 
 Bruker du en bærbar med styreplate, kan en voksen slå på **Emulate 3 Button Mouse** under **Edit → Preferences → Input**. Da kan du snu med **Alt** og venstre museknapp.
@@ -74,13 +74,13 @@ Bruker du en bærbar med styreplate, kan en voksen slå på **Emulate 3 Button M
 
 ## Del B: Hent modellen inn i Roblox
 
-<div class="boks ide" markdown="1">
+<div class="ds-alert" data-color="info" markdown="1">
 ### Bruk eksempelmodellen
 
 Fikk du ikke til soppen i Blender? Last ned eksempelsoppen og bruk den i stedet. Den er en OBJ-fil, og Roblox henter den inn på samme måte. Du kan også åpne den i Blender med **File → Import → Wavefront (.obj)**.
 
 <div class="bildegalleri">
-  <a href="{{ '/assets/modeller/sopp.obj' | relative_url }}" download><img src="{{ '/assets/modeller/sopp.png' | relative_url }}" alt="Sopp"><span>Last ned sopp.obj</span></a>
+  <a href="{{ '/assets/modeller/sopp.obj' | relative_url }}" class="ds-card" download><img src="{{ '/assets/modeller/sopp.png' | relative_url }}" alt="Sopp"><span>Last ned sopp.obj</span></a>
 </div>
 </div>
 
@@ -92,13 +92,13 @@ Fikk du ikke til soppen i Blender? Last ned eksempelsoppen og bruk den i stedet.
 5. Husk å sette **Anchored** på, ellers faller den ned!
 6. Gi soppen farge med **Color** i Properties.
 
-<div class="boks obs" markdown="1">
+<div class="ds-alert" data-color="danger" markdown="1">
 ### Litt tålmodighet
 
 Roblox sjekker alle modeller som lastes opp, akkurat som bilder. Det kan ta litt tid før den vises for andre spillere. Ber Studio om noe du ikke skjønner, så spør en voksen.
 </div>
 
-<div class="boks ide" markdown="1">
+<div class="ds-alert" data-color="info" markdown="1">
 ### Hold det enkelt
 
 Roblox liker modeller som ikke er altfor detaljerte. Lager du noe veldig avansert i Blender, kan Roblox si at modellen er for stor. Enkle former ser ofte best ut i spill uansett!
@@ -140,7 +140,7 @@ sopp.Touched:Connect(naarNoeRorer)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du rører soppen?
 
 1. Koden husker hvor stor soppen er fra starten, i variabelen `vanlig`.
@@ -150,8 +150,8 @@ sopp.Touched:Connect(naarNoeRorer)
 5. Etter 5 sekunder er hoppekraften borte, og soppen er klar igjen.
 </div>
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Sprettsoppen er nesten den samme som hopp-powerupen fra oppdrag 11. Forskjellen er at den ser ut som en sopp du har laget selv, og at den blir klemt flat et lite øyeblikk når du rører den.
 
 `Vector3.new(1, 0.7, 1)` betyr: like bred, 70 % så høy, like dyp.
@@ -173,6 +173,6 @@ Sprettsoppen er nesten den samme som hopp-powerupen fra oppdrag 11. Forskjellen 
 - [ ] Lag din egen powerup-modell til Har den! (oppdrag 11), og legg powerup-skriptet inni den.
 
 <nav class="bla">
-  <a href="{{ '/bonus-tinkercad/' | relative_url }}">← Bonus: Tinkercad</a>
-  <a class="neste" href="{{ '/' | relative_url }}">Tilbake til alle oppdrag →</a>
+  <a class="ds-button" data-variant="secondary" href="{{ '/bonus-tinkercad/' | relative_url }}">← Bonus: Tinkercad</a>
+  <a class="ds-button" href="{{ '/' | relative_url }}">Tilbake til alle oppdrag →</a>
 </nav>

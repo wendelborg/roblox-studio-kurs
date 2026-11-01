@@ -424,27 +424,35 @@
     var linjer = forklarKode(kode.textContent);
 
     var detaljer = document.createElement("details");
-    detaljer.className = "forklaring";
+    detaljer.className = "ds-details forklaring";
+    detaljer.setAttribute("data-variant", "tinted");
     var knapp = document.createElement("summary");
     knapp.textContent = "Forklar hver linje";
     detaljer.appendChild(knapp);
 
-    var ol = document.createElement("ol");
+    var innhold = document.createElement("div");
+    var tabell = document.createElement("table");
+    tabell.className = "ds-table";
+    tabell.setAttribute("data-zebra", "true");
+    tabell.innerHTML = "<thead><tr><th>Linje</th><th>Kode</th><th>Forklaring</th></tr></thead>";
+    var tbody = document.createElement("tbody");
     linjer.forEach(function (l) {
-      var li = document.createElement("li");
+      var tr = document.createElement("tr");
+      var nr = document.createElement("td");
+      nr.className = "linjenr";
+      nr.textContent = l.nr;
+      var kd = document.createElement("td");
       var k = document.createElement("code");
       k.textContent = l.kode.trim();
-      var p = document.createElement("span");
+      kd.appendChild(k);
+      var p = document.createElement("td");
       p.textContent = l.tekst;
-      var nr = document.createElement("span");
-      nr.className = "linjenr";
-      nr.textContent = "Linje " + l.nr;
-      li.appendChild(nr);
-      li.appendChild(k);
-      li.appendChild(p);
-      ol.appendChild(li);
+      tr.appendChild(nr); tr.appendChild(kd); tr.appendChild(p);
+      tbody.appendChild(tr);
     });
-    detaljer.appendChild(ol);
+    tabell.appendChild(tbody);
+    innhold.appendChild(tabell);
+    detaljer.appendChild(innhold);
 
     var etter = blokk.closest(".skriv-selv") || blokk;
     etter.parentNode.insertBefore(detaljer, etter.nextSibling);

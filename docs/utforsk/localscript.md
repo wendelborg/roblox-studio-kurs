@@ -11,8 +11,8 @@ Et **LocalScript** kjører på **din egen maskin**. Det kan gjøre ting som serv
 
 Men et LocalScript kan ikke bestemme over spillet for alle andre. Endrer et LocalScript fargen på en kloss, er det bare du som ser det!
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Serveren er dommeren på banen. Den bestemmer reglene for alle.
 
 Et LocalScript er som tankene dine mens du spiller. Du vet hvilke taster du trykker på, og hva du ser på, men du kan ikke bestemme over de andre spillerne.
@@ -50,7 +50,7 @@ UserInputService.InputBegan:Connect(tastTrykket)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du trykker på F?
 
 1. `UserInputService` følger med på tastaturet, musa og skjermen din.

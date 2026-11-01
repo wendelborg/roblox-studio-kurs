@@ -9,8 +9,8 @@ I oppdrag 7 lagde du funksjonen `lagKloss`. Men hva om du vil bruke den i mange 
 
 Et **ModuleScript** er en verktøykasse med funksjoner som andre skript kan låne. Du skriver funksjonen én gang i ModuleScriptet, og så kan alle skript hente den med `require`.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Et ModuleScript er som en kokebok på kjøkkenbenken. Alle i familien kan slå opp i den og lage den samme pannekaka, uten at hver person må skrive sin egen oppskrift.
 </div>
 </details>
@@ -55,7 +55,7 @@ Byggeklosser.lagKloss("Bright blue", 8, 15)
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du trykker Play?
 
 1. ModuleScriptet lager en tom huskeliste som heter `Byggeklosser`.

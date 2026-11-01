@@ -13,8 +13,8 @@ Ikke få panikk. Alle programmerere har feil i koden sin, hele tiden. Det som gj
 4. **Sjekk Anchored.** Faller klossen ned eller forsvinner? Da mangler den `Anchored = true`.
 5. **Forklar koden til en bamse,** linje for linje, høyt. Det høres tullete ut, men ekte programmerere gjør dette også. Det har til og med et navn: gummiand-metoden.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Når noe ikke virker, gjør du dette:
 
 1. Se etter **rød tekst** nederst i Studio. Les den høyt.
@@ -53,8 +53,8 @@ Prøv selv:
 - [ ] Finn en Event på Humanoid-siden som heter `Died`. Kan du lage en kloss som skriver «Å nei!» i Output når du dør?
 - [ ] Åpne siden om [Part](https://create.roblox.com/docs/reference/engine/classes/Part) og finn en egenskap du ikke har prøvd før. Prøv den!
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – hvordan leser jeg en engelsk side?</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – hvordan leser jeg en engelsk side?</summary>
+<div markdown="1">
 Du trenger ikke forstå alt. Se etter **navnene** du kjenner fra koden, som `WalkSpeed`. De er de samme på engelsk og i koden din.
 
 Nettleseren kan også oversette siden til norsk. Høyreklikk og velg **Oversett** eller **Translate**. Navnene i koden blir ikke oversatt, og det er bra, for de må skrives akkurat sånn.

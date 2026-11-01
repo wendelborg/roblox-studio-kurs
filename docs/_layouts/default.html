@@ -1,86 +1,94 @@
 <!doctype html>
 {% assign m = nil %}{% if page.nr %}{% assign m = site.data.oppdrag | where: "nr", page.nr | first %}{% endif %}
 {% assign u = nil %}{% if page.utforsk %}{% assign u = site.data.utforsk | where: "ord", page.utforsk | first %}{% endif %}
-<html lang="{{ site.lang }}">
+{% assign ds = "https://cdn.jsdelivr.net/npm/@digdir/designsystemet-css@1.23.0/dist" %}
+<html lang="{{ site.lang }}" data-color-scheme="auto">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if m %}Oppdrag {{ m.nr }}: {{ m.tittel }} · {% elsif u %}{{ u.tittel }} · Utforsk videre · {% elsif page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script>try { var t = localStorage.getItem("roblox-kurs:tema"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-color-scheme", t); } catch (e) {}</script>
+  <!-- Designsystemet (designsystemet.no): skrift, komponenter og standardtema -->
+  <link rel="stylesheet" href="https://altinncdn.no/fonts/inter/v4.1/inter.css" integrity="sha384-OcHzc/By/OPw9uJREawUCjP2inbOGKtKb4A/I2iXxmknUfog2H8Adx71tWVZRscD" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ ds }}/src/index.css">
+  <link rel="stylesheet" href="{{ ds }}/theme/designsystemet.css">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-  <script>try { var t = localStorage.getItem("roblox-kurs:tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='24' height='24' rx='5' fill='%232f7cf6' transform='rotate(12 16 16)'/%3E%3C/svg%3E">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@digdir/designsystemet-web@1.23.0/+esm"></script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='24' height='24' rx='5' fill='%230062ba' transform='rotate(12 16 16)'/%3E%3C/svg%3E">
 </head>
-<body{% if m %} style="--tema: {{ m.farge }}"{% elsif u %} style="--tema: {% if u.nivaa == 1 %}#059669{% elsif u.nivaa == 2 %}#d97706{% else %}#dc2626{% endif %}"{% endif %} data-side="{% if m %}oppdrag-{{ m.nokkel }}{% else %}{{ page.url | remove: '/' | default: 'forside' }}{% endif %}">
+<body data-side="{% if m %}oppdrag-{{ m.nokkel }}{% else %}{{ page.url | remove: '/' | default: 'forside' }}{% endif %}">
+  <a class="ds-skip-link" href="#innhold">Hopp til innholdet</a>
   <header class="topp">
-    <a class="logo" href="{{ '/' | relative_url }}"><span class="logo-kloss" aria-hidden="true"></span>{{ site.title }}</a>
-    <nav>
-      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Oppdrag</a>
-      <a href="{{ '/hjelp/' | relative_url }}"{% if page.url == '/hjelp/' %} aria-current="page"{% endif %}>Hjelp</a>
-      <a href="{{ '/ordbok/' | relative_url }}"{% if page.url == '/ordbok/' %} aria-current="page"{% endif %}>Ordbok</a>
-      <button class="tema-knapp" id="tema-knapp" type="button" aria-label="Bytt mellom lyst og mørkt utseende" title="Lyst eller mørkt">
-        <svg class="lys-ikon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-        <svg class="mork-ikon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <a class="ds-link logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav aria-label="Hovedmeny">
+      <a class="ds-button" data-variant="{% if page.url == '/' %}secondary{% else %}tertiary{% endif %}" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Oppdrag</a>
+      <a class="ds-button" data-variant="{% if page.url == '/hjelp/' %}secondary{% else %}tertiary{% endif %}" href="{{ '/hjelp/' | relative_url }}"{% if page.url == '/hjelp/' %} aria-current="page"{% endif %}>Hjelp</a>
+      <a class="ds-button" data-variant="{% if page.url == '/ordbok/' %}secondary{% else %}tertiary{% endif %}" href="{{ '/ordbok/' | relative_url }}"{% if page.url == '/ordbok/' %} aria-current="page"{% endif %}>Ordbok</a>
+      <button class="ds-button tema-knapp" data-variant="tertiary" data-icon="true" id="tema-knapp" type="button" aria-label="Bytt mellom lyst og mørkt utseende" title="Lyst eller mørkt">
+        <svg class="lys-ikon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="mork-ikon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       </button>
     </nav>
   </header>
 
-  <main>
+  <main id="innhold">
     {% if m %}
-    <div class="oppdrag-hode">
-      <span class="merke">Oppdrag {{ m.nr }} av {{ site.data.oppdrag.size }}</span>
-      <h1>{{ m.tittel }}</h1>
-      <p class="du-laerer"><strong>Du lærer:</strong> {{ page.lerer }}</p>
+    <div class="ds-card side-hode" data-variant="tinted" data-color="accent">
+      <span class="ds-tag" data-color="accent">Oppdrag {{ m.nr }} av {{ site.data.oppdrag.size }}</span>
+      <h1 class="ds-heading" data-size="xl">{{ m.tittel }}</h1>
+      <p class="ds-paragraph"><strong>Du lærer:</strong> {{ page.lerer }}</p>
     </div>
     {% elsif u %}
-    <div class="oppdrag-hode">
-      <span class="merke">Utforsk videre · {% if u.nivaa == 1 %}Lett{% elsif u.nivaa == 2 %}Middels{% else %}Vanskelig{% endif %}</span>
-      <h1>{{ u.tittel }}</h1>
-      <p class="du-laerer">{{ u.tekst }} Søkeordet er <code>{{ u.ord }}</code>.</p>
+    <div class="ds-card side-hode" data-variant="tinted" data-color="{% if u.nivaa == 1 %}success{% elsif u.nivaa == 2 %}warning{% else %}danger{% endif %}">
+      <span class="ds-tag" data-color="{% if u.nivaa == 1 %}success{% elsif u.nivaa == 2 %}warning{% else %}danger{% endif %}">Utforsk videre · {% if u.nivaa == 1 %}Lett{% elsif u.nivaa == 2 %}Middels{% else %}Vanskelig{% endif %}</span>
+      <h1 class="ds-heading" data-size="xl">{{ u.tittel }}</h1>
+      <p class="ds-paragraph">{{ u.tekst }} Søkeordet er <code>{{ u.ord }}</code>.</p>
     </div>
     {% elsif page.title and page.vis_tittel != false %}
-    <h1>{{ page.title }}</h1>
+    <h1 class="ds-heading" data-size="xl">{{ page.title }}</h1>
     {% endif %}
 
     {{ content }}
 
     {% if m %}
-    <section class="hemmelig">
-      <h2>Hemmelig ord: <em>{{ m.ord }}</em></h2>
-      <p>Forklar ordet <strong>{{ m.ord }}</strong> til en voksen med dine egne ord. Klarer du det, er oppdraget fullført!</p>
-      <label class="fullfort"><input type="checkbox" data-lagre="ferdig-{{ m.nokkel }}"> Jeg har forklart ordet. Oppdraget er fullført!</label>
+    <section class="ds-card hemmelig" data-variant="tinted" data-color="success">
+      <h2 class="ds-heading" data-size="md">Hemmelig ord: {{ m.ord }}</h2>
+      <p class="ds-paragraph">Forklar ordet <strong>{{ m.ord }}</strong> til en voksen med dine egne ord. Klarer du det, er oppdraget fullført!</p>
+      <div class="ds-field">
+        <input class="ds-input" type="checkbox" id="ferdig" data-lagre="ferdig-{{ m.nokkel }}">
+        <label for="ferdig">Jeg har forklart ordet. Oppdraget er fullført!</label>
+      </div>
     </section>
 
     {% assign forrige = m.nr | minus: 1 %}{% assign neste = m.nr | plus: 1 %}
-    <nav class="bla">
-      {% if forrige >= 1 %}<a href="{{ '/oppdrag/' | append: forrige | append: '/' | relative_url }}">← Oppdrag {{ forrige }}</a>{% else %}<a href="{{ '/' | relative_url }}">← Alle oppdrag</a>{% endif %}
-      {% if neste <= site.data.oppdrag.size %}<a class="neste" href="{{ '/oppdrag/' | append: neste | append: '/' | relative_url }}">Oppdrag {{ neste }} →</a>{% else %}<a class="neste" href="{{ '/sluttprosjekt/' | relative_url }}">Sluttprosjekt →</a>{% endif %}
+    <nav class="bla" aria-label="Forrige og neste">
+      {% if forrige >= 1 %}<a class="ds-button" data-variant="secondary" href="{{ '/oppdrag/' | append: forrige | append: '/' | relative_url }}">← Oppdrag {{ forrige }}</a>{% else %}<a class="ds-button" data-variant="secondary" href="{{ '/' | relative_url }}">← Alle oppdrag</a>{% endif %}
+      {% if neste <= site.data.oppdrag.size %}<a class="ds-button" href="{{ '/oppdrag/' | append: neste | append: '/' | relative_url }}">Oppdrag {{ neste }} →</a>{% else %}<a class="ds-button" href="{{ '/sluttprosjekt/' | relative_url }}">Sluttprosjekt →</a>{% endif %}
     </nav>
     {% endif %}
 
     {% if u %}
     {% if u.ord == "table" %}{% assign klasse = "https://create.roblox.com/docs/reference/engine/libraries/table" %}{% else %}{% assign klasse = "https://create.roblox.com/docs/reference/engine/classes/" | append: u.ord %}{% endif %}
-    <section class="boks ide les-mer">
-      <h3>Les mer i Roblox sin dokumentasjon</h3>
-      <p>Sidene er på engelsk. Høyreklikk og velg «Oversett» hvis du vil lese på norsk, og spør gjerne en voksen.</p>
-      <ul>
-        <li><a href="{{ u.guide }}" target="_blank" rel="noopener">{{ u.guidetittel }}</a>: en forklaring med eksempler</li>
-        <li><a href="{{ klasse }}" target="_blank" rel="noopener">{{ u.ord }}</a> i oppslagsverket: alle egenskaper, metoder og hendelser</li>
+    <section class="ds-alert les-mer" data-color="info">
+      <h2 class="ds-heading" data-size="xs">Les mer i Roblox sin dokumentasjon</h2>
+      <p class="ds-paragraph">Sidene er på engelsk. Høyreklikk og velg «Oversett» hvis du vil lese på norsk, og spør gjerne en voksen.</p>
+      <ul class="ds-list">
+        <li><a class="ds-link" href="{{ u.guide }}" target="_blank" rel="noopener">{{ u.guidetittel }}</a>: en forklaring med eksempler</li>
+        <li><a class="ds-link" href="{{ klasse }}" target="_blank" rel="noopener">{{ u.ord }}</a> i oppslagsverket: alle egenskaper, metoder og hendelser</li>
       </ul>
     </section>
-    <nav class="bla">
-      <a href="{{ '/' | relative_url }}#utforsk">← Alle konsepter</a>
-      <a class="neste" href="{{ '/hjelp/' | relative_url }}#sla-opp">Slik slår du opp →</a>
+    <nav class="bla" aria-label="Videre">
+      <a class="ds-button" data-variant="secondary" href="{{ '/' | relative_url }}#utforsk">← Alle konsepter</a>
+      <a class="ds-button" href="{{ '/hjelp/' | relative_url }}#sla-opp">Slik slår du opp →</a>
     </nav>
     {% endif %}
   </main>
 
   <footer>
+    <hr class="ds-divider">
     {% assign repo = site.github.repository_url | default: site.repo %}{% assign gren = site.github.source.branch | default: "main" %}
-    <p>Lagret fremgang ligger bare i denne nettleseren.{% if repo %} · Er du voksen? Les {% if m %}<a href="{{ repo }}/blob/{{ gren }}/veileder/{{ m.veileder }}">veilederkapitlet for dette oppdraget</a>{% else %}<a href="{{ repo }}#readme">veilederguiden</a>{% endif %}.{% endif %}</p>
+    <p class="ds-paragraph" data-size="sm">Lagret fremgang ligger bare i denne nettleseren.{% if repo %} · Er du voksen? Les {% if m %}<a class="ds-link" href="{{ repo }}/blob/{{ gren }}/veileder/{{ m.veileder }}">veilederkapitlet for dette oppdraget</a>{% else %}<a class="ds-link" href="{{ repo }}#readme">veilederguiden</a>{% endif %}.{% endif %} Laget med <a class="ds-link" href="https://designsystemet.no">Designsystemet</a>.</p>
   </footer>
   <script src="{{ '/assets/kurs.js' | relative_url }}"></script>
   <script src="{{ '/assets/forklar.js' | relative_url }}"></script>

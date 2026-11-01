@@ -11,8 +11,8 @@ Terreng er ikke klosser. Det er som **leire** du kan forme med en pensel: Du kan
 
 Alt terreng ligger i én ting i Explorer: **Workspace → Terrain**.
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på en sandkasse. Du kan lage en haug, grave et hull, klappe sanden flat og helle vann i en grop.
 
 Terrengverktøyet i Roblox er en digital sandkasse. Du bruker musa i stedet for spaden.
@@ -43,12 +43,12 @@ I Terrain Editor finner du penselverktøy. De heter litt forskjellig i ulike ver
 
 For hvert verktøy kan du velge **størrelse** (hvor stor penselen er) og **styrke** (hvor mye den gjør hver gang).
 
-<div class="boks gjett" markdown="1">
+<div class="ds-alert gjett" data-color="warning" markdown="1">
 ### Gjett først!
 
 Lag en innsjø og gå ut i vannet. Hva skjer med figuren din?
 
-<details markdown="1"><summary>Se svaret</summary>
+<details class="ds-details" markdown="1"><summary>Se svaret</summary>
 Figuren begynner å svømme! Vann i terreng er ekte vann i Roblox. Du kan dykke med mellomromstasten og svømme opp igjen.
 </details>
 </div>
@@ -84,7 +84,7 @@ end
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du trykker Play?
 
 1. `FillBlock` fyller en stor firkantet boks med vann. Det blir havet.
@@ -95,8 +95,8 @@ end
 6. Hver gang du trykker Play, får du en ny verden!
 </div>
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Koden er som en robot med en bøtte:
 
 1. Først heller den ut et helt hav.
@@ -119,7 +119,7 @@ Nå skal du lage en dam med grønt, giftig vann. Den som bader i den, mister lit
 4. Sett **Anchored** på, **CanCollide** av og **Transparency** til 1. Nå er den en usynlig giftsone.
 5. Legg et Script inni `Gift`.
 
-<div class="boks obs" markdown="1">
+<div class="ds-alert" data-color="danger" markdown="1">
 ### Vannfargen gjelder alt vann
 
 `WaterColor` endrer fargen på **alt** vannet i verdenen din, også havet. Vil du ha vanlig blått vann et annet sted? Da kan du lage dammen av et annet materiale i stedet, for eksempel **Mud**, eller la den usynlige giftsonen gjøre jobben alene.
@@ -147,7 +147,7 @@ end
 ```
 </div>
 
-<div class="hva-skjer" markdown="1">
+<div class="ds-card hva-skjer" data-variant="tinted" markdown="1">
 ### Hva skjer når du hopper uti?
 
 1. Løkka går for alltid, to ganger i sekundet.
@@ -158,8 +158,8 @@ end
 6. Etter et halvt sekund sjekker løkka igjen. Blir du i vannet, mister du 5 liv til, og 5 til …
 </div>
 
-<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
-<div class="enkel-tekst" markdown="1">
+<details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div markdown="1">
 Tenk på en badevakt som ser på dammen to ganger i sekundet og roper: «Hvem er i vannet nå?»
 
 Alle som er i vannet, mister litt liv. Kommer du deg opp i tide, går det bra. Blir du for lenge, er du ute!
@@ -168,12 +168,12 @@ Vi sjekker bare **HumanoidRootPart**, den usynlige midten av figuren. Ellers vil
 </div>
 </details>
 
-<div class="boks gjett" markdown="1">
+<div class="ds-alert gjett" data-color="warning" markdown="1">
 ### Gjett først!
 
 Du starter med 100 liv. Hvor mange sekunder kan du bade før du er ute?
 
-<details markdown="1"><summary>Se svaret</summary>
+<details class="ds-details" markdown="1"><summary>Se svaret</summary>
 Cirka 10 sekunder. Du mister 5 liv to ganger i sekundet, det blir 10 liv i sekundet. 100 delt på 10 er 10. Kanskje litt lenger, fordi Roblox gir deg litt liv tilbake av seg selv.
 </details>
 </div>
@@ -198,6 +198,6 @@ Cirka 10 sekunder. Du mister 5 liv to ganger i sekundet, det blir 10 liv i sekun
 - [ ] Lag en helbredende kilde i stedet: bytt `TakeDamage(skade)` med `humanoid.Health += 5`.
 
 <nav class="bla">
-  <a href="{{ '/sluttprosjekt/' | relative_url }}">← Sluttprosjekt</a>
-  <a class="neste" href="{{ '/bonus-tinkercad/' | relative_url }}">Bonus: Tinkercad →</a>
+  <a class="ds-button" data-variant="secondary" href="{{ '/sluttprosjekt/' | relative_url }}">← Sluttprosjekt</a>
+  <a class="ds-button" href="{{ '/bonus-tinkercad/' | relative_url }}">Bonus: Tinkercad →</a>
 </nav>
