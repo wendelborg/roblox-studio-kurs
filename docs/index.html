@@ -15,6 +15,7 @@ vis_tittel: false
   </div>
 </section>
 
+<h2 class="bolk">Oppdrag</h2>
 <ul class="kart">
   {% for m in site.data.oppdrag %}
   <li data-oppdrag="{{ m.nokkel }}" style="--farge: {{ m.farge }}">
@@ -25,13 +26,22 @@ vis_tittel: false
     </a>
   </li>
   {% endfor %}
+</ul>
+
+<h2 class="bolk">Sluttprosjekt</h2>
+<ul class="kart enkel">
   <li class="sluttkort">
     <a href="{{ '/sluttprosjekt/' | relative_url }}">
       <span class="nr" style="color:#ef4444">Sluttprosjekt</span>
       <h3>Min egen obby</h3>
-      <p>Bygg din egen hinderløype med alt du har lært</p>
+      <p>Bygg din egen hinderløype med alt du har lært i oppdrag 1–{{ site.data.oppdrag.size }}</p>
     </a>
   </li>
+</ul>
+
+<h2 class="bolk">Bonusoppdrag</h2>
+<p>Ferdig med obbyen og vil ha mer? Velg det du har lyst til.</p>
+<ul class="kart">
   {% assign bonuser = "bonus-terreng|Terreng|Fjell, huler, hav og øyer;bonus-tinkercad|3D-modell i Tinkercad|Bygg din egen pokal av ferdige former;bonus-blender|3D-modell i Blender|Form en sprettsopp som proffene" | split: ";" %}
   {% for b in bonuser %}{% assign d = b | split: "|" %}
   <li class="bonuskort" style="--farge: #7c3aed">

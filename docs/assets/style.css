@@ -303,3 +303,7 @@ div.highlighter-rouge, div.highlight, pre { max-width: 100%; overflow-x: auto; }
 .ordliste li.sjekk:has(input:checked) > .sjekk-tekst { text-decoration: none; }
 .ordliste li.sjekk:has(input:checked) .ord { color: #10b981; }
 .kart .bonuskort a { border-style: dashed; border-top-style: solid; }
+h2.bolk { margin-top: 32px; }
+.kart.enkel { grid-template-columns: 1fr; }
+.kart.enkel .sluttkort a { padding: 22px 24px; }
+.kart.enkel .sluttkort h3 { font-size: 28px; }
