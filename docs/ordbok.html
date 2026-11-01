@@ -2,23 +2,40 @@
 title: Ordbok
 permalink: /ordbok/
 ---
-<p>Her er alle de hemmelige ordene. Prøv å forklare hvert ord til en voksen med dine egne ord. Klarer du det, krysser du av. Kikk på forklaringen bare hvis du står helt fast!</p>
-<p>Du kan: <span id="ord-teller">0 av {{ site.data.ordbok.size }} ord</span>. Når alle har kryss, får du et diplom.</p>
+{% assign hemmelige = site.data.ordbok | where: "hemmelig", true %}
+{% assign ekstra = site.data.ordbok | where: "hemmelig", false %}
+<p>Her er alle ordene du lærer i kurset. Prøv å forklare hvert ord til en voksen med dine egne ord. Klarer du det, krysser du av. Kikk på forklaringen bare hvis du står helt fast!</p>
 
-<ul class="ordliste">
-  {% for o in site.data.ordbok %}
-  <li><input type="checkbox" aria-label="{{ o.ord }}"><span class="ord">{{ o.ord }}</span>
+<h2>De hemmelige ordene</h2>
+<p>Hvert oppdrag har ett hemmelig ord. Du kan: <span id="ord-teller">0 av {{ hemmelige.size }} ord</span>. Når alle har kryss, får du et diplom.</p>
+
+<ul class="ordliste hemmelige">
+  {% for o in hemmelige %}
+  <li><input type="checkbox" aria-label="{{ o.ord }}"><span class="ord">{{ o.ord }}</span><span class="hvor">{{ o.hvor }}</span>
+    <span class="sprak">Engelsk: <em>{{ o.engelsk }}</em> · Norsk: <em>{{ o.norsk }}</em></span>
     <details><summary>Kikk på forklaringen</summary>{{ o.forklaring | escape }}</details>
   </li>
   {% endfor %}
 </ul>
 
 <section id="diplom" hidden>
-  <p class="ikke-skriv-ut">Du kan alle ordene! Skriv navnet ditt og skriv ut diplomet.</p>
+  <p class="ikke-skriv-ut">Du kan alle de hemmelige ordene! Skriv navnet ditt og skriv ut diplomet.</p>
   <input id="diplom-navn" data-lagre="diplom-navn" placeholder="Navnet ditt" aria-label="Navnet ditt">
   <h2>Diplom</h2>
   <p>Dette bekrefter at</p>
   <p class="navn" id="diplom-navn-ut">…</p>
-  <p>kan forklare alle de {{ site.data.ordbok.size }} ordene i Game on<br>og er en ekte <strong>Luau-programmerer</strong>!</p>
+  <p>kan forklare alle de {{ hemmelige.size }} hemmelige ordene i {{ site.title }}<br>og er en ekte <strong>Luau-programmerer</strong>!</p>
   <button id="skriv-ut" type="button">Skriv ut diplomet</button>
 </section>
+
+<h2>Flere ord du har møtt</h2>
+<p>Disse ordene dukker også opp i kurset. Du trenger dem ikke for diplomet, men ekte programmerere kan dem!</p>
+
+<ul class="ordliste ekstra">
+  {% for o in ekstra %}
+  <li><input type="checkbox" aria-label="{{ o.ord }}"><span class="ord">{{ o.ord }}</span><span class="hvor">{{ o.hvor }}</span>
+    <span class="sprak">Engelsk: <em>{{ o.engelsk }}</em> · Norsk: <em>{{ o.norsk }}</em></span>
+    <details><summary>Kikk på forklaringen</summary>{{ o.forklaring | escape }}</details>
+  </li>
+  {% endfor %}
+</ul>

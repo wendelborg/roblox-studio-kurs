@@ -380,3 +380,10 @@ details.forklaring li span:last-child { font-size: 16px; }
 .kart .sluttkort a { background: var(--kode-bg); color: var(--kode-tekst); border-color: var(--kant); border-top-color: #ef4444; }
 .kart .sluttkort p { color: var(--kode-tekst); opacity: .8; }
 details.forklaring > summary { border-color: var(--kant); }
+
+.ordliste .hvor { font: 700 13px/1.6 "Nunito", sans-serif; color: var(--dempet); white-space: nowrap; }
+.ordliste .sprak { flex-basis: 100%; font-size: 15px; color: var(--dempet); margin: 2px 0 0; }
+.ordliste .sprak em { font-style: normal; font-weight: 700; color: var(--tekst); }
+.ordliste .sjekk-tekst { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.ordliste .sjekk-tekst .ord { flex: 1; }
+.ordliste .sjekk-tekst details { flex-basis: 100%; }

@@ -1,28 +1,187 @@
+# Ordene i ordboka.
+# hemmelig: true  = det hemmelige ordet fra et oppdrag. Alle disse må krysses av for å få diplom.
+# hemmelig: false = flere ord barnet møter i kurset. Fine å kunne, men ikke nødvendige for diplomet.
+# hvor: hvor i kurset ordet dukker opp første gang.
+# engelsk / norsk: ordet på engelsk og hva det betyr på norsk.
+
 - ord: Parent / Child
-  forklaring: Forelder og barn i Explorer-treet. Klossen er forelder til skriptet som ligger inni den.
-- ord: String
-  forklaring: Tekst i anførselstegn, som "Hei!".
+  engelsk: "parent / child"
+  norsk: "forelder / barn"
+  hemmelig: true
+  hvor: Oppdrag 1
+  forklaring: Forelder og barn i Explorer-treet. Klossen er forelder til skriptet som ligger inni den, akkurat som et Kinderegg.
 - ord: Variabel
+  engelsk: "variable"
+  norsk: "variabel"
+  hemmelig: true
+  hvor: Oppdrag 2
   forklaring: En boks med navnelapp. Du legger noe oppi og bruker navnet etterpå.
-- ord: Boolean
-  forklaring: "Ja eller nei: true eller false."
 - ord: Anchored
+  engelsk: "anchored"
+  norsk: "forankret, festet"
+  hemmelig: true
+  hvor: Oppdrag 3
   forklaring: Festet med en usynlig spiker. En kloss som er Anchored, faller ikke ned.
 - ord: Hendelse (event)
-  forklaring: En dørklokke som koden venter på, for eksempel Touched.
+  engelsk: "event"
+  norsk: "hendelse"
+  hemmelig: true
+  hvor: Oppdrag 4
+  forklaring: En dørklokke som koden venter på, for eksempel Touched, som ringer når noe rører en kloss.
 - ord: Betingelse
-  forklaring: Et ja/nei-spørsmål med if.
+  engelsk: "condition"
+  norsk: "betingelse"
+  hemmelig: true
+  hvor: Oppdrag 5
+  forklaring: Et ja/nei-spørsmål med if. Hvis svaret er ja, gjør koden én ting, ellers noe annet.
 - ord: Løkke
-  forklaring: Noe som gjentas, som refrenget i en sang.
+  engelsk: "loop"
+  norsk: "løkke"
+  hemmelig: true
+  hvor: Oppdrag 6
+  forklaring: Noe som gjentas, som refrenget i en sang. while gjentar for alltid, for gjentar et bestemt antall ganger.
 - ord: Funksjon
+  engelsk: "function"
+  norsk: "funksjon"
+  hemmelig: true
+  hvor: Oppdrag 7
   forklaring: En oppskrift med navn som du kan bruke mange ganger.
-- ord: Parameter
-  forklaring: Ingrediensen du sender inn i oppskriften.
+- ord: Debounce
+  engelsk: "debounce"
+  norsk: "avprelling. Ordet kommer fra knapper som «spretter» og trykkes flere ganger av seg selv"
+  hemmelig: true
+  hvor: Oppdrag 8
+  forklaring: En vakt som hindrer at ting skjer for mange ganger, for eksempel at én mynt gir hundre poeng.
+- ord: Backpack
+  engelsk: "backpack"
+  norsk: "ryggsekk"
+  hemmelig: true
+  hvor: Oppdrag 9
+  forklaring: Ryggsekken til spilleren. Et verktøy i sekken er ikke i hånden, så det teller ikke når døra sjekker om du holder nøkkelen.
 - ord: Attributt
-  forklaring: En lapp med navn og verdi som du klistrer på en spiller eller en ting, for eksempel HarDen = true.
+  engelsk: "attribute"
+  norsk: "attributt, en egenskap man klistrer på"
+  hemmelig: true
+  hvor: Oppdrag 10
+  forklaring: En lapp med navn og verdi som du klistrer på en spiller eller en ting, for eksempel HarDen = true. Alle skript kan lese den.
 - ord: Tilfeldig (random)
+  engelsk: "random"
+  norsk: "tilfeldig"
+  hemmelig: true
+  hvor: Oppdrag 11
   forklaring: Et tall datamaskinen velger selv, som å kaste en terning. math.random(1, 6) gir et tall fra 1 til 6.
 - ord: NPC
-  forklaring: En figur i spillet som styres av datamaskinen, ikke av en spiller.
-- ord: Debounce
-  forklaring: En vakt som hindrer at ting skjer for mange ganger.
+  engelsk: "non-player character"
+  norsk: "figur som ikke er en spiller"
+  hemmelig: true
+  hvor: Oppdrag 12
+  forklaring: En figur i spillet som styres av datamaskinen, ikke av en spiller, som roboten i Har den!
+
+- ord: String
+  engelsk: "string"
+  norsk: "tekststreng. En streng er en rekke bokstaver etter hverandre, som perler på en snor"
+  hemmelig: false
+  hvor: Oppdrag 1
+  forklaring: Tekst i anførselstegn, som "Hei!".
+- ord: Output
+  engelsk: "output"
+  norsk: "utdata, det som kommer ut"
+  hemmelig: false
+  hvor: Oppdrag 1
+  forklaring: Vinduet der print skriver, og der de røde feilmeldingene kommer.
+- ord: Boolean
+  engelsk: "boolean"
+  norsk: "sannhetsverdi. Oppkalt etter matematikeren George Boole"
+  hemmelig: false
+  hvor: Oppdrag 2
+  forklaring: "Ja eller nei: true eller false."
+- ord: Model
+  engelsk: "model"
+  norsk: "modell"
+  hemmelig: false
+  hvor: Oppdrag 3
+  forklaring: En gruppe klosser som hører sammen, som en mappe. Den limer ikke klossene sammen. Det gjør sveising.
+- ord: Humanoid
+  engelsk: "humanoid"
+  norsk: "menneskeaktig"
+  hemmelig: false
+  hvor: Oppdrag 4
+  forklaring: Livsmåleren og beina til en figur. Den har liv (Health), fart (WalkSpeed) og hopphøyde (JumpHeight).
+- ord: nil
+  engelsk: "nil"
+  norsk: "ingenting"
+  hemmelig: false
+  hvor: Oppdrag 5
+  forklaring: Ingenting. Det du får når du leter etter noe som ikke finnes.
+- ord: Kommentar
+  engelsk: "comment"
+  norsk: "kommentar"
+  hemmelig: false
+  hvor: Oppdrag 5
+  forklaring: Tekst etter -- som datamaskinen hopper over. Den er bare for mennesker.
+- ord: Parameter
+  engelsk: "parameter"
+  norsk: "parameter"
+  hemmelig: false
+  hvor: Oppdrag 7
+  forklaring: Ingrediensen du sender inn i oppskriften, for eksempel fargen i lagKloss.
+- ord: return
+  engelsk: "return"
+  norsk: "gi tilbake"
+  hemmelig: false
+  hvor: Oppdrag 7
+  forklaring: Stopper funksjonen, og kan gi tilbake et svar til den som brukte den.
+- ord: leaderstats
+  engelsk: "leader stats"
+  norsk: "tallene på ledertavla"
+  hemmelig: false
+  hvor: Oppdrag 8
+  forklaring: Mappa på spilleren som Roblox viser som poengtavle. Den må hete nøyaktig leaderstats.
+- ord: Verktøy (Tool)
+  engelsk: "tool"
+  norsk: "verktøy"
+  hemmelig: false
+  hvor: Oppdrag 9
+  forklaring: En ting spilleren kan plukke opp og holde, som nøkkelen. Delen man holder i, heter Handle.
+- ord: Server
+  engelsk: "server"
+  norsk: "tjener, maskinen som serverer spillet til alle"
+  hemmelig: false
+  hvor: Oppdrag 10
+  forklaring: Datamaskinen hos Roblox som kjører spillet og bestemmer hva som er sant, for eksempel hvem som har den.
+- ord: Klient
+  engelsk: "client"
+  norsk: "klient, kunde. Den som får spillet servert"
+  hemmelig: false
+  hvor: Oppdrag 10
+  forklaring: Din egen PC, nettbrett eller telefon. Den tegner spillet på skjermen og sender tastetrykkene dine til serveren.
+- ord: Huskeliste (tabell)
+  engelsk: "table"
+  norsk: "tabell"
+  hemmelig: false
+  hvor: Sluttprosjektet
+  forklaring: Én variabel som kan huske mange ting, for eksempel når hver spiller startet løypa.
+- ord: Sjekkpunkt
+  engelsk: "checkpoint"
+  norsk: "sjekkpunkt"
+  hemmelig: false
+  hvor: Sluttprosjektet
+  forklaring: Et sted i løypa du starter fra igjen når du dør. Det lages med RespawnLocation.
+- ord: DataStore
+  engelsk: "data store"
+  norsk: "datalager"
+  hemmelig: false
+  hvor: Sluttprosjektet
+  forklaring: Roblox sitt lager for ting som skal huskes selv når ingen spiller, som en rekord.
+- ord: Terreng
+  engelsk: "terrain"
+  norsk: "terreng"
+  hemmelig: false
+  hvor: Bonus
+  forklaring: Landskap du former som leire, med fjell, vann, sand og snø, i stedet for klosser.
+- ord: Mesh
+  engelsk: "mesh"
+  norsk: "nett eller maske, som et nett av små trekanter"
+  hemmelig: false
+  hvor: Bonus
+  forklaring: Formen til en 3D-modell, laget av mange små flater. Modeller fra Tinkercad og Blender blir en MeshPart.

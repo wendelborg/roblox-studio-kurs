@@ -95,7 +95,7 @@
       if (stolpe) stolpe.style.width = (100 * ferdig / kort.length) + "%";
     }
 
-    var ord = document.querySelectorAll(".ordliste input[type=checkbox]");
+    var ord = document.querySelectorAll(".ordliste.hemmelige input[type=checkbox]");
     if (ord.length) {
       var kan = 0;
       ord.forEach(function (b) { if (b.checked) kan += 1; });

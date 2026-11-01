@@ -22,24 +22,26 @@
 | Studio fryser | En `while true`-løkke mangler `task.wait()` |
 | Ingenting skjer | Skriptet ligger feil sted, eller det er et LocalScript i stedet for Script |
 
-**Ordliste – ordene barnet samler:**
+**Ordliste – ordene barnet samler:** Hvert oppdrag har ett hemmelig ord. De tolv ordene gir diplom i ordboka på barnets side.
 
-| Ord | Med egne ord |
-| --- | --- |
-| Parent / Child | Forelder og barn i Explorer-treet |
-| String | Tekst i anførselstegn |
-| Variabel | En boks med navnelapp |
-| Boolean | Ja eller nei (`true` / `false`) |
-| Anchored | Festet med en usynlig spiker, faller ikke |
-| Hendelse (event) | En dørklokke koden venter på |
-| Betingelse | Et ja/nei-spørsmål med `if` |
-| Løkke | Et refreng som gjentas |
-| Funksjon | En oppskrift med navn |
-| Parameter | Ingrediensen du sender inn i oppskriften |
-| Attributt | En lapp med navn som alle skript kan lese |
-| Debounce | En vakt som hindrer at ting skjer for mange ganger |
+| Oppdrag | Ord | Engelsk | Med egne ord |
+| --- | --- | --- | --- |
+| 1 | Parent / Child | parent / child | Forelder og barn i Explorer-treet |
+| 2 | Variabel | variable | En boks med navnelapp |
+| 3 | Anchored | anchored | Festet med en usynlig spiker, faller ikke |
+| 4 | Hendelse (event) | event | En dørklokke koden venter på |
+| 5 | Betingelse | condition | Et ja/nei-spørsmål med `if` |
+| 6 | Løkke | loop | Et refreng som gjentas |
+| 7 | Funksjon | function | En oppskrift med navn |
+| 8 | Debounce | debounce | En vakt som hindrer at ting skjer for mange ganger |
+| 9 | Backpack | backpack | Ryggsekken. Et verktøy der er ikke i hånden. |
+| 10 | Attributt | attribute | En lapp med navn som alle skript kan lese |
+| 11 | Tilfeldig (random) | random | Et tall datamaskinen velger, som en terning |
+| 12 | NPC | non-player character | En figur som styres av datamaskinen |
 
-**Gjør det til et spill:** Skriv ut ordlista og la barnet krysse av hvert ord det kan forklare. Når alle ordene er krysset av, blir det diplom og en belønning dere har avtalt på forhånd.
+Ordboka har også en del med flere ord barnet møter, som String, Boolean, nil, Humanoid, Model, leaderstats, server og klient, huskeliste (tabell), sjekkpunkt og DataStore. Alle ordene har både det engelske ordet og hva det betyr på norsk, så barnet kjenner dem igjen i oppslagsverket. De er ikke nødvendige for diplomet. Alle ordene ligger i `docs/_data/ordbok.yml`, og `hemmelig: true` bestemmer hvilke som teller for diplomet.
+
+**Gjør det til et spill:** Skriv ut ordlista og la barnet krysse av hvert ord det kan forklare. Når alle de hemmelige ordene er krysset av, blir det diplom og en belønning dere har avtalt på forhånd.
 
 **Oppslagsverk:** Roblox har et fullstendig oppslagsverk på engelsk. Bør barnet bruke det? Ja, men gradvis og sammen med deg. Å slå opp er en av de viktigste ferdighetene en programmerer har, og barnet merker fort at navnene i oppslagsverket er de samme som i koden.
 
