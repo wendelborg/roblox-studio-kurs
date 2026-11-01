@@ -1,6 +1,6 @@
 # Bonus: Terreng
 
-[← Sluttprosjekt: Min egen obby](11-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: En robot som spiller Har den! →](13-bonus-npc.md)
+[← Sluttprosjekt: Min egen obby](13-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: Egen 3D-modell →](15-bonus-3d-modell.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/bonus-terreng/](https://wendelborg.github.io/roblox-studio-kurs/bonus-terreng/)
 
@@ -41,7 +41,7 @@ end
 
 - `FillBlock` fyller en boks og `FillBall` en kule med et materiale.
 - Halve kula ligger under havflaten. Derfor blir det en øy og ikke en ball som svever.
-- Løkka (oppdrag 6) og `math.random` (oppdrag 10) gir en ny verden hver gang man trykker Play.
+- Løkka (oppdrag 6) og `math.random` (oppdrag 11) gir en ny verden hver gang man trykker Play.
 
 **Utfordringer:**
 
@@ -52,4 +52,4 @@ end
 
 ---
 
-[← Sluttprosjekt: Min egen obby](11-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: En robot som spiller Har den! →](13-bonus-npc.md)
+[← Sluttprosjekt: Min egen obby](13-sluttprosjekt.md) · [Innhold](../README.md) · [Bonus: Egen 3D-modell →](15-bonus-3d-modell.md)

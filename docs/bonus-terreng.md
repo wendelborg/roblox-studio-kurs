@@ -63,7 +63,7 @@ Figuren begynner å svømme! Vann i terreng er ekte vann i Roblox. Du kan dykke 
 
 ## Del C: Terreng med kode
 
-Du kan også lage terreng med kode, og da kan du bruke tilfeldige tall fra oppdrag 10! Lag et Script i **ServerScriptService**.
+Du kan også lage terreng med kode, og da kan du bruke tilfeldige tall fra oppdrag 11! Lag et Script i **ServerScriptService**.
 
 <div class="skriv-selv" markdown="1">
 ```lua

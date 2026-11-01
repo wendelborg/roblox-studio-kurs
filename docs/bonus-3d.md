@@ -134,7 +134,7 @@ Når du rører pokalen, snurrer den én runde rundt seg selv, som en ballerina. 
 
 ## Utfordringer
 
-- [ ] Lag en powerup-modell til Har den! (oppdrag 10) og legg powerup-skriptet inni den.
+- [ ] Lag en powerup-modell til Har den! (oppdrag 11) og legg powerup-skriptet inni den.
 - [ ] Få pokalen til å snurre for alltid med en `while`-løkke.
 - [ ] Lag en modell av deg selv, kjæledyret ditt eller drømmebilen din i Tinkercad.
 - [ ] Gi modellen din en farge og et materiale i Properties (`Color` og `Material`).

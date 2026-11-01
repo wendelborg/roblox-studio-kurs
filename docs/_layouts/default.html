@@ -1,9 +1,10 @@
 <!doctype html>
+{% assign m = nil %}{% if page.nr %}{% assign m = site.data.oppdrag | where: "nr", page.nr | first %}{% endif %}
 <html lang="{{ site.lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.nr %}Oppdrag {{ page.nr }}: {{ page.title }} · {% elsif page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <title>{% if m %}Oppdrag {{ m.nr }}: {{ m.tittel }} · {% elsif page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +12,6 @@
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='24' height='24' rx='5' fill='%232f7cf6' transform='rotate(12 16 16)'/%3E%3C/svg%3E">
 </head>
-{% assign m = nil %}{% if page.nr %}{% assign m = site.data.oppdrag | where: "nr", page.nr | first %}{% endif %}
 <body{% if m %} style="--tema: {{ m.farge }}"{% endif %} data-side="{% if m %}oppdrag-{{ m.nokkel }}{% else %}{{ page.url | remove: '/' | default: 'forside' }}{% endif %}">
   <header class="topp">
     <a class="logo" href="{{ '/' | relative_url }}"><span class="logo-kloss" aria-hidden="true"></span>{{ site.title }}</a>

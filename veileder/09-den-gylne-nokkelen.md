@@ -1,6 +1,6 @@
 # Oppdrag 9: Den gylne nøkkelen
 
-[← Oppdrag 8: Myntjakt med poengtavle](08-myntjakt-med-poengtavle.md) · [Innhold](../README.md) · [Oppdrag 10: Har den! →](10-har-den.md)
+[← Oppdrag 8: Myntjakt med poengtavle](08-myntjakt-med-poengtavle.md) · [Innhold](../README.md) · [Oppdrag 10: Har den! Del 1: Hvem har den? →](10-har-den.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/9/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/9/)
 
@@ -78,4 +78,4 @@ dor.Touched:Connect(naarNoeRorer)
 
 ---
 
-[← Oppdrag 8: Myntjakt med poengtavle](08-myntjakt-med-poengtavle.md) · [Innhold](../README.md) · [Oppdrag 10: Har den! →](10-har-den.md)
+[← Oppdrag 8: Myntjakt med poengtavle](08-myntjakt-med-poengtavle.md) · [Innhold](../README.md) · [Oppdrag 10: Har den! Del 1: Hvem har den? →](10-har-den.md)

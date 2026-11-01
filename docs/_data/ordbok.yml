@@ -20,5 +20,9 @@
   forklaring: Ingrediensen du sender inn i oppskriften.
 - ord: Attributt
   forklaring: En lapp med navn og verdi som du klistrer på en spiller eller en ting, for eksempel HarDen = true.
+- ord: Tilfeldig (random)
+  forklaring: Et tall datamaskinen velger selv, som å kaste en terning. math.random(1, 6) gir et tall fra 1 til 6.
+- ord: NPC
+  forklaring: En figur i spillet som styres av datamaskinen, ikke av en spiller.
 - ord: Debounce
   forklaring: En vakt som hindrer at ting skjer for mange ganger.

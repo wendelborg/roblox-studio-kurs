@@ -1,10 +1,10 @@
 # Sluttprosjekt: Min egen obby
 
-[← Oppdrag 10: Har den!](10-har-den.md) · [Innhold](../README.md) · [Bonus: Terreng →](12-bonus-terreng.md)
+[← Oppdrag 12: Har den! Del 3: Robotmotspiller](12-har-den-robot.md) · [Innhold](../README.md) · [Bonus: Terreng →](14-bonus-terreng.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/sluttprosjekt/](https://wendelborg.github.io/roblox-studio-kurs/sluttprosjekt/)
 
-Sluttprosjektet er en hinderløype barnet designer selv, der alt fra oppdrag 1–10 brukes. Sett av 3–4 økter. Her er det *barnet* som er sjefen, og du er kunden som tester.
+Sluttprosjektet er en hinderløype barnet designer selv, der alt fra oppdrag 1–12 brukes. Sett av 3–4 økter. Her er det *barnet* som er sjefen, og du er kunden som tester.
 
 **Økt 1 – tegn før du bygger:** På papir tegner barnet løypa fra start til mål. Hver hindring får et navn og en kort forklaring på hvilken kode den trenger. Dette er ekte spillutvikling: plan først.
 
@@ -28,10 +28,10 @@ Sluttprosjektet er en hinderløype barnet designer selv, der alt fra oppdrag 1�
 
 **Siste økt – testdag:** Inviter noen i familien til å spille. Barnet ser på mens de spiller, uten å hjelpe. Hva var for vanskelig? Hva var kjedelig? Så får barnet fikse én ting. Dette lærer barnet at spill blir gode gjennom testing.
 
-**Publisering:** Les kapitlet [Dele spillet med andre](15-dele-spillet.md) før dere publiserer. Kortversjonen: publiser privat og inviter noen få dere kjenner.
+**Publisering:** Les kapitlet [Dele spillet med andre](16-dele-spillet.md) før dere publiserer. Kortversjonen: publiser privat og inviter noen få dere kjenner.
 
-**Vil barnet mer?** Det finnes tre bonuser etter sluttprosjektet: [terreng](12-bonus-terreng.md), [en robot som spiller Har den](13-bonus-npc.md) og [egen 3D-modell](14-bonus-3d-modell.md).
+**Vil barnet mer?** Det finnes to bonuser etter sluttprosjektet: [terreng](14-bonus-terreng.md) og [egen 3D-modell](15-bonus-3d-modell.md).
 
 ---
 
-[← Oppdrag 10: Har den!](10-har-den.md) · [Innhold](../README.md) · [Bonus: Terreng →](12-bonus-terreng.md)
+[← Oppdrag 12: Har den! Del 3: Robotmotspiller](12-har-den-robot.md) · [Innhold](../README.md) · [Bonus: Terreng →](14-bonus-terreng.md)

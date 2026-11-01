@@ -1,6 +1,6 @@
 # Roblox-koding: fra «hæ?» til eget spill
 
-Et Roblox Studio-kurs for barn på 9–11 år. Kurset har ti oppdrag på 45–60 minutter et sluttprosjekt der barnet bygger sin egen obby, og tre bonusoppdrag.
+Et Roblox Studio-kurs for barn på 9–11 år. Kurset har tolv oppdrag på 45–60 minutter, et sluttprosjekt der barnet bygger sin egen obby, og to bonusoppdrag.
 
 Kurset har to deler:
 
@@ -21,13 +21,14 @@ Kurset har to deler:
 | 7 | [Oppdrag 7: Lag dine egne trylleord](veileder/07-lag-dine-egne-trylleord.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/7/) |
 | 8 | [Oppdrag 8: Myntjakt med poengtavle](veileder/08-myntjakt-med-poengtavle.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/8/) |
 | 9 | [Oppdrag 9: Den gylne nøkkelen](veileder/09-den-gylne-nokkelen.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/9/) |
-| 10 | [Oppdrag 10: Har den!](veileder/10-har-den.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/10/) |
-|  | [Sluttprosjekt: Min egen obby](veileder/11-sluttprosjekt.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/sluttprosjekt/) |
-|  | [Bonus: Terreng](veileder/12-bonus-terreng.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-terreng/) |
-|  | [Bonus: En robot som spiller Har den!](veileder/13-bonus-npc.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-npc/) |
-|  | [Bonus: Egen 3D-modell](veileder/14-bonus-3d-modell.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-3d/) |
-|  | [Dele spillet med andre](veileder/15-dele-spillet.md) |  |
-|  | [Verktøykasse](veileder/16-verktoykasse.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/hjelp/) |
-|  | [Om nettsiden](veileder/17-om-nettsiden.md) |  |
+| 10 | [Oppdrag 10: Har den! Del 1: Hvem har den?](veileder/10-har-den.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/10/) |
+| 11 | [Oppdrag 11: Har den! Del 2: Powerups og felter](veileder/11-har-den-powerups.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/11/) |
+| 12 | [Oppdrag 12: Har den! Del 3: Robotmotspiller](veileder/12-har-den-robot.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/12/) |
+|  | [Sluttprosjekt: Min egen obby](veileder/13-sluttprosjekt.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/sluttprosjekt/) |
+|  | [Bonus: Terreng](veileder/14-bonus-terreng.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-terreng/) |
+|  | [Bonus: Egen 3D-modell](veileder/15-bonus-3d-modell.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/bonus-3d/) |
+|  | [Dele spillet med andre](veileder/16-dele-spillet.md) |  |
+|  | [Verktøykasse](veileder/17-verktoykasse.md) | [Åpne](https://wendelborg.github.io/roblox-studio-kurs/hjelp/) |
+|  | [Om nettsiden](veileder/18-om-nettsiden.md) |  |
 
 Begynn med [Slik bruker du kurset](veileder/00-slik-bruker-du-kurset.md). Der står det hvordan en økt kjøres, og hva som må gjøres klart i Roblox Studio før oppdrag 1.

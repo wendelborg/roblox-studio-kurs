@@ -3,7 +3,7 @@ title: "Sluttprosjekt: Min egen obby"
 permalink: /sluttprosjekt/
 ---
 
-Nå er det **du** som er sjefen! Du skal lage din egen hinderløype, og der skal du bruke alt du har lært i oppdrag 1–10. Den voksne er kunden som tester spillet ditt.
+Nå er det **du** som er sjefen! Du skal lage din egen hinderløype, og der skal du bruke alt du har lært i oppdrag 1–12. Den voksne er kunden som tester spillet ditt.
 
 Sett av 3–4 økter. Det trenger ikke bli ferdig på én dag.
 
@@ -72,5 +72,4 @@ Vil du at venner skal spille obbyen din på sine egne maskiner? Da må spillet p
 Når obbyen er ferdig, kan du prøve disse:
 
 - [Lag din egen verden med terreng]({{ '/bonus-terreng/' | relative_url }})
-- [En robot som spiller Har den!]({{ '/bonus-npc/' | relative_url }})
 - [Lag din egen 3D-modell]({{ '/bonus-3d/' | relative_url }})

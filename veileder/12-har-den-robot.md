@@ -1,12 +1,12 @@
-# Bonus: En robot som spiller Har den!
+# Oppdrag 12: Har den! Del 3: Robotmotspiller
 
-[← Bonus: Terreng](12-bonus-terreng.md) · [Innhold](../README.md) · [Bonus: Egen 3D-modell →](14-bonus-3d-modell.md)
+[← Oppdrag 11: Har den! Del 2: Powerups og felter](11-har-den-powerups.md) · [Innhold](../README.md) · [Sluttprosjekt: Min egen obby →](13-sluttprosjekt.md)
 
-> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/bonus-npc/](https://wendelborg.github.io/roblox-studio-kurs/bonus-npc/)
+> Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/oppdrag/12/](https://wendelborg.github.io/roblox-studio-kurs/oppdrag/12/)
 
 **Barnet lærer:** å lage en datastyrt figur (NPC) med en enkel «hjerne», og å utvide et eksisterende skript så det håndterer både spillere og roboter.
 
-**Forutsetning:** Oppdrag 10 (Har den!) må være ferdig, med dommerskriptet `HarDen` i ServerScriptService.
+**Forutsetning:** Oppdrag 10 må være ferdig, med dommerskriptet `HarDen` i ServerScriptService. Oppdrag 11 er ikke nødvendig, men sakte-feltet derfra virker også med roboten.
 
 **Den store ideen:** Roboten er en figur med Humanoid, akkurat som en spiller, men den styres av et skript. Hjernen har to regler: Har roboten den, jager den nærmeste spiller. Har en spiller den, løper roboten vekk. Nå kan barnet spille Har den alene, og det gjør testing mye enklere.
 
@@ -28,7 +28,7 @@ Nye ting:
 **Del C – dommer 2.0:** Dommerskriptet fra oppdrag 10 jobber med *spillere*. Roboten er ikke en spiller, bare en figur. Den nye versjonen jobber derfor med *figurer*:
 
 - `den` er nå figuren som har den.
-- `settLapp` setter attributten både på figuren og eventuelt spilleren, slik at sakte-feltet fra oppdrag 10 fortsatt virker.
+- `settLapp` setter attributten både på figuren og eventuelt spilleren, slik at sakte-feltet fra oppdrag 11 fortsatt virker.
 - En figur er «med i leken» hvis den har en Humanoid.
 - Nederst følger dommeren med på roboten og gir den den fra start.
 
@@ -44,6 +44,8 @@ Barnet erstatter hele skriptet. Sammenlign gjerne den gamle og den nye versjonen
 - [ ] Roboten kan ta powerups.
 - [ ] For spesielt interesserte: `PathfindingService`, så roboten går rundt vegger.
 
+**Hemmelig ord å forklare tilbake:** NPC
+
 ---
 
-[← Bonus: Terreng](12-bonus-terreng.md) · [Innhold](../README.md) · [Bonus: Egen 3D-modell →](14-bonus-3d-modell.md)
+[← Oppdrag 11: Har den! Del 2: Powerups og felter](11-har-den-powerups.md) · [Innhold](../README.md) · [Sluttprosjekt: Min egen obby →](13-sluttprosjekt.md)

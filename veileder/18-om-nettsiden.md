@@ -1,6 +1,6 @@
 # Om nettsiden
 
-[← Verktøykasse](16-verktoykasse.md) · [Innhold](../README.md)
+[← Verktøykasse](17-verktoykasse.md) · [Innhold](../README.md)
 
 Barnets side ligger i mappa `docs/` og bygges automatisk av GitHub Pages med Jekyll.
 
@@ -11,10 +11,9 @@ Barnets side ligger i mappa `docs/` og bygges automatisk av GitHub Pages med Jek
 | Fil | Innhold |
 | --- | --- |
 | `docs/index.html` | Forsiden med oppdragskart, fremdrift og oppsett av Studio |
-| `docs/oppdrag/1.md` … `10.md` | Ett oppdrag per fil |
+| `docs/oppdrag/1.md` … `12.md` | Ett oppdrag per fil |
 | `docs/sluttprosjekt.md` | Min egen obby |
 | `docs/bonus-terreng.md` | Bonus: terreng |
-| `docs/bonus-npc.md` | Bonus: robot som spiller Har den |
 | `docs/bonus-3d.md` | Bonus: egen 3D-modell |
 | `docs/hjelp.md` | Detektivmetoden og vanlige feilmeldinger |
 | `docs/ordbok.html` | Ordbok og diplom |
@@ -35,6 +34,6 @@ Oppdragene er vanlig Markdown. Disse byggeklossene kan brukes i dem:
 
 ---
 
-[← Verktøykasse](16-verktoykasse.md) · [Innhold](../README.md)
+[← Verktøykasse](17-verktoykasse.md) · [Innhold](../README.md)
 
 **Lagret fremgang:** Avkrysningene lagres i nettleseren med faste nøkler, ikke med oppdragsnummer. Hvert oppdrag har en `nokkel` i `docs/_data/oppdrag.yml` som aldri skal endres. Utfordringer og ord lagres med en nøkkel laget av selve teksten. Derfor kan oppdrag flyttes og nummereres om uten at fremgangen havner feil. Endrer du teksten i en utfordring, regnes den som en ny utfordring og må krysses av på nytt.

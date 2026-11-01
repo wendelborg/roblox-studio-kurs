@@ -1,6 +1,6 @@
 # Bonus: Egen 3D-modell
 
-[← Bonus: En robot som spiller Har den!](13-bonus-npc.md) · [Innhold](../README.md) · [Dele spillet med andre →](15-dele-spillet.md)
+[← Bonus: Terreng](14-bonus-terreng.md) · [Innhold](../README.md) · [Dele spillet med andre →](16-dele-spillet.md)
 
 > Barnets side for dette kapitlet: [wendelborg.github.io/roblox-studio-kurs/bonus-3d/](https://wendelborg.github.io/roblox-studio-kurs/bonus-3d/)
 
@@ -42,4 +42,4 @@ pokal.CFrame = pokal.CFrame * CFrame.Angles(0, math.rad(10), 0)
 
 ---
 
-[← Bonus: En robot som spiller Har den!](13-bonus-npc.md) · [Innhold](../README.md) · [Dele spillet med andre →](15-dele-spillet.md)
+[← Bonus: Terreng](14-bonus-terreng.md) · [Innhold](../README.md) · [Dele spillet med andre →](16-dele-spillet.md)
