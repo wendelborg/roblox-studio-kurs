@@ -41,7 +41,7 @@
 
 **Gjør det til et spill:** Skriv ut ordlista og la barnet krysse av hvert ord det kan forklare. Når alle ordene er krysset av, blir det diplom og en belønning dere har avtalt på forhånd.
 
-**Når kurset er ferdig:** Roblox sin egen dokumentasjon på create.roblox.com/docs har gode, gratis gjennomganger. Neste naturlige steg er LocalScripts og knapper på skjermen (GUI), og ModuleScripts for å dele kode mellom skript.
+**Når kurset er ferdig:** Forsiden på barnets side har en bolk som heter «Utforsk videre». Den har 14 konsepter sortert etter vanskelighetsgrad, fra «Trykk E»-knapper, lyd og partikler til GUI, RemoteEvent og DataStore. Hvert konsept lenker til Roblox sin engelske dokumentasjon. Listen ligger i `docs/_data/utforsk.yml` og er lett å utvide. Roblox har også egne gratis kurs på create.roblox.com/docs.
 
 ---
 

@@ -312,3 +312,10 @@ h2.bolk { margin-top: 32px; }
 .bildegalleri a:hover { border-color: var(--tema); }
 .bildegalleri img { width: 100%; max-width: 120px; height: auto; }
 .bildegalleri span { font-weight: 800; font-size: 15px; }
+.nivaa { display: inline-block; font: 800 12px/1 "Nunito", sans-serif; text-transform: uppercase; letter-spacing: .05em; padding: 4px 9px; border-radius: 999px; color: #fff; }
+.nivaa.n1 { background: #10b981; } .nivaa.n2 { background: #d97706; } .nivaa.n3 { background: #dc2626; }
+.nivaa-forklaring .nivaa { margin-right: 4px; }
+.kart.utforsk a { display: flex; flex-direction: column; gap: 4px; }
+.kart.utforsk h3 { font-size: 20px; margin: 6px 0 2px; }
+.kart.utforsk code { align-self: flex-start; margin-top: auto; font-size: 13px; }
+.kart.utforsk .nivaa { align-self: flex-start; }

@@ -54,6 +54,23 @@ vis_tittel: false
   {% endfor %}
 </ul>
 
+<h2 class="bolk">Utforsk videre</h2>
+<p>Ferdig med alt? Roblox Studio kan mye mer! Her er ting du kan lære deg selv. Søkeordet i den lille boksen er navnet Roblox bruker, og lenken går til Roblox sin egen forklaring. Den er på engelsk, så spør gjerne en voksen om hjelp.</p>
+<p class="nivaa-forklaring"><span class="nivaa n1">Lett</span> <span class="nivaa n2">Middels</span> <span class="nivaa n3">Vanskelig</span></p>
+<ul class="kart utforsk">
+  {% assign utforsk = site.data.utforsk | sort: "nivaa" %}
+  {% for u in utforsk %}
+  <li style="--farge: {% if u.nivaa == 1 %}#10b981{% elsif u.nivaa == 2 %}#f59e0b{% else %}#ef4444{% endif %}">
+    <a href="https://create.roblox.com/docs/reference/engine/{% if u.ord == 'table' %}libraries/table{% else %}classes/{{ u.ord }}{% endif %}" target="_blank" rel="noopener">
+      <span class="nivaa n{{ u.nivaa }}">{% if u.nivaa == 1 %}Lett{% elsif u.nivaa == 2 %}Middels{% else %}Vanskelig{% endif %}</span>
+      <h3>{{ u.tittel }}</h3>
+      <p>{{ u.tekst }}</p>
+      <code>{{ u.ord }}</code>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
 <h2 id="start">Start her: Gjør klar Roblox Studio</h2>
 <p>Dette er ikke et oppdrag. Det er forberedelsene, og dere gjør dem bare én gang, sammen med en voksen. Det tar cirka 15 minutter. Når alt er krysset av, er du klar for oppdrag 1.</p>
 <ul>
