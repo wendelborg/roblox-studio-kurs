@@ -9,6 +9,7 @@
 - nr: 2
   nokkel: trylleformler   # fast ID for lagret fremgang, endres aldri
   veileder: 02-trylleformler.md
+  fasit: solutions/lesson2.rbxl
   tittel: Trylleformler
   kort: Bytt farge, størrelse og usynlighet
   ord: variabel

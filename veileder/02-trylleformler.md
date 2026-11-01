@@ -6,6 +6,8 @@
 
 **Barnet lærer:** variabler (navngitte bokser) og egenskaper (det som står i Properties-vinduet).
 
+**Ferdig eksempel:** [solutions/lesson2.rbxl](../solutions/lesson2.rbxl) er oppdraget slik det ser ut når det er ferdig. Åpne den i Roblox Studio med **File → Open from File**.
+
 **Den store ideen:** Alt du kan endre i Properties-vinduet med musa, kan koden også endre. En **variabel** er en boks med navnelapp som vi legger noe i, så vi slipper å skrive det samme om og om igjen.
 
 **Kode (i et Script inni Magikloss):**

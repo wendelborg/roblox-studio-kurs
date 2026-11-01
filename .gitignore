@@ -1,3 +1,6 @@
 _site/
 .jekyll-cache/
 .jekyll-metadata
+
+# Låsefil fra Roblox Studio mens et spill er åpent
+*.rbxl.lock
