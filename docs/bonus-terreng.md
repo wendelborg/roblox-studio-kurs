@@ -107,10 +107,84 @@ Fordi stedene er tilfeldige, ser verdenen forskjellig ut hver gang.
 </div>
 </details>
 
+## Del D: Den giftige dammen
+
+Nå skal du lage en dam med grønt, giftig vann. Den som bader i den, mister litt og litt liv. Pass på!
+
+### Bygg dammen
+
+1. Grav en grop med **Subtract** og fyll den med vann. Bruk **Sea Level** eller mal med **Water**.
+2. Klikk på **Terrain** i Explorer og finn **WaterColor** i Properties. Gjør vannet giftgrønt!
+3. Lag en kloss som dekker hele dammen, fra bunnen og litt opp over vannet. Gi den navnet `Gift`.
+4. Sett **Anchored** på, **CanCollide** av og **Transparency** til 1. Nå er den en usynlig giftsone.
+5. Legg et Script inni `Gift`.
+
+<div class="boks obs" markdown="1">
+### Vannfargen gjelder alt vann
+
+`WaterColor` endrer fargen på **alt** vannet i verdenen din, også havet. Vil du ha vanlig blått vann et annet sted? Da kan du lage dammen av et annet materiale i stedet, for eksempel **Mud**, eller la den usynlige giftsonen gjøre jobben alene.
+</div>
+
+<div class="skriv-selv" markdown="1">
+```lua
+local gift = script.Parent   -- den usynlige klossen over dammen
+local skade = 5              -- hvor mye liv du mister hver gang
+
+while true do
+	local deler = workspace:GetPartsInPart(gift)
+
+	for _, del in deler do
+		if del.Name == "HumanoidRootPart" then
+			local humanoid = del.Parent:FindFirstChild("Humanoid")
+			if humanoid then
+				humanoid:TakeDamage(skade)
+			end
+		end
+	end
+
+	task.wait(0.5)
+end
+```
+</div>
+
+<div class="hva-skjer" markdown="1">
+### Hva skjer når du hopper uti?
+
+1. Løkka går for alltid, to ganger i sekundet.
+2. `GetPartsInPart` spør: «Hvilke deler er inni giftsonen akkurat nå?» Svaret er en liste.
+3. Løkka går gjennom lista, del for del, akkurat som i Har den! (oppdrag 10).
+4. Er delen en **HumanoidRootPart**, altså midten av en figur, er det noen som bader!
+5. `TakeDamage(5)` tar 5 liv fra den som bader.
+6. Etter et halvt sekund sjekker løkka igjen. Blir du i vannet, mister du 5 liv til, og 5 til …
+</div>
+
+<details class="enklere" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>
+<div class="enkel-tekst" markdown="1">
+Tenk på en badevakt som ser på dammen to ganger i sekundet og roper: «Hvem er i vannet nå?»
+
+Alle som er i vannet, mister litt liv. Kommer du deg opp i tide, går det bra. Blir du for lenge, er du ute!
+
+Vi sjekker bare **HumanoidRootPart**, den usynlige midten av figuren. Ellers ville du mistet liv én gang for hver arm, hvert bein og hver fot!
+</div>
+</details>
+
+<div class="boks gjett" markdown="1">
+### Gjett først!
+
+Du starter med 100 liv. Hvor mange sekunder kan du bade før du er ute?
+
+<details markdown="1"><summary>Se svaret</summary>
+Cirka 10 sekunder. Du mister 5 liv to ganger i sekundet, det blir 10 liv i sekundet. 100 delt på 10 er 10. Kanskje litt lenger, fordi Roblox gir deg litt liv tilbake av seg selv.
+</details>
+</div>
+
 ## Hva betyr ordene?
 
 - **Terrain** er alt terrenget i verdenen din.
 - `FillBlock` fyller en boks med et materiale. `FillBall` fyller en kule.
+- `GetPartsInPart` gir deg en liste over alle deler som er inni en kloss.
+- `TakeDamage` tar liv fra en Humanoid.
+- `WaterColor` er fargen på vannet i terrenget.
 - `Enum.Material.Grass` er materialet. Prøv også `Sand`, `Rock`, `Snow`, `Water` og `CrackedLava`.
 
 ## Utfordringer
@@ -119,6 +193,9 @@ Fordi stedene er tilfeldige, ser verdenen forskjellig ut hver gang.
 - [ ] Lag en vulkan: et fjell av `Rock` med `CrackedLava` på toppen.
 - [ ] Endre koden så det blir 30 små øyer i stedet for 10 store.
 - [ ] Lag en tunnel gjennom et fjell med **Subtract**, og gjem en mynt inni.
+- [ ] Gjør dammen farligere eller snillere ved å endre `skade`. Hva er gøyest?
+- [ ] Legg en **ParticleEmitter** i `Gift` og lag grønne bobler som stiger opp av dammen.
+- [ ] Lag en helbredende kilde i stedet: bytt `TakeDamage(skade)` med `humanoid.Health += 5`.
 
 <nav class="bla">
   <a href="{{ '/sluttprosjekt/' | relative_url }}">← Sluttprosjekt</a>

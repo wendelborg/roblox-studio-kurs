@@ -37,6 +37,16 @@ for i = 1, 10 do
 end
 ```
 
+**Del D – den giftige dammen:** Barnet graver en dam, fyller den med vann og gjør vannet grønt med **WaterColor** på Terrain. Merk at fargen gjelder alt vann i verdenen. Over dammen ligger en usynlig kloss, `Gift` (Anchored, CanCollide av, Transparency 1), med et skript som to ganger i sekundet:
+
+1. henter alle deler inni klossen med `workspace:GetPartsInPart(gift)`
+2. finner `HumanoidRootPart`-delene, så hver figur bare telles én gang
+3. trekker 5 liv med `humanoid:TakeDamage(skade)`
+
+Terreng har ikke `Touched` som virker på samme måte som en kloss, derfor brukes en usynlig sone over vannet. Løkken over delene er den samme typen som i dommerskriptet i oppdrag 10.
+
+**Tippeoppgave:** «Hvor lenge kan du bade med 100 liv?» (Cirka 10 sekunder: 10 liv i sekundet. Litt lenger fordi Roblox gir liv tilbake av seg selv.)
+
 **Forklar sammen:**
 
 - `FillBlock` fyller en boks og `FillBall` en kule med et materiale.
@@ -49,6 +59,8 @@ end
 - [ ] Lag en vulkan med `Rock` og `CrackedLava`.
 - [ ] 30 små øyer i stedet for 10 store.
 - [ ] En tunnel gjennom et fjell med en gjemt mynt.
+- [ ] Grønne bobler i giftdammen med en ParticleEmitter.
+- [ ] En helbredende kilde i stedet for gift.
 
 ---
 
