@@ -1,58 +1,68 @@
 - nr: 1
+  nokkel: hei-verden   # fast ID for lagret fremgang, endres aldri
   veileder: 01-hei-verden.md
   tittel: Hei, verden!
   kort: Få en kloss til å snakke
   ord: Parent
   farge: "#2f7cf6"
 - nr: 2
+  nokkel: trylleformler   # fast ID for lagret fremgang, endres aldri
   veileder: 02-trylleformler.md
   tittel: Trylleformler
   kort: Bytt farge, størrelse og usynlighet
   ord: variabel
   farge: "#8b5cf6"
 - nr: 3
+  nokkel: fysikk-laben   # fast ID for lagret fremgang, endres aldri
   veileder: 03-fysikk-laben.md
   tittel: Fysikk-laben
   kort: Tyngdekraft, ting som faller og klosser som henger sammen
   ord: Anchored
   farge: "#0891b2"
 - nr: 4
+  nokkel: gulvet-er-lava   # fast ID for lagret fremgang, endres aldri
   veileder: 04-gulvet-er-lava.md
   tittel: Gulvet er lava
   kort: Lag en kloss som er farlig å tråkke på
   ord: hendelse
   farge: "#ef4444"
 - nr: 5
+  nokkel: hemmelig-dor   # fast ID for lagret fremgang, endres aldri
   veileder: 05-den-hemmelige-dora.md
   tittel: Den hemmelige døra
   kort: En dør som bare åpner seg for deg
   ord: betingelse
   farge: "#f59e0b"
 - nr: 6
+  nokkel: disko-og-trapp   # fast ID for lagret fremgang, endres aldri
   veileder: 06-disko-og-forsvinnende-trapp.md
   tittel: Disko og forsvinnende trapp
   kort: Gjenta ting uten å skrive dem mange ganger
   ord: løkke
   farge: "#ec4899"
 - nr: 7
+  nokkel: egne-trylleord   # fast ID for lagret fremgang, endres aldri
   veileder: 07-lag-dine-egne-trylleord.md
   tittel: Lag dine egne trylleord
   kort: Finn opp dine egne kommandoer
   ord: funksjon
   farge: "#10b981"
 - nr: 8
+  nokkel: myntjakt   # fast ID for lagret fremgang, endres aldri
   veileder: 08-myntjakt-med-poengtavle.md
   tittel: Myntjakt med poengtavle
   kort: Samle mynter og få poeng
   ord: debounce
   farge: "#eab308"
 - nr: 9
+  nokkel: gylne-nokkelen   # fast ID for lagret fremgang, endres aldri
   veileder: 09-den-gylne-nokkelen.md
   tittel: Den gylne nøkkelen
   kort: Finn nøkkelen og lås opp døra
   ord: Backpack
   farge: "#d97706"
 - nr: 10
+  nokkel: har-den   # fast ID for lagret fremgang, endres aldri
   veileder: 10-har-den.md
   tittel: Har den!
   kort: Flerspiller-sisten med powerups og sakte-felt

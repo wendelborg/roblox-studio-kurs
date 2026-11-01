@@ -14,8 +14,20 @@
 
   var side = document.body.getAttribute("data-side") || "side";
 
+  // Lager en kort, fast nøkkel fra en tekst. Nøkkelen avhenger av hva
+  // som står i punktet, ikke av hvor det står, så fremgangen overlever
+  // at oppdrag og punkter flyttes eller nummereres om.
+  function nokkelFra(tekst) {
+    var h = 5381;
+    tekst = tekst.replace(/\s+/g, " ").trim();
+    for (var i = 0; i < tekst.length; i++) {
+      h = ((h << 5) + h + tekst.charCodeAt(i)) | 0;
+    }
+    return (h >>> 0).toString(36);
+  }
+  var brukt = {};
+
   // 1. Gjør «- [ ]»-lister om til ekte avkrysningsbokser.
-  var teller = 0;
   document.querySelectorAll("main li").forEach(function (li) {
     var boks = li.querySelector(":scope > input[type=checkbox]");
     if (!boks) {
@@ -29,8 +41,10 @@
     boks.disabled = false;
     boks.removeAttribute("disabled");
     boks.checked = false;
-    teller += 1;
-    boks.setAttribute("data-lagre", side + "-" + teller);
+    var tekstUtenBoks = li.textContent;
+    var n = side + "-" + nokkelFra(tekstUtenBoks);
+    if (brukt[n]) { brukt[n] += 1; n += "-" + brukt[n]; } else { brukt[n] = 1; }
+    boks.setAttribute("data-lagre", n);
     li.classList.add("sjekk");
     // Pakk teksten inn i ett element, så flex-layouten ikke deler den opp
     var tekst = document.createElement("span");

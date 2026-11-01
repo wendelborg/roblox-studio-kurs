@@ -12,7 +12,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='24' height='24' rx='5' fill='%232f7cf6' transform='rotate(12 16 16)'/%3E%3C/svg%3E">
 </head>
 {% assign m = site.data.oppdrag | where: "nr", page.nr | first %}
-<body{% if m %} style="--tema: {{ m.farge }}"{% endif %} data-side="{% if page.nr %}oppdrag-{{ page.nr }}{% else %}{{ page.url | remove: '/' | default: 'forside' }}{% endif %}">
+<body{% if m %} style="--tema: {{ m.farge }}"{% endif %} data-side="{% if m %}oppdrag-{{ m.nokkel }}{% else %}{{ page.url | remove: '/' | default: 'forside' }}{% endif %}">
   <header class="topp">
     <a class="logo" href="{{ '/' | relative_url }}"><span class="logo-kloss" aria-hidden="true"></span>{{ site.title }}</a>
     <nav>
@@ -39,7 +39,7 @@
     <section class="hemmelig">
       <h2>Hemmelig ord: <em>{{ m.ord }}</em></h2>
       <p>Forklar ordet <strong>{{ m.ord }}</strong> til en voksen med dine egne ord. Klarer du det, er oppdraget fullført!</p>
-      <label class="fullfort"><input type="checkbox" data-lagre="ferdig-{{ m.nr }}"> Jeg har forklart ordet. Oppdraget er fullført!</label>
+      <label class="fullfort"><input type="checkbox" data-lagre="ferdig-{{ m.nokkel }}"> Jeg har forklart ordet. Oppdraget er fullført!</label>
     </section>
 
     {% assign forrige = m.nr | minus: 1 %}{% assign neste = m.nr | plus: 1 %}

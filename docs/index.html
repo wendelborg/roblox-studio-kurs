@@ -17,7 +17,7 @@ vis_tittel: false
 
 <ul class="kart">
   {% for m in site.data.oppdrag %}
-  <li data-oppdrag="{{ m.nr }}" style="--farge: {{ m.farge }}">
+  <li data-oppdrag="{{ m.nokkel }}" style="--farge: {{ m.farge }}">
     <a href="{{ '/oppdrag/' | append: m.nr | append: '/' | relative_url }}">
       <span class="nr">Oppdrag {{ m.nr }}</span>
       <h3>{{ m.tittel }}</h3>
