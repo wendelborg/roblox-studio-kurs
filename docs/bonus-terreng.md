@@ -21,7 +21,7 @@ Terrengverktøyet i Roblox er en digital sandkasse. Du bruker musa i stedet for 
 
 ## Del A: La Roblox lage en verden
 
-1. Åpne **Terrain Editor**. Du finner den under fanen **Home** eller **Model**.
+1. Åpne **Terrain Editor**. Du finner den i menyen **Window → 3D → Terrain** øverst på skjermen.
 2. Velg **Generate**. Her kan du velge hvor stor verdenen skal være, og hva slags landskap du vil ha: fjell, sletter, ørken, snø og mer.
 3. Trykk **Generate** og se verdenen vokse fram!
 

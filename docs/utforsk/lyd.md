@@ -24,7 +24,7 @@ En Sound er som en liten høyttaler du kan sette hvor du vil. Legger du den i en
 
 ## Finn en lyd
 
-1. Åpne **Toolbox** (under fanen View eller Home) og velg **Audio**.
+1. Åpne **Toolbox** (i menyen **Window**) og velg **Audio**.
 2. Søk etter for eksempel `coin`, `pop` eller `jump`. Trykk på en lyd for å høre den.
 3. Dra lyden du liker, inn på en kloss i Explorer. Da ligger det et **Sound**-objekt inni klossen.
 

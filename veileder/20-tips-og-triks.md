@@ -30,14 +30,14 @@ På Mac bruker du **Cmd** der det står **Ctrl**.
 | **Q** og **E** | Fly ned og opp |
 | Høyre museknapp + dra | Snu deg og se deg rundt |
 | **Shift** | Hold inne for å fly saktere og mer nøyaktig |
-| Terningen øverst til høyre | Klikk en side eller et hjørne for å se fra den vinkelen. Toppen gir oversikt ovenfra. Slås på under **View → View Selector**. |
+| Terningen øverst til høyre | Klikk en side eller et hjørne for å se fra den vinkelen. Toppen gir oversikt ovenfra. |
 
 **Teste**
 
 | Tast | Hva den gjør |
 | --- | --- |
 | **F5** | Play: Start spillet med figuren din |
-| **F8** | Run: Start spillet uten figur. Fint for å se på fysikk eller roboten. |
+| **F8** | Run: Start spillet uten figur. Fint for å se på fysikk eller roboten. Run kan også velges i testmenyen ved siden av Play. |
 | **Shift+F5** | Stopp testen |
 
 Hurtigtaster kan endres under **File → Advanced → Customize Shortcuts**. Der kan du også gi taster til ting som ikke har noen fra før.
@@ -66,7 +66,7 @@ Høyreklikk en modell og velg **Convert to Package**. En package er en modell so
 ## Gjør Studio barnevennlig
 
 - **Større skrift i skriptene:** **File → Studio Settings → Script Editor → Font size**. Stor skrift hjelper mye for barn som skriver av kode.
-- **Hold de tre vinduene åpne:** Explorer, Properties og Output. Lukkes de ved et uhell, ligger de under fanen **View** eller menyen **Window**.
+- **Hold de tre vinduene åpne:** Explorer, Properties og Output. Lukkes de ved et uhell, ligger de i menyen **Window**.
 - **Filtrer Explorer:** Søkefeltet øverst i Explorer finner ting med navn. Det er fint når verden blir full.
 - **Rydd i Output:** Med knappen for å tømme Output slipper dere gamle meldinger som forvirrer.
 - **Snap:** Under fanen Model kan dere velge hvor langt Move og Rotate flytter hver gang. 1 stud og 15 grader gjør det lettere å bygge pent.

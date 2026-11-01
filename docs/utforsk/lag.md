@@ -27,7 +27,7 @@ Her trenger du nesten ingen kode.
 2. Gi laget et navn, for eksempel `Rødt lag`, og velg en **TeamColor**.
 3. Lag ett lag til, for eksempel `Blått lag`, med en annen farge.
 4. Lag to **SpawnLocation**-er. På hver av dem slår du **Neutral** av og setter **TeamColor** til samme farge som laget.
-5. Test med 2 spillere under fanen **Test**. Roblox fordeler spillerne på lagene av seg selv.
+5. Test med 2 spillere: Velg **Server & Clients** og **2** i **Test**-menyen øverst til venstre, og trykk Play. Roblox fordeler spillerne på lagene av seg selv.
 
 Vil du se lagene i koden, kan du legge dette i et Script i **ServerScriptService**:
 

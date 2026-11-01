@@ -27,7 +27,7 @@ Tenk på en ostehøvel og en leirklump.
 
 Her lager du en mynt med hull i midten, som en smultring.
 
-1. Lag en **Cylinder** (velg den under **Part** i fanen Home). Gjør den flat og rund som en mynt.
+1. Lag en **Cylinder** (velg den under **Part** i fanen **Model**). Gjør den flat og rund som en mynt.
 2. Lag en mindre Cylinder og legg den midt i den første. Den skal bli hullet.
 3. Velg den lille og trykk **Negate** i fanen **Model** (eller **Ctrl+Shift+N**, på Mac **Cmd+Shift+N**). Den blir gjennomsiktig og rød. Det betyr «skjær bort».
 4. Marker begge og trykk **Union** (**Ctrl+Shift+G**, på Mac **Cmd+Shift+G**).
@@ -76,7 +76,7 @@ Har du ikke laget en modell ennå, eller vil du se hvordan det blir? Last ned ek
 1. I Roblox Studio velger du **File → Import 3D**.
 2. Finn OBJ-filen du lagret (eller eksempelpokalen), og trykk **Import**.
 3. Modellen dukker opp i verdenen din og i Explorer. Den er en **MeshPart**.
-4. Er den altfor stor eller altfor liten? Bruk **Scale**-verktøyet i fanen Home.
+4. Er den altfor stor eller altfor liten? Bruk **Scale**-verktøyet i fanen **Model**.
 5. Husk å sette **Anchored** på, ellers faller den ned!
 
 <div class="ds-alert" data-color="danger" markdown="1">

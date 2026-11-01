@@ -10,7 +10,7 @@
 
 Dette er en ren kreativ bonus. Det meste skjer med musa, og bare den siste delen har kode. Fin å ta på en dag med lite energi til kode, eller som en belønning etter obbyen.
 
-**Del A – generer en verden:** Åpne **Terrain Editor** (fanen Home eller Model) og velg **Generate**. Velg størrelse og landskapstyper, og trykk Generate. **Ctrl+Z** (Mac: Cmd+Z) angrer, og **Clear** sletter alt terreng.
+**Del A – generer en verden:** Åpne **Terrain Editor** (menyen **Window → 3D → Terrain**) og velg **Generate**. Velg størrelse og landskapstyper, og trykk Generate. **Ctrl+Z** (Mac: Cmd+Z) angrer, og **Clear** sletter alt terreng.
 
 **Del B – form selv:** Penselverktøyene heter litt forskjellig i ulike Studio-versjoner, men nesten alltid finnes **Add/Draw**, **Subtract**, **Grow/Erode**, **Smooth**, **Flatten**, **Paint** og **Sea Level**. Hver pensel har størrelse og styrke.
 

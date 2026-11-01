@@ -88,7 +88,7 @@ Fikk du ikke til soppen i Blender? Last ned eksempelsoppen og bruk den i stedet.
 1. I Roblox Studio velger du **File → Import 3D**.
 2. Finn FBX-filen du lagret (eller eksempelsoppen), og trykk **Import**.
 3. Modellen dukker opp i verdenen din og i Explorer. Den er en **MeshPart**.
-4. Er den altfor stor eller altfor liten? Bruk **Scale**-verktøyet i fanen Home.
+4. Er den altfor stor eller altfor liten? Bruk **Scale**-verktøyet i fanen **Model**.
 5. Husk å sette **Anchored** på, ellers faller den ned!
 6. Gi soppen farge med **Color** i Properties.
 

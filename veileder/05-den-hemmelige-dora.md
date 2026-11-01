@@ -49,7 +49,7 @@ dor.Touched:Connect(naarNoeRorer)
 
 - [ ] Legg til en `elseif` som gjør døra rød for alle andre.
 - [ ] Lag en dør som bare åpner seg for spillere med under 50 i liv: `if humanoid.Health < 50 then`.
-- [ ] Test med en venn eller med Studio-fanen **Test → Players: 2**. Fungerer døra bare for den riktige?
+- [ ] Test med en venn, eller velg **Server & Clients** med 2 spillere i testmenyen øverst til venstre. Fungerer døra bare for den riktige?
 
 **Hemmelig ord å forklare tilbake:** betingelse
 

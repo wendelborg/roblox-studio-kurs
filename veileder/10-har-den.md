@@ -10,7 +10,7 @@
 
 Har den! er delt i fire oppdrag: 10 er selve leken, 11 er powerups og sakte-felt, 12 er en robot som spiller med barnet, og 13 er en frysepistol. Oppdrag 10 er det tyngste av de fire. Det er helt greit å bruke to økter på det.
 
-**Testing:** Under fanen **Test** kan dere starte en lokal test med 2 spillere. Studio åpner da ett vindu per spiller. Det er tungt for maskinen, så lukk andre programmer. Enda morsommere: publiser spillet og spill sammen med en venn eller et søsken.
+**Testing:** Start en lokal test med 2 spillere i testmenyen øverst til venstre i Studio (der det står **Test**, ved siden av Play-knappen): velg **Server & Clients** og antall spillere, og trykk Play. Studio åpner da ett vindu per spiller. Det er tungt for maskinen, så lukk andre programmer. Enda morsommere: publiser spillet og spill sammen med en venn eller et søsken.
 
 **Del A – dommerskriptet (Script i ServerScriptService, kalt `HarDen`):** Koden står i sin helhet på barnets side. Det er mye kode å skrive, så det er helt greit å dele den over to økter. Stopp gjerne etter funksjonen `giDen` og test med `print`.
 

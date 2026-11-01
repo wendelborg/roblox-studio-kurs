@@ -55,9 +55,9 @@ For at noe skal huskes til neste gang, må det lagres i **DataStore**. Det er Ro
 
 Når dere trykker **Play** i Studio, starter Studio en liten server og en klient på samme maskin. Det er derfor skript på serveren og spilleren virker som i et ekte spill.
 
-- **Play** (F5) gir én spiller.
-- **Run** (F8) starter bare serveren, uten spiller. Det er nyttig for å se på fysikk eller roboten i oppdrag 12.
-- Under fanen **Test** kan dere starte en test med **flere spillere**. Da åpner Studio ett vindu for serveren og ett per spiller. Dette brukes i Har den!
+- **Play** (den blå knappen øverst til venstre) gir én spiller.
+- **Run** (velges i testmenyen ved siden av Play) starter bare serveren, uten spiller. Det er nyttig for å se på fysikk eller roboten i oppdrag 12.
+- Velger dere **Server & Clients** i testmenyen, kan dere teste med **flere spillere**. Da åpner Studio ett vindu for serveren og ett per spiller. **End Session** stopper alt. Dette brukes i Har den!
 - Mens testen kjører, kan dere bytte mellom **Client** og **Server** øverst i Studio. Da ser dere Explorer slik serveren eller spilleren ser den. Det er en fin måte å vise forskjellen for barnet på.
 
 ## Bygge sammen (Team Create)

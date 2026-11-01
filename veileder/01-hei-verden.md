@@ -10,7 +10,7 @@
 
 **Steg for steg:**
 
-1. Sett inn en Part (fanen Home → Part). Gi den navnet `Magikloss` i Explorer.
+1. Sett inn en Part (fanen Model → Part). Gi den navnet `Magikloss` i Explorer.
 2. Hold musa over Magikloss i Explorer og trykk **+** som dukker opp til høyre for navnet. Skriv `Script` og velg **Script**. (Høyreklikk → **Insert Object** gjør det samme.) **+** betyr «legg noe nytt inni denne», og det er verdt å bruke litt tid på: resten av kurset bygger på at barnet skjønner hvor ting havner.
 3. Slett det som står der og skriv:
 

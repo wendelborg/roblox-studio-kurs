@@ -19,7 +19,7 @@ Før eller siden vil barnet vise fram spillet sitt. Dette kapitlet forklarer de 
 
 ## 1. Spill sammen på samme maskin
 
-Under fanen **Test** i Studio kan dere starte en lokal test med 2 eller flere spillere. Studio åpner da ett vindu per spiller, og dere bytter mellom dem. Det er slik dere tester Har den! (oppdrag 10). Ingenting blir delt med noen utenfor maskinen.
+Dere kan starte en lokal test med 2 eller flere spillere i testmenyen øverst til venstre i Studio (der det står **Test**, ved siden av Play-knappen): velg **Server & Clients** og antall spillere, og trykk Play. Studio åpner da ett vindu per spiller, og dere bytter mellom dem. Det er slik dere tester Har den! (oppdrag 10). Ingenting blir delt med noen utenfor maskinen.
 
 ## 2. Lagre som fil
 
