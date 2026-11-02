@@ -6,6 +6,8 @@
 
 **Barnet lærer:** at Roblox har fysikk, hva Anchored betyr, forskjellen på å gruppere og å sveise klosser, og hvordan tyngdekraften kan endres.
 
+**Ferdig eksempel:** [solutions/lesson3.rbxl](../solutions/lesson3.rbxl) har del A, B og C: klossetårnet, bilen som en Model og bilen sveiset sammen med WeldConstraint. Åpne den i Roblox Studio med **File → Open from File**.
+
 **Den store ideen:** Ting i Roblox faller, ruller og velter nesten som i virkeligheten. En kloss med **Anchored** på er festet med en usynlig spiker og blir hengende der den er. En kloss uten Anchored er fri, og da bestemmer tyngdekraften. Barnet har sett `Anchored = true` i oppdrag 2. Nå får barnet oppleve hva det faktisk betyr.
 
 Dette oppdraget er mest bygging og eksperimentering, og bare ett lite skript. Det er et godt pusterom etter to oppdrag med kode, og det gjør senere oppdrag lettere: lavaklosser, trapper og plattformer må alle være forankret.
@@ -40,7 +42,7 @@ Fortell gjerne at det holder å forankre **én** kloss i en sveiset gruppe for a
 local plattform = script.Parent
 
 print("Plattformen henger i lufta …")
-task.wait(3)
+task.wait(10)
 
 plattform.BrickColor = BrickColor.new("Really red")
 task.wait(1)
@@ -48,6 +50,8 @@ task.wait(1)
 plattform.Anchored = false
 print("… og nå faller den!")
 ```
+
+Skriptet begynner å telle idet Play trykkes, men det tar noen sekunder før figuren er lastet inn. Derfor er ventetiden 10 sekunder. Faller plattformen likevel med en gang, mangler nesten alltid kryss for **Anchored** på plattformen. Anchored kan settes i Properties eller med **Anchor**-knappen (ankeret) i fanen Home. Den må være forankret fra start for at skriptet skal ha noe å slippe. Med 3 sekunder har plattformen falt før barnet ser den. Med **Run** i testmenyen (uten figur) kan dere se fallet med en gang.
 
 **Lek med tyngdekraften:** Klikk på Workspace og finn **Gravity** i Properties. Standard er 196.2. Prøv 30 (månehopp) og 0 (barnet svever bort). Husk å sette verdien tilbake.
 

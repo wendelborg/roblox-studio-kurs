@@ -10,7 +10,7 @@ Ikke få panikk. Alle programmerere har feil i koden sin, hele tiden. Det som gj
 1. **Les den røde teksten** i Output. Den forteller nesten alltid hvilken linje feilen er på.
 2. **Sett inn `print`** før og etter linjen du lurer på. Kommer begge meldingene i Output? Da vet du hvor koden stopper.
 3. **Sjekk stavingen.** Store og små bokstaver betyr noe. `Humanoid` med liten h finnes ikke.
-4. **Sjekk Anchored.** Faller klossen ned eller forsvinner? Da mangler den `Anchored = true`.
+4. **Sjekk Anchored.** Faller klossen ned eller forsvinner? Da mangler den `Anchored = true`. Sett kryss ved Anchored i Properties, eller trykk på **Anchor**-knappen (ankeret) i fanen **Home**.
 5. **Forklar koden til en bamse,** linje for linje, høyt. Det høres tullete ut, men ekte programmerere gjør dette også. Det har til og med et navn: gummiand-metoden.
 
 <details class="ds-details enklere" data-variant="tinted" markdown="1"><summary>Dette ble for vanskelig – forklar enklere</summary>

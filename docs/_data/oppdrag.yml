@@ -17,6 +17,7 @@
 - nr: 3
   nokkel: fysikk-laben   # fast ID for lagret fremgang, endres aldri
   veileder: 03-fysikk-laben.md
+  fasit: solutions/lesson3.rbxl
   tittel: Fysikk-laben
   kort: Tyngdekraft, ting som faller og klosser som henger sammen
   ord: Anchored
