@@ -91,6 +91,7 @@ Femten oppdrag på 45–60 minutter tar barnet fra å endre en kloss til å bygg
 **Oppsett:**
 
 - Last ned Roblox Studio fra create.roblox.com og logg inn med barnets konto.
+- Første gang Studio åpnes, tilbys en omvisning (**Start Tour**). Ta den sammen med barnet. Den tar noen minutter og viser de viktigste knappene og vinduene, og det meste av det oppdrag 1 forutsetter.
 - Lag et nytt **Baseplate**-spill. Lagre det med et navn barnet velger selv.
 - Åpne vinduene **Explorer**, **Properties** og **Output** i menyen **Window**. Disse tre skal alltid være åpne.
 - Øv på å fly rundt i 3D-ruta: **W A S D** og **Q/E** for å fly, hold høyre museknapp og dra for å se rundt, musehjulet for zoom og **F** for å fly til klossen som er valgt. Terningen øverst til høyre i 3D-ruta (View Selector) bytter vinkel: toppen gir oversikt ovenfra, sidene viser verden fra hver kant. Det er lett å miste seg selv i verden, så bruk gjerne fem minutter på dette. Flere taster står i [Tips og triks](22-tips-og-triks.md).

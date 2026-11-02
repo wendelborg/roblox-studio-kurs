@@ -30,6 +30,13 @@
   guidetittel: "Global lighting"
   nivaa: 1
   tekst: Gjør det mørkt og skummelt, eller la sola gå ned mens du spiller. Prøv å endre ClockTime.
+- tittel: Himmelen (skybox)
+  ord: Sky
+  slug: himmel
+  guide: https://create.roblox.com/docs/environment/skybox
+  guidetittel: "Skybox"
+  nivaa: 1
+  tekst: Bytt ut den blå himmelen med verdensrommet, en solnedgang eller en himmel du har tegnet selv.
 - tittel: Myke bevegelser
   ord: TweenService
   slug: myke-bevegelser
