@@ -6,6 +6,8 @@
 
 **Barnet lærer:** løkker – å gjenta noe uten å skrive det mange ganger.
 
+**Ferdig eksempel:** [solutions/lesson6.rbxl](../solutions/lesson6.rbxl) har diskoklossen, klossen som blekner og en trapp med 9 trinn fra byggeoppgaven. Åpne den i Roblox Studio med **File → Open from File**.
+
 **Den store ideen:** En **løkke** er som et refreng i en sang. `while true do` gjentar for alltid. `for i = 1, 10 do` gjentar et bestemt antall ganger og teller underveis.
 
 **Del A – diskoklossen (for alltid):**

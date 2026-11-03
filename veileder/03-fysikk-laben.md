@@ -6,7 +6,7 @@
 
 **Barnet lærer:** at Roblox har fysikk, hva Anchored betyr, forskjellen på å gruppere og å sveise klosser, og hvordan tyngdekraften kan endres.
 
-**Ferdig eksempel:** [solutions/lesson3.rbxl](../solutions/lesson3.rbxl) har del A, B og C: klossetårnet, bilen som en Model og bilen sveiset sammen med WeldConstraint. Åpne den i Roblox Studio med **File → Open from File**.
+**Ferdig eksempel:** [solutions/lesson3.rbxl](../solutions/lesson3.rbxl) har alle fire delene: klossetårnet, bilen som en Model, bilen sveiset sammen med WeldConstraint og plattformen som faller. Åpne den i Roblox Studio med **File → Open from File**.
 
 **Den store ideen:** Ting i Roblox faller, ruller og velter nesten som i virkeligheten. En kloss med **Anchored** på er festet med en usynlig spiker og blir hengende der den er. En kloss uten Anchored er fri, og da bestemmer tyngdekraften. Barnet har sett `Anchored = true` i oppdrag 2. Nå får barnet oppleve hva det faktisk betyr.
 

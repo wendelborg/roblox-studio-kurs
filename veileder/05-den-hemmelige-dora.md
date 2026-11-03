@@ -6,6 +6,8 @@
 
 **Barnet lærer:** `if`, `elseif` og `else` – å la koden ta valg.
 
+**Ferdig eksempel:** [solutions/lesson5.rbxl](../solutions/lesson5.rbxl) er oppdraget slik det ser ut når det er ferdig. Åpne den i Roblox Studio med **File → Open from File**. Bytt ut `SKRIV_BRUKERNAVNET_DITT_HER` med barnets brukernavn før dere tester.
+
 **Den store ideen:** En **betingelse** er et ja/nei-spørsmål koden stiller. «*Hvis* det er deg, åpne døra. *Ellers* si nei.» Sammenligning bruker `==` (er lik), `~=` (er ikke lik), `<` og `>`.
 
 **Kode (lag en høy, smal kloss som heter Dor, med et Script inni):**

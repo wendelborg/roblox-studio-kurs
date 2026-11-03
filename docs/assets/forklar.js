@@ -249,7 +249,8 @@
     if ((m = e.match(/^game:GetService\("(\w+)"\)$/))) return "tjenesten " + m[1];
     if ((m = e.match(/^Instance\.new\("(\w+)"\)$/))) return "en helt ny " + m[1];
     if ((m = e.match(/^(\w+(?:\.\w+)*):FindFirstChild\("(\w+)"\)$/)))
-      return "barnet til " + m[1] + " som heter " + m[2] + " (eller ingenting hvis det ikke finnes)";
+      return "det som heter " + m[2] + " og ligger inni " + m[1] + " (et barn av " + m[1] + "), eller ingenting hvis det ikke finnes" +
+        (m[2] === "Humanoid" ? ". En Humanoid er det som gjør en figur levende, med liv, fart og hopp" : "");
     if ((m = e.match(/^(\w+):WaitForChild\("(\w+)"\)$/)))
       return m[2] + " som ligger i " + (m[1] === "workspace" ? "Workspace" : m[1]) + " (koden venter til den finnes)";
     if ((m = e.match(/^Players:GetPlayerFromCharacter\((.+)\)$/)))

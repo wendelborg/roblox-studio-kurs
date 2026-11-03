@@ -25,6 +25,7 @@
 - nr: 4
   nokkel: gulvet-er-lava   # fast ID for lagret fremgang, endres aldri
   veileder: 04-gulvet-er-lava.md
+  fasit: solutions/lesson4.rbxl
   tittel: Gulvet er lava
   kort: Lag en kloss som er farlig å tråkke på
   ord: hendelse
@@ -32,6 +33,7 @@
 - nr: 5
   nokkel: hemmelig-dor   # fast ID for lagret fremgang, endres aldri
   veileder: 05-den-hemmelige-dora.md
+  fasit: solutions/lesson5.rbxl
   tittel: Den hemmelige døra
   kort: En dør som bare åpner seg for deg
   ord: betingelse
@@ -39,6 +41,7 @@
 - nr: 6
   nokkel: disko-og-trapp   # fast ID for lagret fremgang, endres aldri
   veileder: 06-disko-og-forsvinnende-trapp.md
+  fasit: solutions/lesson6.rbxl
   tittel: Disko og forsvinnende trapp
   kort: Gjenta ting uten å skrive dem mange ganger
   ord: løkke

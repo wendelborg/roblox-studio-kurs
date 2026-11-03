@@ -6,6 +6,8 @@
 
 **Barnet lærer:** hendelser (events) – kode som venter på at noe skal skje.
 
+**Ferdig eksempel:** [solutions/lesson4.rbxl](../solutions/lesson4.rbxl) er oppdraget slik det ser ut når det er ferdig. Åpne den i Roblox Studio med **File → Open from File**.
+
 **Den store ideen:** Til nå har koden kjørt fra topp til bunn med en gang. En **hendelse** er som en dørklokke: koden står og venter, og når noen ringer på, kjører den. `Touched` ringer hver gang noe rører klossen.
 
 **Kode (lag en ny, rød kloss som heter Lava, med et Script inni):**
