@@ -49,6 +49,29 @@
       tag.textContent = "Skriv selv – ikke kopier!";
       b.parentNode.insertBefore(tag, b);
     });
+
+    // Påminnelse om hvor man finner tips, rett under «Utfordringer».
+    var lenke = function (navn) {
+      var a = document.querySelector('header a[href$="/' + navn + '/"]');
+      return a ? a.getAttribute("href") : "/" + navn + "/";
+    };
+    main.querySelectorAll("h2").forEach(function (h) {
+      if (h.textContent.trim() !== "Utfordringer") return;
+      var boks = document.createElement("div");
+      boks.className = "ds-alert tips-boks";
+      boks.setAttribute("data-color", "info");
+      boks.innerHTML =
+        '<p class="ds-paragraph"><strong>Står du fast? Her kan du lete etter tips:</strong></p>' +
+        '<ul class="ds-list">' +
+        "<li>Les «Den store ideen» og «Hva betyr ordene?» lenger opp på siden.</li>" +
+        "<li>Trykk på «Forklar hver linje» under koden.</li>" +
+        "<li>Se på et tidligere oppdrag. Mye av det du trenger, har du gjort før.</li>" +
+        '<li>Slå opp ordet i <a class="ds-link" href="' + lenke("ordbok") + '">Ordboka</a>.</li>' +
+        '<li>Se på <a class="ds-link" href="' + lenke("hjelp") + '">Hjelp-siden</a>, eller <a class="ds-link" href="' + lenke("hjelp") + '#sla-opp">slå opp i Roblox sitt oppslagsverk</a>.</li>' +
+        "<li>Spør en voksen. Det er lov!</li>" +
+        "</ul>";
+      h.parentNode.insertBefore(boks, h.nextSibling);
+    });
   }
 
   // Lager en kort, fast nøkkel fra en tekst. Nøkkelen avhenger av hva

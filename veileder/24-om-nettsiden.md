@@ -51,7 +51,7 @@ Slik legger du til en ny:
 
 1. Bli ferdig med oppdraget i Studio, og lagre med **File → Save to File As…** som for eksempel `lesson2.rbxl`.
 2. Legg fila i `solutions/`.
-3. Legg til `fasit: solutions/lesson2.rbxl` på det oppdraget i `docs/_data/oppdrag.yml`.
+3. Legg til `fasit: solutions/lesson2.rbxl` på det oppdraget i `docs/_data/oppdrag.yml`. Har du også løsninger på utfordringene i en egen fil, legger du den til som `fasit_utfordringer: solutions/lesson2_challenges.rbxl`.
 
 Fila ligger utenfor `docs/`, så den publiseres ikke som en del av nettsiden. Lenken peker til fila i GitHub-repoet. Hold filene under 100 MB, som er grensen for én fil på GitHub.
 

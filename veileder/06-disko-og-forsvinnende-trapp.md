@@ -8,6 +8,8 @@
 
 **Ferdig eksempel:** [solutions/lesson6.rbxl](../solutions/lesson6.rbxl) har diskoklossen, klossen som blekner og en trapp med 9 trinn fra byggeoppgaven. Åpne den i Roblox Studio med **File → Open from File**.
 
+**Løsninger på utfordringene:** [solutions/lesson6_challenges.rbxl](../solutions/lesson6_challenges.rbxl) har én kloss per utfordring (Utfordring1–3), hver med sitt eget skript.
+
 **Den store ideen:** En **løkke** er som et refreng i en sang. `while true do` gjentar for alltid. `for i = 1, 10 do` gjentar et bestemt antall ganger og teller underveis.
 
 **Del A – diskoklossen (for alltid):**
@@ -46,9 +48,12 @@ kloss.CanCollide = false
 
 **Utfordringer:**
 
-- [ ] Få diskoklossen til å vokse og krympe i stedet for å bytte farge.
-- [ ] Lag en nedtelling i Output: 10, 9, 8 … (tips: `for i = 10, 1, -1 do`).
-- [ ] Bruk en løkke til å *lage* 20 klosser i en rad med `Instance.new("Part")`.
+- [ ] Diskokloss med to faste farger i stedet for tilfeldige.
+- [ ] Diskoklossen vokser og krymper. Bruker `Vector3.new` for størrelse, som barnet kjenner fra oppdrag 2.
+- [ ] Nedtelling i Output med `for i = 10, 1, -1 do`. Det tredje tallet er steget. Det er forklart på barnets side.
+- [ ] Klossen som blekner, omvendt: fra usynlig til synlig med samme nedtelling.
+
+Utfordringene bruker bare det barnet har møtt i oppdrag 1–6. Plassering i verden med koordinater (`Position`) og `math.random` kommer først senere.
 
 **Hemmelig ord å forklare tilbake:** løkke
 

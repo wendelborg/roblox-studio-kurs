@@ -42,6 +42,7 @@
   nokkel: disko-og-trapp   # fast ID for lagret fremgang, endres aldri
   veileder: 06-disko-og-forsvinnende-trapp.md
   fasit: solutions/lesson6.rbxl
+  fasit_utfordringer: solutions/lesson6_challenges.rbxl
   tittel: Disko og forsvinnende trapp
   kort: Gjenta ting uten å skrive dem mange ganger
   ord: løkke
