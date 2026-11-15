@@ -233,3 +233,10 @@
   hvor: Oppdrag 6
   forklaring: «while true do» betyr «så lenge svaret er ja, gjør dette». true er alltid ja, så løkka går for alltid. Den må ha task.wait(), ellers prøver datamaskinen å gjøre alt på null sekunder, og Studio fryser.
   se: [Løkke, Tellende løkke, Løkke gjennom ting]
+- ord: ServerScriptService
+  engelsk: "server script service"
+  norsk: "stedet for skript som kjører på serveren"
+  hemmelig: false
+  hvor: Oppdrag 7
+  forklaring: En mappe i Explorer for skript som ikke hører til én bestemt kloss, som poengtavla eller dommeren i Har den!. Det som ligger der, synes ikke i verden, men skriptene starter når spillet starter.
+  se: [Server]

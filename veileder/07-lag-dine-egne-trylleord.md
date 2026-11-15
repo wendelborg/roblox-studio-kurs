@@ -10,6 +10,8 @@
 
 Barnet har faktisk allerede laget funksjoner (`naarNoeRorer`). Nå lages en funksjon som barnet kaller på selv.
 
+**ServerScriptService:** Første gang barnet bruker den. Det er mappen for skript som ikke hører til én kloss. Det som ligger der, er usynlig i verden, og skriptene kjører på serveren når spillet starter. Barnets side kaller den «kontrollrommet bak scenen». Server og klient forklares først i oppdrag 10 og i [Slik fungerer serveren](21-serveren.md), så det holder å si at det er her skript som gjelder hele spillet, skal ligge.
+
 **Kode (Script i ServerScriptService):**
 
 ```lua

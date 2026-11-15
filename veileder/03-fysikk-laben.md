@@ -64,7 +64,7 @@ Skriptet begynner å telle idet Play trykkes, men det tar noen sekunder før fig
 
 **Utfordringer:**
 
-- [ ] Endre tyngdekraften med kode: `workspace.Gravity = 30` i et Script i ServerScriptService.
+- [ ] Endre tyngdekraften med kode: `workspace.Gravity = 30` i et Script i en hvilken som helst kloss. ServerScriptService kommer først i oppdrag 7.
 - [ ] Lag tre plattformer som faller etter 2, 4 og 6 sekunder.
 - [ ] Lag en ball (Shape = Ball) og la den rulle ned en Wedge.
 - [ ] Bygg et høyt tårn, sveis det sammen uten Anchored, og løp inn i det.
