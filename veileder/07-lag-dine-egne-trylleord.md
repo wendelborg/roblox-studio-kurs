@@ -39,6 +39,8 @@ kjempe.Material = Enum.Material.Neon
 
 **Utfordringer:**
 
+- [ ] Tårn med løkke og `lagKloss("Really red", 2, i * 2)`. Klossene er 2 høye, og `Position` er midten, så avstanden må være lik høyden for at de skal ligge kant i kant.
+- [ ] Vridd tårn med `Orientation = Vector3.new(0, i * 10, 0)` på klossen `lagKloss` gir tilbake.
 - [ ] Legg til en parameter for posisjon, så klossene ikke havner oppå hverandre.
 - [ ] Lag funksjonen `lagTrapp(antall)` som bruker en løkke og `lagKloss` til å bygge en trapp.
 - [ ] Lag `lagLava(x, z)` som lager en lavakloss med Touched-koden fra oppdrag 4 innebygd.
